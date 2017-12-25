@@ -1,0 +1,184 @@
+
+/*header,nav,article,footer,section,aside,figure,figcaption{display:block}*/
+
+/*#header > h2{
+  text-align: center;
+}*/
+
+/*ul{
+  list-style-position: outside;
+  list-style-type: disc;
+}
+li{
+  list-style-position: outside;
+  list-style-type: disc;
+}*/
+
+
+/* ---------------------------- icon font ---------------------------- */
+
+.contacts-menu ul{
+  display: inline;
+}
+
+.contacts-menu ul li a {
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-family: 'Fontawesome';
+  vertical-align: middle;
+}
+
+.contacts-menu ul li a {
+  *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf17c;');
+}
+.contacts-menu ul li a[href*="@"] {
+  *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0e0;');
+}
+.contacts-menu ul li a[href*="plus.google.com"] {
+  *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0d4;');
+}
+.contacts-menu ul li a[href*="vk.com"] {
+  font-family: 'Fontawesome';
+  *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf189;');
+}
+.contacts-menu ul li a[href*="facebook.com"] {
+  *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf09a;');
+}
+.contacts-menu ul li a[href*="linkedin.com"] {
+  *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0e1;');
+}
+.contacts-menu ul li a[href*="github.com"] {
+  *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf113;');
+}
+.contacts-menu ul li a[href*="twitter.com"] {
+  *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf099;');
+}
+.contacts-menu ul li a[href*="addons.mozilla.org"] {
+  *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf12e;');
+}
+.contacts-menu ul li a[href*="joomla.org"] {
+  *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf1aa;');
+}
+.contacts-menu ul li a[href*="stackoverflow.com"] {
+  *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf16c;');
+}
+
+.contacts-menu ul li a[href*="wordpress.org"] {
+  font-family: "dashicons";
+  *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf120;');
+}
+
+.contacts-menu ul li a[href*="sourceforge.net"] {
+  font-family: 'icomoon' !important;
+  *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe903;');
+}
+
+a.github-source-icon{
+  font-family: 'Fontawesome';
+  *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf09b;');
+}
+
+
+/* ---------------------------- contacts menu ---------------------------- */
+
+.menu-part-i,
+.menu-part-ii{
+  display: inline;
+}
+
+
+/* ---------------------------- projects menu ---------------------------- */
+
+#menu-box {
+  width: 60%;
+}
+
+.projects-menu .inner{
+  margin: 1em auto;
+}
+
+.projects-menu .inner table td{
+  font-family: 'Ubuntu';
+  font-size: 16px;
+  font-weight: 700;
+  font-style: normal;
+}
+
+#menu-box .content,
+#menu-box .content,
+#menu-box .content {
+  /*background: white;*/
+  /*border: solid 1px black;*/
+  border: solid 1px transparent;
+}
+
+#menu-box,
+#menu-box,
+#menu-box {
+  background: #cccccc;
+  zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=4);
+  border: none;
+}
+
+#menu-box .content,
+#menu-box .content,
+#menu-box .content {
+  background: white;
+  position: relative;
+  margin-top: 8px;
+  margin-left: 8px;
+}
+
+
+/* ---------------------------- elements ---------------------------- */
+
+img{
+  outline: none;
+  border: none;
+}
+
+p, li{
+  display: block;
+  margin-bottom: 2px;
+  line-height: 20px;
+}
+
+
+/* ---------------------------- projects ---------------------------- */
+
+.project ul, .project ol{
+  padding-left: 40px;
+}
+
+#projects #stater-point a{
+  /*display: inline; */
+  /*padding: 0;*/
+}
+#projects #stater-point img{
+  /*display: inline;*/
+  padding: 20px;
+  max-width: 40%;
+}
+
+
+/* ---------------------------- footer ---------------------------- */
+
+#footer{
+  margin-bottom: 1em;
+}
+
+#footer a#toTop{
+  /*padding: 20px;*/
+  display: none;
+}
+
+
+/* ---------------------------- projects-menu ---------------------------- */
+
+#projects-nav{
+  display: none;
+}
+#menu-box{
+  display: block;
+}

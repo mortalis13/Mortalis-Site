@@ -1,0 +1,3 @@
+div.type*9>div.type-title+div.project>div.title+div.description+div.images
+
+div.type>div.type-title+div.project>div.title+div.description+div.images
