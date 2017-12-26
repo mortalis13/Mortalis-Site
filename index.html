@@ -20,7 +20,7 @@
   <link href='assets/fonts/font-awesome/css/font-awesome.min.css' rel='stylesheet' media='all' />
   <link href='assets/fonts/dashicons/css/dashicons.min.css' rel='stylesheet' media='all' />
   <link href='assets/fonts/icomoon/css/icomoon.css' rel='stylesheet' media='all' />
-  <link href="assets/bootstrap/css/bootstrap.css" rel="stylesheet">
+  <link href="assets/bootstrap/css/bootstrap-custom.css" rel="stylesheet">
   
   <link href='assets/style/style.css' rel='stylesheet' media='all' />
   <link href='assets/style/media.css' rel='stylesheet' media='all' />
@@ -65,8 +65,8 @@
         
         <nav id="contacts-menu" class="contacts-menu clear" role="navigation">
           <div class="contacts-menu-container">
-            <ul id="menu-social-menu" class="menu">
-              <div class="menu-part-i">
+            <div class="menu-part-i">
+              <ul id="menu-social-i" class="menu menu-social">
                 <li class="menu-item mi1">
                   <a title="GitHub" rel="tooltip" data-toggle="tooltip" data-placement="bottom" target="_blank" href="https://github.com/mortalis13"><span class="screen-reader-text">GitHub</span></a>
                 </li>
@@ -90,7 +90,10 @@
                 <li class="menu-item mi6 divider-menu">
                   <a title="Stack Overflow" data-toggle="tooltip" data-placement="bottom" target="_blank" href="http://stackoverflow.com/users/1106547/mortalis"><span class="screen-reader-text">Stack Overflow</span></a>
                 </li>
-              </div><div class="menu-part-ii">
+              </ul>
+            </div><!--
+         --><div class="menu-part-ii">
+              <ul id="menu-social-ii" class="menu menu-social">
                 <li class="menu-item mi7">
                   <a title="E-Mail" data-toggle="tooltip" data-placement="bottom" target="_blank" href="mailto:stangerroman@gmail.com"><span class="screen-reader-text">E-Mail</span></a>
                 </li>
@@ -114,9 +117,8 @@
                 <li class="menu-item mi12">
                   <a title="Google+" data-toggle="tooltip" data-placement="bottom" target="_blank" href="https://plus.google.com/u/0/115913467942162994955"><span class="screen-reader-text">Google+</span></a>
                 </li>
-              </div>
-              
-            </ul>
+              </ul>
+            </div>
           </div>
         </nav>
       </section>
@@ -1245,7 +1247,7 @@
                   <br>
                   <p class="project-features">Project features</p>
                   <ul>
-                    <li><b>Export Tabs</b> - saves current tabs addresses to a text file in the "/sdcard/Android/tabs_backup/" folder</li>
+                    <li class="break-words-xxs"><b>Export Tabs</b> - saves current tabs addresses to a text file in the "/sdcard/Android/tabs_backup/" folder</li>
                     <li><b>Import Tabs</b> - allows to select a file with addresses which will be loaded in new tabs</li>
                     <li>the menu items are in the <b>Tools</b> top-level menu</li>
                   </ul>
@@ -1379,10 +1381,9 @@
     
     <footer id='footer'>
       <div class="footer-content">
-        <div class="footer-info">&copy; 2017</div>
-        <!-- <div class="footer-central-info"><a id="toTop" href="#">To Top</a></div> -->
-        <div class="footer-central-info"><a id="toTop">To Top</a></div>
-        <div class="footer-text"><a href="http://mortalis.co.nf" rel="home">Mortalis</a></div>
+        <div class="footer-info col-xs-4 text-left">&copy; 2017</div>
+        <div class="footer-info col-xs-4 text-center"><a id="toTop">To Top</a></div>
+        <div class="footer-info col-xs-4 text-right"><a href="https://github.com/mortalis13/Mortalis-Site" target="_blank"><span class="hidden-xxs">source </span>v1.2.1</a></div>
       </div>
     </footer>
   </div>

@@ -155,10 +155,6 @@ a:focus{
   margin-bottom: 5px;
 }
 
-.text-center{
-  text-align: center;
-}
-
 .divider-menu{
   border-right: 2px solid #ccc;
 }
@@ -292,7 +288,7 @@ a:focus{
 }
 
 .projects-menu .inner{
-  border-radius: 0.5em;
+  border-radius: 5px;
   -ms-border-radius: 0.5em;
   -moz-box-shadow: 0px 0px 4px #a4b2b5 inset;
   -webkit-box-shadow: 0px 0px 4px #a4b2b5 inset;
@@ -506,20 +502,9 @@ a:focus{
 .footer-content {
   padding: 16px 24px;
   padding: 1rem 1.5rem;
-  text-align: center;
 }
-
-.site-info {
-  text-align: center;
-}
-.footer-info {
-  float: left;
-}
-.footer-text {
-  float: right;
-}
-.footer-central-info{
-  display: inline-block;
+.footer-content .footer-info {
+  padding: 0;
 }
 
 #footer #toTop{
@@ -618,8 +603,6 @@ a.github-source-icon::before{
   -webkit-font-smoothing: antialiased;
   display: inline-block;
   font-family: 'Fontawesome';
-  /*vertical-align: top;*/
-  
   content: '\f09b';
 }
 
@@ -631,24 +614,22 @@ a.github-source-icon::before{
   width: 75%;
 }
 hr.project-separator { 
-  /*width: 70%;*/
   padding: 0;
   border: none;
   border-top: 1px solid #ccc;
   color: #777;
   text-align: center;
-  /*margin: 8px 0 8px 16px;*/
   margin: 0 0 0 16px;
   height: 0;
 } 
 hr.project-separator:after { 
-  content: "\2022"; 
-  display: inline-block; 
-  position: relative; 
-  top: -0.7em; 
-  /*font-size: 1.3em; */
-  padding: 0 0.25em; 
-  background: white; 
+  content: "\2022";
+  display: inline-block;
+  position: relative;
+  /*top: -0.7em;*/
+  top: -0.65em;
+  padding: 0 0.25em;
+  background: white;
   font-size: 24px;
   font-size: 1.5rem;
 }
