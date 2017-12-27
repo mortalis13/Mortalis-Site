@@ -11,3 +11,16 @@
   font-weight: 700;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'Alegreya';
+  src: url('../fonts/Alegreya/Alegreya-Regular.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Alegreya';
+  src: url('../fonts/Alegreya/Alegreya-Bold.ttf');
+  font-weight: 700;
+  font-style: normal;
+}

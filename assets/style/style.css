@@ -47,63 +47,25 @@ a:focus{
 }
 
 
-/* ----------------- fonts ----------------- */
-
-/*@font-face {
-  font-family: 'Ubuntu';
-  src: url('../fonts/Ubuntu/Ubuntu-Regular.ttf');
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Ubuntu';
-  src: url('../fonts/Ubuntu/Ubuntu-Bold.ttf');
-  font-weight: 700;
-  font-style: normal;
-}*/
-
-/*@font-face {
-  font-family: 'Open Sans';
-  src: url('../fonts/OpenSans/OpenSans-Regular.ttf');
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Open Sans';
-  src: url('../fonts/OpenSans/OpenSans-Bold.ttf');
-  font-weight: 700;
-  font-style: normal;
-}*/
-
-/*@font-face {
-  font-family: 'Ubuntu';
-  font-style: normal;
-  font-weight: 400;
-  src: url('../fonts/Ubuntu/Ubuntu-Regular.woff2') format('woff2');
-}
-@font-face {
-  font-family: 'Ubuntu';
-  font-style: normal;
-  font-weight: 700;
-  src: url('../fonts/Ubuntu/Ubuntu-Bold.woff2') format('woff2');
-}*/
-
-/*@font-face {
-  font-family: 'Ubuntu';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Ubuntu'), url(https://fonts.gstatic.com/s/ubuntu/v9/sDGTilo5QRsfWu6Yc11AXg.woff2) format('woff2');
-}
-@font-face {
-  font-family: 'Ubuntu';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Ubuntu Bold'), local('Ubuntu-Bold'), url(https://fonts.gstatic.com/s/ubuntu/v9/0ihfXUL2emPh0ROJezvraFtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
-}
-*/
-
-
 /* ----------------- content ----------------- */
+
+.section-title {
+  font-family: 'Alegreya';
+  font-size: 24px;
+  line-height: 1em;
+  
+  /*font-family: 'Roboto';*/
+  /*font-family: 'Lato';*/
+  
+  /*font-family: 'Anxiety Management';*/
+  /*font-size: 28px;*/
+  
+  /*font-family: 'McKenna';*/
+  /*font-size: 40px;*/
+  
+  /*font-family: 'Sparrow';*/
+  /*font-size: 30px;*/
+}
 
 #site{
   width: 60%;
