@@ -6,7 +6,7 @@ html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
 }
-body{
+body {
   margin: 0;
   position: relative;
 }
@@ -18,31 +18,33 @@ body{
   box-sizing: border-box;
 }
 
-header,nav,article,footer,section,aside,figure,figcaption{display:block}
+header,nav,article,footer,section,aside,figure,figcaption {
+  display:block
+}
 
 
-p{
+p {
   margin:0;
   margin-bottom: 2px;
 }
-li{
+li {
   margin-bottom: 2px;
 }
 
-ul, ol{
+ul, ol {
   margin: 0;
 }
 
-a{
+a {
   text-decoration: none;
   color: #316678;
 }
 a:hover,
-a:focus{
+a:focus {
   text-decoration: underline;
 }
 
-.img-shadow{
+.img-shadow {
   box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.2);
 }
 
@@ -67,7 +69,7 @@ a:focus{
   /*font-size: 30px;*/
 }
 
-#site{
+#site {
   width: 60%;
   margin: 0 auto;
   color: #333;
@@ -75,49 +77,49 @@ a:focus{
   font-size: 16px;
 }
 
-#header{
+#header {
   text-align: center;
   margin: 0 auto;
   padding: 15px 0px;
 }
 
-.under-construction{
+.under-construction {
   color: #691B1B;
   margin: 7px;
   font-family: Tahoma;
 }
 
-#header .name a{
+#header .name a {
   text-decoration: none;
   color: #333;
 }
 
 #header .name a:hover,
-#header .name a:focus{
+#header .name a:focus {
   text-decoration: underline;
   opacity: 0.8;
 }
 
-#content #contacts, #content #projects{
+#content #contacts, #content #projects {
   padding: 25px 0px;
 }
-#content #projects{
+#content #projects {
   padding-bottom: 0px;
 }
 
-.section{
+.section {
   border-bottom: 1px solid #ddd;
 }
 
-#header h1, h2, h3, h4, h5, h6{
+#header h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
-#header .name{
+#header .name {
   margin-bottom: 5px;
 }
 
-.divider-menu{
+.divider-menu {
   border-right: 2px solid #ccc;
 }
 
@@ -166,11 +168,11 @@ a:focus{
   /*background: #098598;*/
   /*background: #828282;*/
 }
-.contacts-menu li:hover > a{
+.contacts-menu li:hover > a {
   transition: background 0.15s;
 }
 .menu-part-i,
-.menu-part-ii{
+.menu-part-ii {
   display: inline-block;
 }
 
@@ -179,13 +181,13 @@ a:focus{
 
 /* === side-fixed-menu === */
 
-#projects-nav{
+#projects-nav {
   position: absolute;
   margin-left: -275px;
   margin-left: -19rem;
 }
 #projects-nav,
-.affix{
+.affix {
   width: 15%;
   min-width: 240px;
   min-width: 15rem;
@@ -196,10 +198,10 @@ a:focus{
   border: 2px solid #444;
   border-radius: 7px;
 }
-#projects-nav .nav li{
+#projects-nav .nav li {
   margin: 0;
 }
-#projects-nav .nav li a{
+#projects-nav .nav li a {
   padding: 10px 15px;
   color: #333;
   background: #eee;
@@ -208,15 +210,15 @@ a:focus{
   -moz-transition-duration: 0.05s;
   transition-duration: 0.05s;
 }
-#projects-nav .nav li:first-child a{
+#projects-nav .nav li:first-child a {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
-#projects-nav .nav li:last-child a{
+#projects-nav .nav li:last-child a {
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
-#projects-nav .nav li:last-child a{
+#projects-nav .nav li:last-child a {
   border-bottom: 0;
 }
 #projects-nav .nav li a:hover,
@@ -249,7 +251,7 @@ a:focus{
   width: 50%;
 }
 
-.projects-menu .inner{
+.projects-menu .inner {
   border-radius: 5px;
   -ms-border-radius: 0.5em;
   -moz-box-shadow: 0px 0px 4px #a4b2b5 inset;
@@ -257,11 +259,11 @@ a:focus{
   -ms-box-shadow: 0px 0px 4px #a4b2b5 inset;
   box-shadow: 0px 0px 4px #a4b2b5 inset;
 }
-.projects-menu table{
+.projects-menu table {
   margin: 0px auto;
   text-align: left;
 }
-.projects-menu table td{
+.projects-menu table td {
   padding: 1.5em 2em;
 }
 .projects-menu-item {
@@ -272,7 +274,7 @@ a:focus{
 
 /* ----------------- projects ----------------- */
 
-.project-image{
+.project-image {
   max-height: 240px;
   max-height: 15rem;
   max-width: 100%;
@@ -287,10 +289,10 @@ a:focus{
   margin-bottom: 1rem;
 }
 
-#projects .project-type{
+#projects .project-type {
   margin-bottom: 3em;
 }
-#projects .type-description{
+#projects .type-description {
   margin-bottom: 1.5em;
   margin-top: 40px;
   margin-top: 2.5rem;
@@ -299,7 +301,7 @@ a:focus{
   border-left: 3px solid #aaa;
   border-right: 3px solid #aaa;
 }
-#projects .type-title{
+#projects .type-title {
   font-weight: bold;
   font-size: 1.4em;
   text-decoration: underline;
@@ -307,7 +309,7 @@ a:focus{
   margin-bottom: -1rem;
 }
 
-#projects .subtype-title{
+#projects .subtype-title {
   font-weight: 700;
   font-style: italic;
   margin: 40px 0px;
@@ -318,29 +320,29 @@ a:focus{
   font-size: 1.1em;
 }
 
-#projects .project{
+#projects .project {
   margin: 40px 0 40px 16px;
   margin: 2.5rem 0 2.5rem 1rem;
 }
 
-#projects .title{
+#projects .title {
   font-weight: 700;
   font-size: 1.2em;
   margin-bottom: 0.5em;
 }
 
-#projects .description{
+#projects .description {
   margin-bottom: 1.5em;
 }
 
-#projects .images{
+#projects .images {
   text-align: center;
 }
-#projects .images a{
+#projects .images a {
   font-size: 0;
   outline: 0;
 }
-#projects .image-titles{
+#projects .image-titles {
   text-align: left;
   margin-bottom: 1em;
 }
@@ -348,11 +350,11 @@ a:focus{
 #projects .images a:focus > img {
   outline: 1px dotted #000;
 }
-#projects .images a:hover > img{
+#projects .images a:hover > img {
   opacity: 0.8;
 }
 
-.project-features{
+.project-features {
   text-transform: uppercase;
   margin-bottom: 5px;
   font-weight: 700;
@@ -360,20 +362,20 @@ a:focus{
   font-size: 90%;
 }
 
-#projects #simpleblog img{
+#projects #simpleblog img {
   max-width: 45%;
   margin-right: 5px;
 }
 
-#projects #timetable img{
+#projects #timetable img {
   margin-right: 10px;
 }
 
-#projects #homedict-java img{
+#projects #homedict-java img {
   max-height: 384px;
   max-height: 24rem;
 }
-#projects .project-type#android img{
+#projects .project-type#android img {
   max-height: 272px;
   max-height: 17rem;
   margin-right: 16px;
@@ -381,66 +383,66 @@ a:focus{
   box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.2);
 }
 
-#projects #qtcolorpicker img{
+#projects #qtcolorpicker img {
   margin-right: 15px;
 }
-#projects #create-folders img{
+#projects #create-folders img {
   max-height: 320px;
   max-height: 20rem;
 }
-#projects #path-edit img{
+#projects #path-edit img {
   max-height: 320px;
   max-height: 20rem;
 }
-#projects #android-manager img{
+#projects #android-manager img {
   max-height: 320px;
   max-height: 20rem;
 }
-#projects #page-downloader img{
+#projects #page-downloader img {
   max-height: 320px;
   max-height: 25rem;
 }
 
-#projects #stater-point img{
+#projects #stater-point img {
   max-width: 47%;
   margin-right: 20px;
   margin-bottom: 20px;
 }
 
-#projects #html-post-editor img{
+#projects #html-post-editor img {
   max-width: 47%;
 }
 
-#projects #tinymce-code-formatting img{
+#projects #tinymce-code-formatting img {
   max-height: 100%;
   margin-bottom: 10px;
 }
 
-#projects #advanced-admin-menu img{
+#projects #advanced-admin-menu img {
   max-height: 100%;
   max-width: 47%;
   margin-bottom: 16px;
   margin-bottom: 1rem;
 }
-#projects #menu-with-login img{
+#projects #menu-with-login img {
   max-height: 100%;
   max-width: 70%;
 }
 
-#projects #firefox-addons .subtype.android-addons .images img{
+#projects #firefox-addons .subtype.android-addons .images img {
   box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.2);
 }
-#projects #bookmarks-sidebar-button-pr img{
+#projects #bookmarks-sidebar-button-pr img {
   margin-right: 16px;
   margin-right: 1rem;
 }
-#projects #regex-find-pr img{
+#projects #regex-find-pr img {
   margin-bottom: 16px;
   margin-bottom: 1rem;
   margin-right: 16px;
   margin-right: 1rem;
 }
-#projects #stater-point img{
+#projects #stater-point img {
   border: 1px solid #ccc;
 }
 
@@ -469,18 +471,18 @@ a:focus{
   padding: 0;
 }
 
-#footer #toTop{
+#footer #toTop {
   padding: 7px 12px;
   background: #eee;
   border-radius: 4px;
   text-decoration: none;
   cursor: pointer;
 }
-#footer #toTop:hover{
+#footer #toTop:hover {
   background: #ddd;
 }
 #footer #toTop:focus,
-#footer #toTop:active{
+#footer #toTop:active {
   outline: none;
 }
 
@@ -550,18 +552,18 @@ a:focus{
   content: "\e903";
 }
 
-a.github-source-icon{
+a.github-source-icon {
   color: #555;
   margin-left: 5px;
   font-size: 120%;
 }
 a.github-source-icon:hover,
-a.github-source-icon:focus{
+a.github-source-icon:focus {
   color: #111;
   text-decoration: none;
 }
 
-a.github-source-icon::before{
+a.github-source-icon::before {
   -webkit-font-smoothing: antialiased;
   display: inline-block;
   font-family: 'Fontawesome';
@@ -571,7 +573,7 @@ a.github-source-icon::before{
 
 /* ---------------------------- add ---------------------------- */
 
-.project-separator-container{
+.project-separator-container {
   margin: 0px auto;
   width: 75%;
 }
