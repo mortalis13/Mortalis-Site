@@ -2,7 +2,7 @@
 
 <html lang="en-US">
 <head>
-  <!-- version 1.2.1 -->
+  <!-- version 1.2.2 -->
   
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -130,14 +130,14 @@
         
         <div id="projects-nav" class="scrollspy">
           <ul id="nav" class="nav hidden-xs hidden-sm" data-spy="affix">
-            <li> <a href="#web-sites">Web Sites (3)</a> </li>
-            <li> <a href="#multilanguage-projects">Multilanguage <span class="sm-hide">Projects</span> (1)</a> </li>
-            <li> <a href="#java">Java (3)</a> </li>
-            <li> <a href="#android">Android (5)</a> </li>
-            <li> <a href="#qt">Qt (7)</a> </li>
-            <li> <a href="#wordpress">Wordpress (3)</a> </li>
-            <li> <a href="#joomla">Joomla (2)</a> </li>
-            <li> <a href="#firefox-addons">Firefox Addons (13)</a> </li>
+            <li><a href="#web-sites">Web Sites (3)</a></li>
+            <li><a href="#multilanguage-projects">Multilanguage <span class="sm-hide">Projects</span> (1)</a></li>
+            <li><a href="#java">Java (3)</a></li>
+            <li><a href="#android">Android (5)</a></li>
+            <li><a href="#qt">Qt (7)</a></li>
+            <li><a href="#wordpress">Wordpress (3)</a></li>
+            <li><a href="#joomla">Joomla (2)</a></li>
+            <li><a href="#firefox-addons">Firefox Addons (13)</a></li>
           </ul>
         </div>
         
@@ -346,7 +346,7 @@
             
             <div class="project" id="homedict-java">
               <div class="title">
-                <a href="https://sourceforge.net/projects/HomeDictionary-Java" target="_blank">Home Dictionary</a>
+                Home Dictionary
                 <a title="GitHub Source" class="github-source-icon" target="_blank" href="https://github.com/mortalis13/HomeDictionary-Java"><span class="screen-reader-text">GitHub Source</span></a>
               </div>
               <div class="description">
@@ -538,42 +538,45 @@
             
             <div class="project" id="homedict-android">
               <div class="title">
-                <a href="https://sourceforge.net/projects/homedictionary-android" target="_blank">Home Dictionary</a>
-                <a title="GitHub Source" class="github-source-icon" target="_blank" href="https://github.com/mortalis13/Home-Dictionary-Android"><span class="screen-reader-text">GitHub Source</span></a>
+                <a href="https://github.com/mortalis13/HomeDictionary-Android/releases/latest" target="_blank">Home Dictionary</a>
+                <a title="GitHub Source" class="github-source-icon" target="_blank" href="https://github.com/mortalis13/HomeDictionary-Android"><span class="screen-reader-text">GitHub Source</span></a>
               </div>
               <div class="description">
-                <p>Mobile multilanguage dictionary which allows to add multiple dictionary files in <a target="_blank" href="http://lingvo.com/"><b>Lingvo</b></a> LSD format.</p>
-                <p>Developed from the desktop version <a href="#homedict-java"><b>Home Dictionary</b></a> in Java to allow mobility and ease of use.</p>
-                <p>For slow Android devices it is better to use the desktop version to index dictionaries for the first time.</p>
+                <p>Mobile dictionary shell application which allows to add multilanguage dictionary files in <a target="_blank" href="http://lingvo.com/"><b>Lingvo</b></a> <a href="http://lingvo.helpmax.net/en/troubleshooting/dsl-compiler/">DSL</a> format and search across added dictionaries in 1 or multiple language directions.</p>
                 <br>
                 <p class="project-features">Project features</p>
                 <ul>
-                  <li>read and index dictionaries in <b>LSD</b> format</li>
-                  <li>select a language pair from the dropdown lists</li>
+                  <li>read and index dictionaries in <b>DSL</b> format (or compressed <b>DSL.DZ</b> variation)</li>
+                  <li>select a language pair from the dropdown list</li>
                   <li>search for a word translation within the selected languages</li>
                   <li>resulting article contains word translation from all the dictionaries in the selected language pair</li>
                   <li>output formatted dictionary article</li>
                   <li>zoom article content with wrapping to allow comfortable viewing</li>
                   <li>navigate through articles using internal links</li>
-                  <li>quick word search</li>
+                  <li>manage added dictionaries (change order in article, remove and view main information)</li>
+                  <li>save and view search history ordering it by a set of conditions</li>
+                  <li>change settings such as main storage directory, max results to show, article font size</li>
                 </ul>
                 <br>
                 <p class="project-features">Development features</p>
                 <ul>
-                  <li>decoding of <b>LSD</b> dictionaries and creating of quick search indexes</li>
-                  <li>use of background task for the indexing process to prevent freezing of the main UI thread</li>
-                  <li>recognition of system and user dictionaries</li>
-                  <li>use of <b>JNI (Android NDK)</b> with <b>SO</b> libraries </li>
-                  <li>multiple encodings support using the <b>UTF-16</b> encoding</li>
-                  <li>saving of indexed directions to a config file</li>
-                  <li>use of a custom markup parser to create an HTML code for the articles</li>
-                  <li>use of a custom CSS stylesheet file to easily control the look of articles </li>
+                  <li>scanning of dictionary files in DSL format, indexing all the words for fast search and storing of the index files in the main directory</li>
+                  <li>use of internal database to store dictionary paths and main information</li>
+                  <li>use of background tasks for the indexing and search to prevent freezing of the main UI thread</li>
+                  <li>use of <b>JNI (Android NDK)</b> with <b>SO</b> libraries</li>
+                  <li>multiple encodings support using the <b>UTF-8</b> and <b>UTF-32</b> charsets</li>
+                  <li>use of a custom markup parser to create HTML code for the articles</li>
+                  <li>use of a custom CSS stylesheet file to easily control the look of the articles</li>
                 </ul>
               </div>
               <div class="images">
-                <a href="images/projects/homedictionary-android-1.png" target="_blank"><img class="project-image" src="images/projects/homedictionary-android-1.png" alt="Home Dictionary Image1"></a>
-                <a href="images/projects/homedictionary-android-2.png" target="_blank"><img class="project-image" src="images/projects/homedictionary-android-2.png" alt="Home Dictionary Image1"></a>
-                <a href="images/projects/homedictionary-android-3.png" target="_blank"><img class="project-image" src="images/projects/homedictionary-android-3.png" alt="Home Dictionary Image1"></a>
+                <a href="images/projects/homedictionary-android-1_word_search.png" target="_blank"><img class="project-image" src="images/projects/homedictionary-android-1_word_search.png" alt="Home Dictionary Image1"></a>
+                <a href="images/projects/homedictionary-android-2_article.png" target="_blank"><img class="project-image" src="images/projects/homedictionary-android-2_article.png" alt="Home Dictionary Image2"></a>
+                <a href="images/projects/homedictionary-android-3_settings.png" target="_blank"><img class="project-image" src="images/projects/homedictionary-android-3_settings.png" alt="Home Dictionary Image3"></a>
+                <br>
+                <a href="images/projects/homedictionary-android-4_dict_manager.png" target="_blank"><img class="project-image" src="images/projects/homedictionary-android-4_dict_manager.png" alt="Home Dictionary Image4"></a>
+                <a href="images/projects/homedictionary-android-5_dict_scanner.png" target="_blank"><img class="project-image" src="images/projects/homedictionary-android-5_dict_scanner.png" alt="Home Dictionary Image5"></a>
+                <a href="images/projects/homedictionary-android-6_history.png" target="_blank"><img class="project-image" src="images/projects/homedictionary-android-6_history.png" alt="Home Dictionary Image6"></a>
               </div>
             </div>
             
