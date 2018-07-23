@@ -80,7 +80,7 @@
   }
   #menu-box {
     display: block;
-    width: 60%;
+    width: 56%;
   }
   
   #projects #regex-find-pr img {
@@ -92,7 +92,7 @@
 
 @media screen and (max-width: 830px) {
   #menu-box {
-    width: 80%;
+    width: 70%;
   }
   .menu-part-i,
   .menu-part-ii {
@@ -116,6 +116,10 @@
   #projects .images ol {
     padding-left: 30px;
   }
+  
+  #projects #qtcolorpicker .images img {
+    max-width: 100%;
+  }
 }
 
 @media screen and (max-width: 640px) {
@@ -135,9 +139,19 @@
     padding: 10px;
     border: 0 !important;
   }
+  #projects #html-post-editor .image-container {
+    max-width: 100%;
+  }
   #projects img {
     max-width: 100% !important;
-    max-height: 18rem !important;
+    max-height: 20rem !important;
+  }
+  #projects #list-folders .images img, 
+  #projects #android-manager .images img {
+    max-height: 30rem !important;
+  }
+  #projects #android.project-type #metronomics .images .stacked-images {
+    margin-right: 0;
   }
 }
 

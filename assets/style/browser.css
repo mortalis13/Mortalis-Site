@@ -1,0 +1,20 @@
+
+.mobile hr.project-separator:after,
+.chrome hr.project-separator:after {
+  top: -0.65em;
+}
+
+.mobile .project-header .title,
+.chrome .project-header .title {
+  margin-bottom: 3px;
+}
+
+.ie hr.project-separator:after,
+.ie11 hr.project-separator:after {
+  top: -0.65em;
+}
+
+.ie .project-header .title,
+.ie11 .project-header .title {
+  margin-bottom: 4px;
+}

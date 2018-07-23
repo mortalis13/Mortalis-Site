@@ -44,8 +44,24 @@ a:focus {
   text-decoration: underline;
 }
 
+.image-full {
+  max-width: 100% !important;
+}
+
 .img-shadow {
   box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.2);
+}
+
+.center {
+  text-align: center;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.align-top {
+  vertical-align: top;
 }
 
 
@@ -101,7 +117,7 @@ a:focus {
 }
 
 #content #contacts, #content #projects {
-  padding: 25px 0px;
+  padding: 16px 0px;
 }
 #content #projects {
   padding-bottom: 0px;
@@ -131,7 +147,7 @@ a:focus {
   display: block;
   width: 100%;
   clear: both;
-  padding: 16px 0px;
+  padding: 16px 0px 0px;
   margin-top: 0px;
 }
 .contacts-menu .contacts-menu-container {
@@ -264,7 +280,7 @@ a:focus {
   text-align: left;
 }
 .projects-menu table td {
-  padding: 1.5em 2em;
+  padding: 0.8em 1.5em;
 }
 .projects-menu-item {
   margin-bottom: 0.4em;
@@ -274,7 +290,8 @@ a:focus {
 
 /* ----------------- projects ----------------- */
 
-.project-image {
+.project-image,
+.container-image {
   max-height: 240px;
   max-height: 15rem;
   max-width: 100%;
@@ -301,11 +318,19 @@ a:focus {
   border-left: 3px solid #aaa;
   border-right: 3px solid #aaa;
 }
+#projects .type-title-wrap {
+  margin-top: 24px;
+  margin-top: 1.5rem;
+  text-align: center;
+}
 #projects .type-title {
+  padding: 4px 50px;
+  text-align: center;
+  display: inline-block;
+  border-top: 4px solid #62ad62;
+  border-bottom: 4px solid #62ad62;
   font-weight: bold;
   font-size: 1.4em;
-  text-decoration: underline;
-  margin-bottom: -16px;
   margin-bottom: -1rem;
 }
 
@@ -321,14 +346,13 @@ a:focus {
 }
 
 #projects .project {
-  margin: 40px 0 40px 16px;
-  margin: 2.5rem 0 2.5rem 1rem;
+  margin: 32px 0 32px 16px;
+  margin: 2rem 0 2rem 1rem;
 }
 
-#projects .title {
+.project .title {
   font-weight: 700;
   font-size: 1.2em;
-  margin-bottom: 0.5em;
 }
 
 #projects .description {
@@ -362,9 +386,24 @@ a:focus {
   font-size: 90%;
 }
 
+.image-container {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  margin-right: 1rem;
+}
+#projects .image-container img {
+  margin-bottom: 0;
+  margin-right: 0;
+}
+.image-caption {
+  font-style: italic;
+  font-size: 14px;
+}
+
 #projects #simpleblog img {
   max-width: 45%;
-  margin-right: 5px;
+  margin-right: 0.5rem;
+  border: 1px solid #ccc;
 }
 
 #projects #timetable img {
@@ -375,32 +414,56 @@ a:focus {
   max-height: 384px;
   max-height: 24rem;
 }
-#projects .project-type#android img {
+#projects .project-type#android .images img {
   max-height: 272px;
   max-height: 17rem;
-  margin-right: 16px;
-  margin-right: 1rem;
   box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.2);
 }
+#projects .project-type#android .images img.project-image {
+  margin-right: 16px;
+  margin-right: 1rem;
+}
 
-#projects #qtcolorpicker img {
-  margin-right: 15px;
+#projects .project-type#android #metronomics .images img {
+  max-height: 304px;
+  max-height: 19rem;
 }
-#projects #create-folders img {
-  max-height: 320px;
-  max-height: 20rem;
+#projects .project-type#android #metronomics .images .stacked-images {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 1rem;
 }
-#projects #path-edit img {
-  max-height: 320px;
-  max-height: 20rem;
+#projects .project-type#android #metronomics .images .stacked-images img {
+  margin-right: 0 !important;
+  margin-bottom: 0.5rem;
+  width: 208px;
+  box-shadow: none !important;
 }
-#projects #android-manager img {
-  max-height: 320px;
-  max-height: 20rem;
+
+#projects #qtcolorpicker .images img {
+  margin-right: 0;
+  max-height: 17rem;
+  max-width: 40rem;
 }
-#projects #page-downloader img {
-  max-height: 320px;
-  max-height: 25rem;
+#projects #list-folders .images img {
+  max-height: 336rem;
+  max-height: 21rem;
+}
+#projects #path-edit .images img {
+  max-height: 384px;
+  max-height: 24rem;
+}
+#projects #android-manager .images img {
+  max-height: 384px;
+  max-height: 24rem;
+}
+
+#projects #double-commander .images img {
+  max-width: 300px;
+  box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.2);
+}
+#projects #double-commander .image-container {
+  margin-right: 0.5rem;
 }
 
 #projects #stater-point img {
@@ -408,16 +471,13 @@ a:focus {
   margin-right: 20px;
   margin-bottom: 20px;
 }
-
-#projects #html-post-editor img {
+#projects #html-post-editor .image-container {
   max-width: 47%;
 }
-
-#projects #tinymce-code-formatting img {
+#projects #tinymce-code-formatting .image-container {
   max-height: 100%;
   margin-bottom: 10px;
 }
-
 #projects #advanced-admin-menu img {
   max-height: 100%;
   max-width: 47%;
@@ -443,6 +503,9 @@ a:focus {
   margin-right: 1rem;
 }
 #projects #stater-point img {
+  border: 1px solid #ccc;
+}
+#projects #html-post-editor img {
   border: 1px solid #ccc;
 }
 
@@ -539,6 +602,9 @@ a:focus {
 .contacts-menu ul li a[href*="stackoverflow.com"]::before {
   content: '\f16c';
 }
+.contacts-menu ul li a[href*="soundcloud.com"]::before {
+  content: '\f1be';
+}
 
 .contacts-menu ul li a[href*="wordpress.org"]::before,
 .contacts-menu ul li a[href*="wordpress.com"]::before {
@@ -573,7 +639,7 @@ a.github-source-icon::before {
 
 /* ---------------------------- add ---------------------------- */
 
-.project-separator-container {
+/*.project-separator-container {
   margin: 0px auto;
   width: 75%;
 }
@@ -590,12 +656,32 @@ hr.project-separator:after {
   content: "\2022";
   display: inline-block;
   position: relative;
-  /*top: -0.7em;*/
   top: -0.65em;
   padding: 0 0.25em;
   background: white;
   font-size: 24px;
   font-size: 1.5rem;
+}*/
+
+hr.project-separator {
+  overflow: visible;
+  padding: 0;
+  border: none;
+  border-top: 1px solid #ccc;
+  color: #777;
+  text-align: center;
+  width: 75%;
+  height: 0;
+  margin: 0 auto;
+}
+hr.project-separator:after {
+  content: "\2022";
+  display: inline-block;
+  position: relative;
+  top: -0.73em;
+  font-size: 1.5em;
+  padding: 0 0.25em;
+  background: white;
 }
 
 .screen-reader-text {
@@ -631,4 +717,17 @@ hr.project-separator:after {
   margin-left: -4px;
   border-width: 0 3px 4px;
   border-bottom-color: #0D576B;
+}
+
+
+/*---*/
+ul.list-aligned {
+  padding-left: 1em !important;
+}
+
+.project .project-icon {
+  float: left;
+  margin-bottom: 0.5rem;
+  margin-right: 10px;
+  padding-top: 5px;
 }
