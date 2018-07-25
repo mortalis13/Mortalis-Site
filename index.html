@@ -2,7 +2,7 @@
 
 <html lang="en-US">
 <head>
-  <!-- version 1.2.3 -->
+  <!-- version 1.2.4 -->
   
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -127,11 +127,11 @@
           <ul id="nav" class="nav hidden-xs hidden-sm" data-spy="affix">
             <li><a href="#android">Android (7)</a></li>
             <li><a href="#qt-cpp">Qt / C++ (6)</a></li>
-            <li><a href="#free-pascal">Free Pascal (1)</a></li>
             <li><a href="#web-sites">Web Sites (2)</a></li>
             <li><a href="#wordpress">Wordpress (3)</a></li>
             <li><a href="#joomla">Joomla (2)</a></li>
             <li><a href="#firefox-addons">Firefox Addons (9)</a></li>
+            <li><a href="#misc">Misc (5)</a></li>
           </ul>
         </div>
         
@@ -144,15 +144,15 @@
                     <div class="menu-part">
                       <div class="projects-menu-item"><a href="#android">Android (7)</a></div>
                       <div class="projects-menu-item"><a href="#qt">Qt / C++ (6)</a></div>
-                      <div class="projects-menu-item"><a href="#free-pascal">Free Pascal (1)</a></div>
                       <div class="projects-menu-item"><a href="#web-sites">Web Sites (2)</a></div>
+                      <div class="projects-menu-item"><a href="#wordpress">Wordpress (3)</a></div>
                     </div>
                   </td>
                   <td class="align-top">
                     <div class="menu-part">
-                      <div class="projects-menu-item"><a href="#wordpress">Wordpress (3)</a></div>
                       <div class="projects-menu-item"><a href="#joomla">Joomla (2)</a></div>
                       <div class="projects-menu-item"><a href="#firefox-addons">Firefox Addons (9)</a></div>
+                      <div class="projects-menu-item"><a href="#misc">Misc (5)</a></div>
                     </div>
                   </td>
                 </tr>
@@ -184,7 +184,8 @@
               </div>
               
               <div class="description clearfix">
-                <p>Dictionary shell which allows to add multilanguage dictionary files in <a target="_blank" href="http://lingvo.com/"><b>Lingvo</b></a> <a href="http://lingvo.helpmax.net/en/troubleshooting/dsl-compiler/" target="_blank">DSL</a> format and search across added dictionaries in various language directions.</p>
+                <p>Dictionary shell which allows to add multilanguage dictionary files in <a target="_blank" href="http://lingvo.com/"><b>Lingvo</b></a> <a href="http://lingvo.helpmax.net/en/troubleshooting/dsl-compiler/dsl-dictionary-structure" target="_blank">DSL</a> format and search across added dictionaries in various language directions.</p>
+                <p><b>DSL</b> is a text file with specific markup: a headword followed by article body indented with spaces or tabs. An example: <a href="https://github.com/Tvangeste/SampleDSL/blob/master/sample.dsl" target="_blank"><b>SampleDSL</b></a>.</p>
                 <br>
                 <p class="project-features">Project features</p>
                 <ul>
@@ -213,7 +214,7 @@
                   <li>custom CSS stylesheet file to easily control the look of the articles</li>
                   <li>customized components for <b>WebView</b> with comfortable scrollbar and <b>Spinner</b> as language selector</li>
                 </ul>
-                <br>                
+                <br>
                 <p class="project-features">Instructions</p>
                 <ul>
                   <li>start the app and wait for the demo data to load for the first time</li>
@@ -256,7 +257,6 @@
               </div>
             </div>
             
-            <!-- <div class="center"><hr class="project-separator"></div> -->
             <hr class="project-separator">
             
             <div class="project" id="metronomics">
@@ -693,7 +693,7 @@
                 <a href="images/projects/listfolders-2.png" target="_blank"><img class="project-image" src="images/projects/listfolders-2.png" alt="ListFolders Image1"></a>
                 <a href="images/projects/listfolders-3.png" target="_blank"><img class="project-image img-shadow" src="images/projects/listfolders-3.png" alt="ListFolders Image1"></a>
               </div>
-            </div>            
+            </div>
             
             <hr class="project-separator">
             
@@ -853,85 +853,6 @@
             </div>
           </div>
           
-
-          <!-- == FREE_PASCAL == -->
-          <div class="project-type" id="free-pascal">
-            <div class="type-title-wrap"><div class="type-title">Free Pascal</div></div>
-            
-            <div class="project" id="double-commander">
-              <div class="project-header">
-                <div class="project-icon">
-                  <img src="images/icons/double-commander-rebuild-48.png" alt="" class="">
-                </div>
-                <div class="project-info">
-                  <div class="title">
-                    <a href="https://github.com/mortalis13/DoubleCommander-Rebuild/releases" target="_blank">Double Commander [Rebuild]</a>
-                    <a title="GitHub Source" class="github-source-icon" target="_blank" href="https://github.com/mortalis13/DoubleCommander-Rebuild"><span class="screen-reader-text">GitHub Source</span></a>
-                  </div>
-                  <div class="short-description">Extension of the <a href="https://doublecmd.sourceforge.io/index.php?lang=eng" target="_blank"><b>Double Commander</b></a> file manager</div>
-                </div>
-              </div>
-              
-              <div class="description clearfix">
-                <p>Written in <b>Free Pascal</b> language with use of the <a href="https://www.lazarus-ide.org" target="_blank">Lazarus IDE</a> the source code compiles perfectly after a couple of adjustments.</p>
-                <p>With the knowledge of <b>Pascal</b> syntax and <b>Delphi</b> principles it's relatively easy to study the structure of the project to be able to extend it and add new necessary features, like menu items, custom commands, colors and shortcuts.</p>
-                <br>
-                <p>So I forked the main <a href="https://sourceforge.net/p/doublecmd/code/HEAD/tree/trunk" target="_blank">SVN repository</a> and with a list of desired enhancements began to modify the code for my everyday needs.</p>
-                <p>Thanks to the program creator (<b>alexx2000</b>) and all the contributors for this great instument which I used for several years now and very happy to be able to do things comfortably and fast!</p>
-                <br>
-                <p>In short about the <b>original project</b>: it's a 2-panel file manager with tabs, toolbars and many filesystem utilities, fast navigation (Left-Right arrows for directory enter/exit is one of my favourite) and customizable parameters.</p>
-                <p>Some of tools I use: internal viewer (text, hex, image modes), multirename, <i>ADB</i> plugin to navigate an Android device filesystem, quick search and filter, inline archive view/extract/pack (all in the same panel, not only ZIP or RAR, but other zip-like files, APK, WAR, EAR, XPI), filename/filepath copy, space calculation for all folders, custom shortcuts for external system commands (like commit changes to <i>GitHub</i>, load a folder to <i>Sublime Text</i>).</p>
-                <br>
-                <p>Next I describe my contribution to the project.</p>
-                <br>
-                <p class="project-features">Project features</p>
-                <ul>
-                  <li>open drive by index command (default keys Alt+1..9)</li>
-                  <li>activate tab by index (default Ctrl+0..9)</li>
-                  <li>maximize active panel (F11) to easily view long filenames</li>
-                  <li>restore all tabs to their initial position without restart</li>
-                  <li>free sorting mode (no sorting for free files positioning)</li>
-                  <li>multirename enhancement which allows to edit names of selected files in an external text editor</li>
-                  <li>parameters for copy command which allow to copy only folders without content</li>
-                  <li>alias mode which uses short commands to navigate faster to a directory or execute other system commands</li>
-                  <li>extended information in copy/move dialogs: current/total files, current/total amount of data transferred (in MB)</li>
-                  <li>additional column that shows files and folders number in each directory when calculating occupied space</li>
-                  <li>extended New Folder dialog to create a list of folders in one command</li>
-                  <li>removed <b>'..'</b> item that allowed to go to the parent folder (for faster navigation, now use Left arrow to exit current directory)</li>
-                  <li>increased tabs height</li>
-                  <li>converted Calculate Space dialog to non-modal type so it doesn't block main window and added Copy button to it</li>
-                  <li>select all folders command (similar to select all files with the same extension)</li>
-                </ul>
-              </div>
-              <div class="images">
-                <div class="image-container">
-                  <a href="images/projects/double-commander-rebuild-2.png" target="_blank"><img class="project-image" src="images/projects/double-commander-rebuild-2.png" alt="Double Commander Rebuild Image2"></a>
-                  <div class="image-caption">Maximized Panel</div>
-                </div>
-                <div class="image-container">
-                  <a href="images/projects/double-commander-rebuild-5.png" target="_blank"><img class="project-image" src="images/projects/double-commander-rebuild-5.png" alt="Double Commander Rebuild Image5"></a>
-                  <div class="image-caption">Files/Folders Count</div>
-                </div>
-                <div class="image-container">
-                  <a href="images/projects/double-commander-rebuild-3.png" target="_blank"><img class="project-image" src="images/projects/double-commander-rebuild-3.png" alt="Double Commander Rebuild Image3"></a>
-                  <div class="image-caption">External Rename</div>
-                </div>
-                <div class="image-container">
-                  <a href="images/projects/double-commander-rebuild-4.png" target="_blank"><img class="project-image" src="images/projects/double-commander-rebuild-4.png" alt="Double Commander Rebuild Image4"></a>
-                  <div class="image-caption">Copy Progress</div>
-                </div>
-                <div class="image-container">
-                  <a href="images/projects/double-commander-rebuild-7.png" target="_blank"><img class="project-image" src="images/projects/double-commander-rebuild-7.png" alt="Double Commander Rebuild Image7"></a>
-                  <div class="image-caption">Extended Folder Statistics</div>
-                </div>
-                <div class="image-container">
-                  <a href="images/projects/double-commander-rebuild-6.png" target="_blank"><img class="project-image" src="images/projects/double-commander-rebuild-6.png" alt="Double Commander Rebuild Image6"></a>
-                  <div class="image-caption">Multi-folder Creation</div>
-                </div>
-              </div>
-            </div>
-          </div>          
-          
           
           <!-- == WEB_SITES == -->
           <div class="project-type" id="web-sites">
@@ -939,7 +860,7 @@
             
             <div class="project" id="pcadvice">
               <div class="title">
-                <a href="http://pcadvice.co.nf" target="_blank">PC Advice</a> 
+                <a href="http://pcadvice.co.nf" target="_blank">PC Advice</a>
                 <a title="GitHub Source" class="github-source-icon" target="_blank" href="https://github.com/mortalis13/pcadvice-site"><span class="screen-reader-text">GitHub Source</span></a>
               </div>
               <div class="description">
@@ -961,7 +882,7 @@
                   <li>created colored categories within the theme</li>
                   <li>multi-language support</li>
                   <li>program code highlight using a customly modified <a target="_blank" href="http://prismjs.com"><b>Prism</b></a> highlighter plugin,
-                    <a href="https://github.com/mortalis13/wp-prism-highlight" target="_blank">[plugin source]</a> 
+                    <a href="https://github.com/mortalis13/wp-prism-highlight" target="_blank">[plugin source]</a>
                     <a href="images/web-sites/pcadvice-ex1.png" target="_blank"><b>[example]</b></a>
                   </li>
                 </ul>
@@ -1426,6 +1347,184 @@
               </div>
             </div>
           </div>
+
+          
+          <!-- == MISC == -->
+          <div class="project-type" id="misc">
+            <div class="type-title-wrap"><div class="type-title">Misc</div></div>
+            
+            <div class="project" id="double-commander">
+              <div class="project-header">
+                <div class="project-icon">
+                  <img src="images/icons/double-commander-rebuild-48.png" alt="" class="">
+                </div>
+                <div class="project-info">
+                  <div class="title">
+                    <a href="https://github.com/mortalis13/DoubleCommander-Rebuild/releases" target="_blank">Double Commander [Rebuild]</a>
+                    <a title="GitHub Source" class="github-source-icon" target="_blank" href="https://github.com/mortalis13/DoubleCommander-Rebuild"><span class="screen-reader-text">GitHub Source</span></a>
+                  </div>
+                  <div class="short-description">Extension of the <a href="https://doublecmd.sourceforge.io/index.php?lang=eng" target="_blank"><b>Double Commander</b></a> file manager</div>
+                </div>
+              </div>
+              
+              <div class="description clearfix">
+                <p>Written in <b>Free Pascal</b> language with use of the <a href="https://www.lazarus-ide.org" target="_blank">Lazarus IDE</a> the source code compiles perfectly after a couple of adjustments.</p>
+                <p>With the knowledge of <b>Pascal</b> syntax and <b>Delphi</b> principles it's relatively easy to study the structure of the project to be able to extend it and add new necessary features, like menu items, custom commands, colors and shortcuts.</p>
+                <br>
+                <p>So I forked the main <a href="https://sourceforge.net/p/doublecmd/code/HEAD/tree/trunk" target="_blank">SVN repository</a> and with a list of desired enhancements began to modify the code for my everyday needs.</p>
+                <p>Thanks to the program creator (<b>alexx2000</b>) and all the contributors for this great instument which I used for several years now and very happy to be able to do things comfortably and fast!</p>
+                <br>
+                <p>In short about the <b>original project</b>: it's a 2-panel file manager with tabs, toolbars and many filesystem utilities, fast navigation (Left-Right arrows for directory enter/exit is one of my favourite) and customizable parameters.</p>
+                <p>Some of tools I use: internal viewer (text, hex, image modes), multirename, <i>ADB</i> plugin to navigate an Android device filesystem, quick search and filter, inline archive view/extract/pack (all in the same panel, not only ZIP or RAR, but other zip-like files, APK, WAR, EAR, XPI), filename/filepath copy, space calculation for all folders, custom shortcuts for external system commands (like commit changes to <i>GitHub</i>, load a folder to <i>Sublime Text</i>).</p>
+                <br>
+                <p>Next I describe my contribution to the project.</p>
+                <br>
+                <p class="project-features">Project features</p>
+                <ul>
+                  <li>open drive by index command (default keys Alt+1..9)</li>
+                  <li>activate tab by index (default Ctrl+0..9)</li>
+                  <li>maximize active panel (F11) to easily view long filenames</li>
+                  <li>restore all tabs to their initial position without restart</li>
+                  <li>free sorting mode (no sorting for free files positioning)</li>
+                  <li>multirename enhancement which allows to edit names of selected files in an external text editor</li>
+                  <li>parameters for copy command which allow to copy only folders without content</li>
+                  <li>alias mode which uses short commands to navigate faster to a directory or execute other system commands</li>
+                  <li>extended information in copy/move dialogs: current/total files, current/total amount of data transferred (in MB)</li>
+                  <li>additional column that shows files and folders number in each directory when calculating occupied space</li>
+                  <li>extended New Folder dialog to create a list of folders in one command</li>
+                  <li>removed <b>'..'</b> item that allowed to go to the parent folder (for faster navigation, now use Left arrow to exit current directory)</li>
+                  <li>increased tabs height</li>
+                  <li>converted Calculate Space dialog to non-modal type so it doesn't block main window and added Copy button to it</li>
+                  <li>select all folders command (similar to select all files with the same extension)</li>
+                </ul>
+              </div>
+              <div class="images">
+                <div class="image-container">
+                  <a href="images/projects/double-commander-rebuild-1.png" target="_blank"><img class="project-image" src="images/projects/double-commander-rebuild-1.png" alt="Double Commander Rebuild Image1"></a>
+                  <div class="image-caption">Maximized Panel</div>
+                </div>
+                <div class="image-container">
+                  <a href="images/projects/double-commander-rebuild-2.png" target="_blank"><img class="project-image" src="images/projects/double-commander-rebuild-2.png" alt="Double Commander Rebuild Image2"></a>
+                  <div class="image-caption">Files/Folders Count</div>
+                </div>
+                <div class="image-container">
+                  <a href="images/projects/double-commander-rebuild-3.png" target="_blank"><img class="project-image" src="images/projects/double-commander-rebuild-3.png" alt="Double Commander Rebuild Image3"></a>
+                  <div class="image-caption">External Rename</div>
+                </div>
+                <div class="image-container">
+                  <a href="images/projects/double-commander-rebuild-4.png" target="_blank"><img class="project-image" src="images/projects/double-commander-rebuild-4.png" alt="Double Commander Rebuild Image4"></a>
+                  <div class="image-caption">Copy Progress</div>
+                </div>
+                <div class="image-container">
+                  <a href="images/projects/double-commander-rebuild-5.png" target="_blank"><img class="project-image" src="images/projects/double-commander-rebuild-5.png" alt="Double Commander Rebuild Image5"></a>
+                  <div class="image-caption">Extended Folder Statistics</div>
+                </div>
+                <div class="image-container">
+                  <a href="images/projects/double-commander-rebuild-6.png" target="_blank"><img class="project-image" src="images/projects/double-commander-rebuild-6.png" alt="Double Commander Rebuild Image6"></a>
+                  <div class="image-caption">Multi-folder Creation</div>
+                </div>
+              </div>
+            </div>
+            
+            <hr class="project-separator">
+            
+            <div class="project">
+              <div class="title">
+                <a href="https://rawgit.com/mortalis13/NumberConverter-AngularJS/master/index.html" target="_blank">NumberConverter</a>
+                <a title="GitHub Source" class="github-source-icon" target="_blank" href="https://github.com/mortalis13/NumberConverter-AngularJS"><span class="screen-reader-text">GitHub Source</span></a>
+              </div>
+              <div class="description">
+                <p>A web tools for number formats dynamic conversion (dec/hex/bin).</p>
+                <p>Written with <b>AngularJS</b>.</p>
+                <br>
+                <p class="project-features">Project features</p>
+                <ul>
+                  <li>copy values</li>
+                  <li>format hex/bin text</li>
+                  <li>show bytes-bits visualization</li>
+                  <li>set/unset each bit</li>
+                  <li>reference number tables</li>
+                </ul>
+              </div>
+              <div class="images">
+                <a href="images/web-projects/number-converter-1.png" target="_blank"><img class="project-image img-shadow" src="images/web-projects/number-converter-1.png" alt="NumberConverter Image1"></a>
+              </div>
+            </div>
+            
+            <hr class="project-separator">
+            
+            <div class="project">
+              <div class="title mb5">
+                <a href="https://github.com/mortalis13/PythonScripts" target="_blank">Python Scripts</a>
+              </div>
+              <div class="description">
+                <p>Utilities for various programming tasks:</p>
+                <ul>
+                  <li>filesystem manipulation</li>
+                  <li>text analysis and edition</li>
+                  <li>internet downloads</li>
+                  <li>data analysis</li>
+                </ul>
+                <br>
+                <p>Examples:</p>
+                <ul>
+                  <li><b>addons_download</b> - downloader for Firefox addons by direct URLs</li>
+                  <li><b>cue_split</b> - split FLAC audio files with a CUE list</li>
+                  <li><b>ftp_list</b> - get a list of files in FTP directories</li>
+                  <li><b>get_java_imports</b> - extract Java imports from a directory</li>
+                  <li><b>pdf_merge</b> - combine multiple PDF or image files</li>
+                </ul>
+              </div>
+            </div>
+            
+            <hr class="project-separator">
+            
+            <div class="project">
+              <div class="title mb5">
+                <a href="https://github.com/mortalis13/SublimeSettings/tree/master/user-plugins" target="_blank">Sublime Plugins</a>
+              </div>
+              <div class="description">
+                <p>Sublime Text editor specific scripts written in <b>Python</b> with <a href="http://docs.sublimetext.info/en/latest/reference/api.html" target="_blank">Sublime API</a>.</p>
+                <p>Used mainly for text editing and interface control as well as file operations with a handy text input in the active tab.</p>
+                <br>
+                <p>Description of some scripts:</p>
+                <ul>
+                  <li><b>convert_sql</b> - transforms SQL INSERT commands to UPDATE using the selected text</li>
+                  <li><b>create_files</b> - creates multiple files with some content</li>
+                  <li><b>find_duplicated_lines</b> - shows text duplicates in a new tab</li>
+                  <li><b>generate_from_template</b> - creates text filling data into a static template</li>
+                  <li><b>generate_java_getters</b> - creates getter/setter methods for class fields in Java</li>
+                  <li><b>generate_lines</b> - creates new lines following a pattern</li>
+                  <li><b>get_method_call_signature</b> - extracts method call from its definition</li>
+                  <li><b>open_all_files</b> - opens files in tabs under a selected folder in the sidebar</li>
+                  <li><b>open_project_in_new_window</b> - clones active project window with the same project folder</li>
+                  <li><b>paste_with_commas</b> - pastes a list of lines separated by commas (with/without quotes)</li>
+                  <li><b>separate_variable</b> - creates separate lines for a variable definition and its usage in a statement</li>
+                  <li><b>subtract_lines</b> - finds a difference between 2 lists of lines (in files or directly in the editor tabs)</li>
+                  <li><b>unindent_resursive</b> - reduces a nested block indentation by the same amount for all nested levels</li>
+                  <li><b>view_as_hex</b> - converts all the text to hex codepoints</li>
+                </ul>
+              </div>
+            </div>
+            
+            <hr class="project-separator">
+            
+            <div class="project">
+              <div class="title mb5">
+                <a href="https://github.com/mortalis13/Norber-Theme-Sublime" target="_blank">Norber Theme</a>
+              </div>
+              <div class="description">
+                <p>A theme for <a href="http://sublimetext.com" target="_blank"><b>Sublime Text</b></a> editor.</p>
+                <p>A comfortable design and layout with dark color scheme, filetype icon in the sidebar, different styles for different tab states.</p>
+                <p>The core of theme development is modification of specific API keys in JSON- and XML-structured control files.</p>
+              </div>
+              <div class="images">
+                <a href="images/projects/norber-theme-1.png" target="_blank"><img class="project-image" src="images/projects/norber-theme-1.png" alt="NorberTheme Image1"></a>
+              </div>
+            </div>
+            
+          </div>
+          <!-- #misc -->
         
         </div>
         <!-- #projects-wrap -->
@@ -1437,7 +1536,7 @@
       <div class="footer-content">
         <div class="footer-info col-xs-4 text-left">&copy; 2017</div>
         <div class="footer-info col-xs-4 text-center"><a id="toTop">To Top</a></div>
-        <div class="footer-info col-xs-4 text-right"><a href="https://github.com/mortalis13/Mortalis-Site" target="_blank"><span class="hidden-xxs">source </span>v1.2.3</a></div>
+        <div class="footer-info col-xs-4 text-right"><a href="https://github.com/mortalis13/Mortalis-Site" target="_blank"><span class="hidden-xxs">source </span>v1.2.4</a></div>
       </div>
     </footer>
   </div>
