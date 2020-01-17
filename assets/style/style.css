@@ -294,6 +294,10 @@ a:focus {
 
 /* ----------------- projects ----------------- */
 
+.project .images img {
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.2);
+}
+
 .project-image,
 .container-image {
   max-height: 240px;
@@ -428,16 +432,19 @@ a:focus {
   margin-right: 1rem;
 }
 
-#projects .project-type#android #metronomics .images img {
+#projects .project-type#android #metronomix .project-icon img {
+  width: 50px;
+}
+#projects .project-type#android #metronomix .images img {
   max-height: 304px;
   max-height: 19rem;
 }
-#projects .project-type#android #metronomics .images .stacked-images {
+#projects .project-type#android #metronomix .images .stacked-images {
   display: inline-block;
   vertical-align: top;
   margin-right: 1rem;
 }
-#projects .project-type#android #metronomics .images .stacked-images img {
+#projects .project-type#android #metronomix .images .stacked-images img {
   margin-right: 0 !important;
   margin-bottom: 0.5rem;
   width: 208px;
