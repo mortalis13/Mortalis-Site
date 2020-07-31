@@ -80,22 +80,22 @@
                 </li>
                 
                 <li class="menu-item mi3">
-                  <a title="Wordpress" data-toggle="tooltip" data-placement="bottom" target="_blank" href="https://profiles.wordpress.org/mortalis#content-plugins"><span class="screen-reader-text">WordPress</span></a>
+                  <a title="Stack Overflow" data-toggle="tooltip" data-placement="bottom" target="_blank" href="http://stackoverflow.com/users/1106547/mortalis"><span class="screen-reader-text">Stack Overflow</span></a>
                 </li>
                 
                 <li class="menu-item mi4">
-                  <a title="Joomla" data-toggle="tooltip" data-placement="bottom" target="_blank" href="http://extensions.joomla.org/profile/profile/details/260289"><span class="screen-reader-text">Joomla</span></a>
+                  <a title="Wordpress" data-toggle="tooltip" data-placement="bottom" target="_blank" href="https://profiles.wordpress.org/mortalis#content-plugins"><span class="screen-reader-text">WordPress</span></a>
                 </li>
                 
                 <li class="menu-item mi6 divider-menu">
-                  <a title="Stack Overflow" data-toggle="tooltip" data-placement="bottom" target="_blank" href="http://stackoverflow.com/users/1106547/mortalis"><span class="screen-reader-text">Stack Overflow</span></a>
+                  <a title="Joomla" data-toggle="tooltip" data-placement="bottom" target="_blank" href="http://extensions.joomla.org/profile/profile/details/260289"><span class="screen-reader-text">Joomla</span></a>
                 </li>
               </ul>
             </div><!--
          --><div class="menu-part-ii">
               <ul id="menu-social-ii" class="menu menu-social">
                 <li class="menu-item mi7">
-                  <a title="E-Mail" data-toggle="tooltip" data-placement="bottom" target="_blank" href="mailto:stangerroman@gmail.com"><span class="screen-reader-text">E-Mail</span></a>
+                  <a title="E-Mail" data-toggle="tooltip" data-placement="bottom" target="_blank" href="mailto:aspirinumes@gmail.com"><span class="screen-reader-text">E-Mail</span></a>
                 </li>
                 
                 <li class="menu-item mi8">
@@ -107,7 +107,7 @@
                 </li>
                 
                 <li class="menu-item mi10">
-                  <a title="Twitter" data-toggle="tooltip" data-placement="bottom" target="_blank" href="https://twitter.com/mortalis13"><span class="screen-reader-text">Twitter</span></a>
+                  <a title="Tumblr" data-toggle="tooltip" data-placement="bottom" target="_blank" href="https://mortalis13.tumblr.com"><span class="screen-reader-text">Tumblr</span></a>
                 </li>
 
                 <li class="menu-item mi11">
@@ -176,8 +176,8 @@
                 </div>
                 <div class="project-info">
                   <div class="title">
-                    <a href="https://github.com/mortalis13/HomeDictionary-Android/releases" target="_blank">Home Dictionary</a>
-                    <a title="GitHub Source" class="github-source-icon" target="_blank" href="https://github.com/mortalis13/HomeDictionary-Android"><span class="screen-reader-text">GitHub Source</span></a>
+                    <a href="https://play.google.com/store/apps/details?id=org.mortalis.homedictionary" target="_blank">Home Dictionary</a>
+                    <a title="GitHub Issues" class="github-source-icon" target="_blank" href="https://github.com/mortalis13/HomeDictionary"><span class="screen-reader-text">GitHub Source</span></a>
                   </div>
                   <div class="short-description">Multilanguage dictionary shell application</div>
                 </div>
@@ -185,7 +185,7 @@
               
               <div class="description clearfix">
                 <p>Dictionary shell which allows to add multilanguage dictionary files in <a target="_blank" href="http://lingvo.com/"><b>Lingvo</b></a> <a href="http://lingvo.helpmax.net/en/troubleshooting/dsl-compiler/dsl-dictionary-structure" target="_blank">DSL</a> format and search across added dictionaries in various language directions.</p>
-                <p><b>DSL</b> is a text file with specific markup: a headword followed by article body indented with spaces or tabs. An example: <a href="https://github.com/Tvangeste/SampleDSL/blob/master/sample.dsl" target="_blank"><b>SampleDSL</b></a>.</p>
+                <p><b>DSL</b> is a text file with specific markup: a headword followed by article body indented with spaces or tabs [<a href="https://github.com/Tvangeste/SampleDSL/blob/master/sample.dsl" target="_blank"><b>SampleDSL</b></a>].</p>
                 <br>
                 <p class="project-features">Project features</p>
                 <ul>
@@ -205,12 +205,12 @@
                 <p class="project-features">Development features</p>
                 <ul>
                   <li>scanning of dictionary files in DSL format, indexing all the words for fast search and storing of the index files in the main directory</li>
-                  <li>use of internal database to store dictionary paths and main information</li>
+                  <li>use of internal database (<b>SQLite/.db</b>) to store dictionary paths and main information</li>
                   <li>use of background tasks for the indexing and search to prevent freezing of the main UI thread</li>
-                  <li>development of <a href="#cpp-native-libraries">native (C++) library</a> with memory efficient processing of dictionary files and indexes</li>
+                  <li>development of <a href="#cpp-native-libraries"><b>native (C++) library</b></a> with memory efficient processing of dictionary files and indexes</li>
                   <li>use of <b>JNI (Android NDK)</b> to integrate native library into the app</li>
-                  <li>multiple encodings support using the <b>UTF-8</b> and <b>UTF-32</b> charsets</li>
-                  <li>use of a custom markup parser to create HTML code for the articles</li>
+                  <li>multiple encodings support using the <b>UTF-8</b>, <b>UTF-16</b> and <b>UTF-32</b> charsets</li>
+                  <li>use of a custom markup parser to generate HTML code for the articles</li>
                   <li>custom CSS stylesheet file to easily control the look of the articles</li>
                   <li>customized components for <b>WebView</b> with comfortable scrollbar and <b>Spinner</b> as language selector</li>
                 </ul>
@@ -275,7 +275,7 @@
               
               <div class="description clearfix">
                 <p>The app mainly serves as a metronome with quick tempo adjustments and beat visualization.</p>
-                <p>But also allows to change the played pattern and number of bars in a sound loop.</p>
+                <p>But also allows to change the played pattern and number of bars in a loop.</p>
                 <p>During the playback it shows audio spectrum of the currently played section.</p>
                 <br>
                 <p class="project-features">Project features</p>
@@ -283,34 +283,34 @@
                   <li>adjustable tempo with buttons and presets</li>
                   <li>metronome counters: number of bars played, global time and loop time duration</li>
                   <li>handy device volume control</li>
+                  <li>4x16 sequencer allows to create various rhythm patterns</li>
                   <li>color accent for active beat in a 4/4 loop</li>
                   <li>audio spectrum visualization during the playback</li>
-                  <li>customizable layout via Settings</li>
-                  <li>pattern/bars editor allowing to copy/paste, clear, remove, add, duplicate bars and navigate between them</li>
-                  <li>4x16 sequencer allows to create various rhythm patterns</li>
-                  <li>live steps editing</li>
+                  <li>pattern/bars editor allows to copy/paste, clear, remove, add, duplicate bars and navigate between them</li>
+                  <li>live steps editing (the changes are applied without the need to restart or stop the playback)</li>
                 </ul>
                 <br>
                 <p class="project-features">Development features</p>
                 <ul>
                   <li>use of custom widgets and direct surface painting (TempoPresets, Sequencer, Spectrum)</li>
                   <li>direct audio I/O with <b>AudioTrack</b> technology</li>
-                  <li>raw audio data reading from external <b>WAVE</b> files using <a href="#cpp-native-libraries">native (C++) library</a> in Android NDK implementation</li>
+                  <li>raw audio data reading from external <b>WAVE</b> files using a <a href="#cpp-native-libraries"><b>native (C++) library</b></a> with Android NDK</li>
                   <li>separate audio thread which constantly writes audio data (samples) to the buffer during the loop playback</li>
-                  <li>application of Fast Fourier Transform (FFT) C++ implementation for audio data analysis and spectrum data generation</li>
-                  <li>conversion of FFT data to logarithmic frequency scale which reflects more precisely how the sound is perceived by human ear</li>
+                  <li>application of <a href="http://www.fftw.org" target="_blank"><b>Fast Fourier Transform (FFT)</b></a> C++ implementation for audio data analysis and spectrum data generation</li>
+                  <li>conversion of <b>FFT</b> data to logarithmic frequency scale which reflects more precisely how the sound is perceived by human ear</li>
                 </ul>
                 <br>
                 <p class="project-features">Instructions</p>
                 <ul>
                   <li>select a tempo using buttons or predefined presets</li>
                   <li>press the green button below to play</li>
-                  <li>edit layout visibility in the Settings as well as spectrum Visualization parameters</li>
+                  <li>edit layout visibility in the <b>Settings</b> as well as spectrum Visualization parameters</li>
                   <li>open <b>Sound Editor</b> to edit metronome pattern via 16-step sequencer and bars navigator</li>
-                  <li>the sequencer has <b>4 channels/instruments</b> to create a loop: Kick Drum, Snare Drum, Hihat Closed, Hihat Open</li>
+                  <li>the sequencer has <b>4 active channels/instruments</b> by default which allow to create a loop pattern: Kick&nbsp;Drum, Snare&nbsp;Drum, Hihat&nbsp;Closed, Hihat&nbsp;Open</li>
+                  <li>it's possible to add more channels by assigning a sound sample to them (<i>in the full version</i>)</li>
                   <li>the toolbar buttons allow to copy and paste bar contents (steps), clear/remove/add bars</li>
-                  <li>to duplicate a bar long click the Add button</li>
-                  <li>max bars number is 20</li>
+                  <li>to duplicate a bar long click the <b>Add/+</b> button</li>
+                  <li>max bars number is 20 (<i>unlimited for the full version</i>)</li>
                   <li>on smaller screens put the app in the landscape orientation for more comfortable step editing</li>
                 </ul>
               </div>
@@ -345,28 +345,27 @@
               <div class="description clearfix">
                 <p class="project-features">Project features</p>
                 <ul>
-                  <li>fills the whole screen width with the keys to print text comfortably</li>
-                  <li>switch between two languages</li>
+                  <li>uses the maximum possible key size for comfortable and fast typing</li>
                   <li>wide set of symbols</li>
                   <li>keys for cursor moving and text selection</li>
-                  <li>A-Z order of keys</li>
-                  <li>reduces typing errors</li>
+                  <li>A-Z order of keys (<i>since the number of keys per row is less than 10 like in stantard QWERTY layout</i>)</li>
+                  <li>layout that reduces typing errors</li>
                 </ul>
                 <br>
                 <p class="project-features">Instructions</p>
                 <ul>
                   <li>Hold <b>Shift</b> to enable all caps</li>
                   <li>Hold <b>123</b> to show text editing panel</li>
-                  <li>Hold <b>Language</b> key to show keyboard of extended characters</li>
+                  <li>Hold <b>Language</b> key to show keyboard with extended characters</li>
                 </ul>
               </div>
               <div class="images">
                 <a href="images/projects/wrapkeyboard-1.png" target="_blank"><img class="project-image" src="images/projects/wrapkeyboard-1.png" alt="WrapKeyboard Image1"></a>
                 <a href="images/projects/wrapkeyboard-2.png" target="_blank"><img class="project-image" src="images/projects/wrapkeyboard-2.png" alt="WrapKeyboard Image2"></a>
                 <a href="images/projects/wrapkeyboard-3.png" target="_blank"><img class="project-image" src="images/projects/wrapkeyboard-3.png" alt="WrapKeyboard Image3"></a>
-                <a href="images/projects/wrapkeyboard-4.png" target="_blank"><img class="project-image" src="images/projects/wrapkeyboard-4.png" alt="WrapKeyboard Image4"></a>
               </div>
               <div class="images">
+                <a href="images/projects/wrapkeyboard-4.png" target="_blank"><img class="project-image" src="images/projects/wrapkeyboard-4.png" alt="WrapKeyboard Image4"></a>
                 <a href="images/projects/wrapkeyboard-5.png" target="_blank"><img class="project-image" src="images/projects/wrapkeyboard-5.png" alt="WrapKeyboard Image5"></a>
                 <a href="images/projects/wrapkeyboard-6.png" target="_blank"><img class="project-image" src="images/projects/wrapkeyboard-6.png" alt="WrapKeyboard Image6"></a>
               </div>
@@ -377,7 +376,7 @@
             <div class="project">
               <div class="project-header">
                 <div class="project-icon">
-                  <img src="images/icons/plain-alarm-50.png" alt="" class="img-shadow">
+                  <img src="images/icons/plain-alarm-48.png" alt="">
                 </div>
                 <div class="project-info">
                   <div class="title">
@@ -456,8 +455,8 @@
                 <br>
                 <p class="project-features">Instructions</p>
                 <ul>
-                  <li>To edit text in any section click on section header when it's activated. This will open the Editor</li>
-                  <li>The Editor import text button (arrow down) is used to select a text file from the filesystem</li>
+                  <li>To edit text in any section click on the section header after it's activated</li>
+                  <li>The Editor <b>Import Text</b> button (arrow down) is used to select a text file from the filesystem</li>
                   <li>Long press on any button to show its tooltip</li>
                 </ul>
               </div>
@@ -474,7 +473,7 @@
             <div class="project">
               <div class="project-header">
                 <div class="project-icon">
-                  <img src="images/icons/ram-status-50.png" alt="" class="img-shadow">
+                  <img src="images/icons/ram-status-50.png" alt="">
                 </div>
                 <div class="project-info">
                   <div class="title">
@@ -509,7 +508,7 @@
                     <a href="https://github.com/mortalis13/Verb-Conjugator-Android/releases" target="_blank">Verb Conjugator</a>
                     <a title="GitHub Source" class="github-source-icon" target="_blank" href="https://github.com/mortalis13/Verb-Conjugator-Android"><span class="screen-reader-text">GitHub Source</span></a>
                   </div>
-                  <div class="short-description">Multilanguage conjugation verbal forms with extensive offline database</div>
+                  <div class="short-description">Multilanguage verb conjugation tables with extensive offline database</div>
                 </div>
               </div>
               
@@ -536,7 +535,7 @@
                 <ul>
                   <li>use of a <b>SQLite</b> database generated with a separate <b><a href="https://github.com/mortalis13/VerbConjugatorDBCreator-Qt" target="_blank">Qt project</a></b> with all verb data</li>
                   <li>use of HTML and CSS template files to easily change the article look</li>
-                  <li>use of extended Unicode encoding for diacritics in european languages</li>
+                  <li>use of extended <b>Unicode</b> encoding for diacritics in european languages</li>
                   <li>manually adjusted <b>autocompletion</b> feature which is toggled with a checkbox button</li>
                   <li>javascript injection for the navigation buttons</li>
                   <li>use of background non-blocking task for the verb search action</li>
@@ -544,8 +543,7 @@
                 <br>
                 <p class="project-features">Instructions</p>
                 <ul>
-                  <li>when the app launches for the first time wait until it prepares the database with all verbs</li>
-                  <li>next launches will be faster</li>
+                  <li>when the app launches for the first time wait until it prepares the database with all the verbs</li>
                   <li>type a verb in the text field (the app requires complete verb by default)</li>
                   <li>the autocompletion requires at least 3 first letters of a verb to be typed, then you may select a result from the list</li>
                 </ul>
@@ -573,7 +571,7 @@
                     <a href="https://github.com/mortalis13/Qt-Color-Picker-Qt/releases" target="_blank">QtColorPicker</a>
                     <a title="GitHub Source" class="github-source-icon" target="_blank" href="https://github.com/mortalis13/Qt-Color-Picker-Qt"><span class="screen-reader-text">GitHub Source</span></a>
                   </div>
-                  <div class="short-description">Color selector with <b>HSV, RGB, CMYK, Hex</b> color models</div>
+                  <div class="short-description">Color selector with <b>HSV, RGB, CMYK and Hex</b> color models</div>
                 </div>
               </div>
               
@@ -581,44 +579,44 @@
                 <p class="project-features">Project features</p>
                 <ul>
                   <li>Hue, Saturation, Value selectors</li>
-                  <li>conversion of selected color to text represented in the text fields</li>
+                  <li>conversion of selected color to text</li>
                   <li>buttons to copy color values and paste a Hex value</li>
-                  <li>color sliders and spinners for 3 color models (HSV, RGB, CMYK)</li>
+                  <li>a wide set of keyboard/mouse shortcuts for comfortable and fast app usage</li>
+                  <li>color sliders and spinners for 3 color models (HSV, RGB, CMYK) (<i>in the <b>Sliders</b> window</i>)</li>
                 </ul>
                 <br>
                 <p class="project-features">Development features</p>
                 <ul>
-                  <li>developed using the MVC design pattern</li>
+                  <li>developed using the <b>MVC</b> design pattern</li>
                   <li>implementation of custom graphics to draw sliders and the selector pointer</li>
                   <li>extensive use of mouse events (press, drag, wheel press & drag, scroll)</li>
-                  <li>development of custom UI widgets</li>
+                  <li>development of custom <b>UI widgets</b></li>
                 </ul>
                 <br>
                 <p class="project-features">Instructions</p>
                 <ul>
-                  <li>select a color from the selectors</li>
-                  <li>pressing the buttons near text fields copies the corresponding values to the clipboard (the values are comma separated)</li>
-                  <li><b>Paste Hex</b> button inserts a hex color value from the clipboard (with or without leading #)</li>
-                  <li>color values may be pasted in any text field which will immediately reflect the color in the left area</li>
+                  <li>select a color using the selectors</li>
+                  <li>pressing the buttons near the text fields copies the corresponding values to the clipboard (the copied values are comma separated)</li>
+                  <li><b>Paste Hex</b> button inserts a hex color value from the clipboard</li>
+                  <li>color values may be pasted in any text field which will immediately update the color selectors</li>
                   <li>the values may be pasted with or without commas between them</li>
-                  <li>each color component (red, saturation, ...) can be incremented/decremented using up/down arrows on the keyboard, just put the cursor near the corresponding component</li>
-                  <li>these components can also be changed via mouse scrolling highlighting the corresponding text</li>
-                  <li>mouse wheel may be used inside color selectors to gradually change color components (check the shortcuts part)</li>
-                  <li>the main window may be dragged by holding any window area, except the color selectors</li>
-                  <li>to open the <b>Sliders</b> subwindow press mouse wheel on the color sample or use <b>Ctrl+S</b> shortcut</li>
+                  <li>each color component (red, saturation, ...) can be incremented/decremented using up/down arrows on the keyboard</li>
+                  <li>these components can also be changed by scrolling the mouse wheel</li>
+                  <li>mouse wheel may be used inside color selectors to gradually change color components (check the <i>shortcuts</i> part)</li>
+                  <li>the main window may be dragged by holding any window area, except for the color selectors</li>
+                  <li>to open the <b>Sliders</b> sub-window press mouse wheel on the color sample or use <b>Ctrl+S</b> shortcut</li>
                   <li>the sliders reflect the corresponding color components immediately and may also be changed separately</li>
                   <li><b>Shortcuts:</b>
                     <ul>
-                      <li>F1 - F5 - copy color values (HSV, RGB, CMYK, Hex, # Hex)</li>
-                      <li>F6 - paste Hex value</li>
-                      <li>Shift+F1 - Shift+F4 - focus text fields (HSV, RGB, CMYK, Hex)</li>
-                      <li>Ctrl+S - open/close Sliders window</li>
-                      <li>Esc or mouse wheel press - exit</li>
-                      <li>mouse wheel press on the color sample - open/close Sliders window</li>
+                      <li><span class="shortcut">F1</span> - <span class="shortcut">F5</span> - copy color values (HSV, RGB, CMYK, Hex, # Hex)</li>
+                      <li><span class="shortcut">F6</span> - paste Hex value</li>
+                      <li><span class="shortcut">Shift+F1</span> - <span class="shortcut">Shift+F4</span> - focus text fields (HSV, RGB, CMYK, Hex)</li>
+                      <li><span class="shortcut">Ctrl+S</span> or mouse wheel press on the color sample - open/close Sliders window</li>
+                      <li><span class="shortcut">Esc</span> or mouse wheel press - exit</li>
                       <li>left/right mouse click on the color sample - copy Hex value (without/with leading #)</li>
                       <li>mouse scroll on the vertical Hue selector - change the Hue value by 1</li>
-                      <li>mouse scroll on the rectangular Saturation/Value selector - change Value component by 1, with Shift - change Saturation component</li>
-                      <li>mouse scroll with Ctrl - change values by 10</li>
+                      <li>mouse scroll on the rectangular Saturation/Value selector - change Value component by 1, with <b>Shift</b> - change Saturation component</li>
+                      <li>mouse scroll with <b>Ctrl</b> - change values by 10</li>
                     </ul>
                   </li>
                 </ul>

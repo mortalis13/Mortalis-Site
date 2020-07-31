@@ -68,6 +68,13 @@ a:focus {
   margin-bottom: 5px;
 }
 
+.shortcut {
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  padding: 0px 4px;
+  background: #fafafa;
+}
+
 
 /* ----------------- content ----------------- */
 
@@ -615,6 +622,10 @@ a:focus {
 }
 .contacts-menu ul li a[href*="soundcloud.com"]::before {
   content: '\f1be';
+}
+.contacts-menu ul li a[href*="tumblr.com"]::before {
+  /*content: '\f173';*/
+  content: '\f174';
 }
 
 .contacts-menu ul li a[href*="wordpress.org"]::before,
