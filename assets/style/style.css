@@ -87,10 +87,10 @@ a:focus {
 }
 
 .new {
-  padding: 1px 5px;
+  padding: 0px 5px 2px;
   background: #c8f0c7;
   border: 1px solid #8ebb8e;
-  border-radius: 8px;
+  border-radius: 6px;
   font-weight: 700;
   cursor: default;
 }
@@ -474,7 +474,7 @@ a:focus {
 }
 #projects .project-type#android #metronomix .images .stacked-images img {
   margin-right: 0 !important;
-  margin-bottom: 0.5rem;
+  margin-bottom: 4px;
   width: 208px;
   box-shadow: none !important;
 }
@@ -489,8 +489,7 @@ a:focus {
   max-height: 21rem;
 }
 #projects #path-edit .images img {
-  max-height: 384px;
-  max-height: 24rem;
+  max-height: 100%;
 }
 #projects #android-manager .images img {
   max-height: 384px;
@@ -529,10 +528,6 @@ a:focus {
   max-width: 47%;
   margin-bottom: 16px;
   margin-bottom: 1rem;
-}
-#projects #menu-with-login img {
-  max-height: 100%;
-  max-width: 70%;
 }
 
 #projects #firefox-addons .subtype.android-addons .images img {
