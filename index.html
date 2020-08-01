@@ -20,9 +20,9 @@
   <!-- <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'> -->
   
   <!-- !I -->
-  <link href='https://fonts.googleapis.com/css?family=Alegreya:400,700' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,700' rel='stylesheet' type='text/css'>
-  <!-- <link href='assets/style/fonts.css' rel='stylesheet' media='all' /> -->
+  <!-- <link href='https://fonts.googleapis.com/css?family=Alegreya:400,700' rel='stylesheet' type='text/css'> -->
+  <!-- <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,700' rel='stylesheet' type='text/css'> -->
+  <link href='assets/style/fonts.css' rel='stylesheet' media='all' />
   
   <link href='assets/fonts/font-awesome/css/font-awesome.min.css' rel='stylesheet' media='all' />
   <link href='assets/fonts/dashicons/css/dashicons.min.css' rel='stylesheet' media='all' />
@@ -38,8 +38,8 @@
   
   <!-- _________ SCRIPTS _________ -->
   <!-- !II -->
-  <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
-  <!-- <script src='assets/js/jquery-1.11.1.min.js'></script> -->
+  <!-- <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script> -->
+  <script src='assets/js/jquery-1.11.1.min.js'></script>
   
   <script src='assets/bootstrap/js/bootstrap.js'></script>
   <script src='assets/js/script.js'></script>
@@ -185,7 +185,7 @@
               
               <div class="description clearfix">
                 <p>Dictionary shell which allows to add multilanguage dictionary files in <a target="_blank" href="http://lingvo.com/"><b>Lingvo</b></a> <a href="http://lingvo.helpmax.net/en/troubleshooting/dsl-compiler/dsl-dictionary-structure" target="_blank">DSL</a> format and search across added dictionaries in various language directions.</p>
-                <p><b>DSL</b> is a text file with specific markup: a headword followed by article body indented with spaces or tabs [<a href="https://github.com/Tvangeste/SampleDSL/blob/master/sample.dsl" target="_blank"><b>SampleDSL</b></a>].</p>
+                <p><b>DSL</b> is a text file with specific markup: a headword followed by an article body indented with spaces or tabs <a href="https://github.com/Tvangeste/SampleDSL/blob/master/sample.dsl" target="_blank"><b>[SampleDSL]</b></a>.</p>
                 <br>
                 <p class="project-features">Project features</p>
                 <ul>
@@ -604,14 +604,14 @@
                   <li>these components can also be changed by scrolling the mouse wheel</li>
                   <li>mouse wheel may be used inside color selectors to gradually change color components (check the <i>shortcuts</i> part)</li>
                   <li>the main window may be dragged by holding any window area, except for the color selectors</li>
-                  <li>to open the <b>Sliders</b> sub-window press mouse wheel on the color sample or use <b>Ctrl+S</b> shortcut</li>
+                  <li>to open the <b>Sliders</b> sub-window press mouse wheel on the color sample or use <span class="shortcut">Ctrl + S</span> shortcut</li>
                   <li>the sliders reflect the corresponding color components immediately and may also be changed separately</li>
-                  <li><b>Shortcuts:</b>
+                  <li class="mt5"><b>Shortcuts:</b>
                     <ul>
                       <li><span class="shortcut">F1</span> - <span class="shortcut">F5</span> - copy color values (HSV, RGB, CMYK, Hex, # Hex)</li>
                       <li><span class="shortcut">F6</span> - paste Hex value</li>
-                      <li><span class="shortcut">Shift+F1</span> - <span class="shortcut">Shift+F4</span> - focus text fields (HSV, RGB, CMYK, Hex)</li>
-                      <li><span class="shortcut">Ctrl+S</span> or mouse wheel press on the color sample - open/close Sliders window</li>
+                      <li><span class="shortcut">Shift + F1</span> - <span class="shortcut">Shift + F4</span> - focus text fields (HSV, RGB, CMYK, Hex)</li>
+                      <li><span class="shortcut">Ctrl + S</span> or mouse wheel press on the color sample - open/close Sliders window</li>
                       <li><span class="shortcut">Esc</span> or mouse wheel press - exit</li>
                       <li>left/right mouse click on the color sample - copy Hex value (without/with leading #)</li>
                       <li>mouse scroll on the vertical Hue selector - change the Hue value by 1</li>
@@ -644,8 +644,8 @@
               </div>
               
               <div class="description clearfix">
-                <p>The program scans files and subfolders and saves the resulting tree into selected formats (Text, HTML).</p>
-                <p>For testing purposes the project was created using different technologies:</p>
+                <p>The program scans files and subfolders and saves the resulting tree as <b>text</b>, <b>JSON</b> or <b>HTML</b>.</p>
+                <p>For testing and comparison purposes the project was created using various languages:</p>
                 <ul>
                   <li><a target="_blank" href="https://github.com/mortalis13/List-Folders-Qt">Qt</a></li>
                   <li><a target="_blank" href="https://github.com/mortalis13/List-Folders-Java">Java</a></li>
@@ -660,9 +660,9 @@
                   <li>filter directories by name</li>
                   <li>export files/directories list to a text file and to a tree structure (JSON)</li>
                   <li>the exported tree can be viewed and navigated with the <b>Tree Viewer</b> tool or as a <b>HTML</b> page</li>
-                  <li>auto save/restore last used settings when the program exits/starts</li>
+                  <li>auto save the last used settings when the program exits</li>
                   <li>fast processing, depends on the number of files to scan not on the total size of the scanned directory</li>
-                  <li>useful for creating virtual tree of directory structure to share with others without copying full file tree</li>
+                  <li>useful for creating virtual tree of directory structure as a backup or for sharing without copying the full file tree</li>
                 </ul>
                 <br>
                 <p class="project-features">Development features</p>
@@ -674,17 +674,16 @@
                   <li>implementation of a custom JSON serializer/deserializer to store/retrieve data</li>
                   <li>use of <b>MVC</b> design pattern</li>
                   <li>implementation of custom <b>TreeModel</b> class for the <b>Tree Viewer</b> subwindow</li>
-                  <li>use of a custom recursive tree structure</li>
                 </ul>
                 <br>
                 <p class="project-features">Instructions</p>
                 <ul>
                   <li>enter a directory path to scan</li>
                   <li>enter file/directory filters</li>
-                  <li>select export type (<b>text</b> - to a text file; <b>tree</b> - to a JSON and HTML files</li>
-                  <li>enter an export name which will be given to the resulting files</li>
+                  <li>select export type (<b>text</b> - to a text file; <b>tree</b> - to a JSON and HTML files)</li>
+                  <li>enter an export name for the resulting output files</li>
                   <li>press <b>Scan</b> and wait</li>
-                  <li>check the <b>export</b> folder for the result</li>
+                  <li>check the <b>export</b> folder inside the program folder to see the result</li>
                   <li>use <b>Tree View</b> to navigate the exported tree, select a JSON file to show its structure</li>
                 </ul>
               </div>
@@ -707,7 +706,7 @@
                     <a href="https://github.com/mortalis13/Android-Manager-Qt/releases" target="_blank">Android Manager</a>
                     <a title="GitHub Source" class="github-source-icon" target="_blank" href="https://github.com/mortalis13/Android-Manager-Qt"><span class="screen-reader-text">GitHub Source</span></a>
                   </div>
-                  <div class="short-description">Android file manager</div>
+                  <div class="short-description">Android file manager for Windows</div>
                 </div>
               </div>
               
@@ -719,27 +718,27 @@
                   <li>copy files from <b>Android</b></li>
                   <li>navigate using <b>Left/Right</b> arrows</li>
                   <li>no need of <b>busybox</b> nor <b>root</b></li>
-                  <li>works independently of USB tethering (when Windows doesn't allow to transfer files)</li>
+                  <li>works independently of USB tethering (shared internet connection from the device)</li>
                 </ul>
                 <br>
                 <p class="project-features">Development features</p>
                 <ul>
                   <li>use of basic <b>adb</b> commands: <b>shell ls, pull</b></li>
+                  <li>use of the <b>QProcess</b> class to call Android shell commands</li>
                   <li>customized table view</li>
-                  <li>work with the <b>QProcess</b> class</li>
-                  <li>encoding fixes to display file/folder names containing non-latin characters</li>
+                  <li>encoding fixes to display text containing non-latin characters</li>
                   <li>smart size units formatting <b>(B, KB, MB, GB)</b></li>
                   <li>use of a background thread to show copy progress</li>
                 </ul>
                 <br>
                 <p class="project-features">Instructions</p>
                 <ul>
-                  <li>enter a <b>Path</b> on the device and <b>Go</b> or start with <b>Root</b></li>
+                  <li>enter a <b>Path</b> on the device and press <b>Go</b> or press <b>Root</b> to go to the root folder</li>
                   <li>navigate to a folder, select file(s)</li>
                   <li>enter destination path on your filesystem or leave it empty to copy files to the default location (<b>Downloads</b> folder in the program main directory)</li>
                   <li>press <b>Copy</b> and check the progress below</li>
                   <li>text area below reflects the system output of the <b>adb ls</b> command</li>
-                  <li>the program needs <b>adb.exe</b> from the Android SDK Platform Tools, it has an executable by default, if it doesn't work make sure you have it in your Path variable</li>
+                  <li>the program needs <b>adb.exe</b> from the <a href="https://developer.android.com/studio/releases/platform-tools" target="_blank"><b>Android SDK Platform Tools</b></a>, it has an executable by default, if it doesn't work make sure you have it in your Path variable</li>
                 </ul>
               </div>
               <div class="images">
@@ -760,7 +759,7 @@
                     <a href="https://github.com/mortalis13/File-Splitter-Qt/releases" target="_blank">File Splitter</a>
                     <a title="GitHub Source" class="github-source-icon" target="_blank" href="https://github.com/mortalis13/File-Splitter-Qt"><span class="screen-reader-text">GitHub Source</span></a>
                   </div>
-                  <div class="short-description">Splits text files to smaller ones by lines</div>
+                  <div class="short-description">Splits text files by lines</div>
                 </div>
               </div>
               
@@ -769,7 +768,7 @@
                 <ul>
                   <li>allows to select an input file, output directory and output filename pattern</li>
                   <li>allows to set lines count which indicate the maximum lines number the resulting subfiles will contain</li>
-                  <li>supports multiple encodings for input file (UTF8, UTF16-LE, UTF16-BE)</li>
+                  <li>supports multiple encodings for input file (<b>UTF8, UTF16-LE, UTF16-BE</b>)</li>
                 </ul>
                 <br>
                 <p class="project-features">Development features</p>
@@ -812,23 +811,15 @@
               <div class="description clearfix">
                 <p class="project-features">Project features</p>
                 <ul>
-                  <li>saves text from the edit field to the Path variable</li>
-                  <li>updates the environment so that new processes use the changed Path</li>
-                  <li>comfortable work with <b>F1/F2</b> shortcuts</li>
-                  <li>displays <b>Path</b> keys in separate lines for quick and easy editing</li>
+                  <li>displays <b>Path</b> entries in separate lines for quick and easy editing</li>
+                  <li>updates the environment without the need to restart so that new processes use the changed Path immediately</li>
+                  <li>use of shortcuts <b>F1/F2</b> to <b>load/save</b> the <b>Path</b> variable value</li>
                 </ul>
                 <br>
                 <p class="project-features">Development features</p>
                 <ul>
-                  <li>read/write Windows Registry keys using Qt and C++ instruments</li>
+                  <li>read/write <b>Windows Registry</b> keys using Qt and C++ instruments</li>
                   <li>send a broadcast message to all windows to update the Path value immediately</li>
-                </ul>
-                <br>
-                <p class="project-features">Instructions</p>
-                <ul>
-                  <li><b>F1</b> - load Path to the program</li>
-                  <li><b>F2</b> - save the Path variable from the text area</li>
-                  <li><b>Esc</b> - exit</li>
                 </ul>
               </div>
               <div class="images">
@@ -844,10 +835,11 @@
               </div>
               <div class="description">
                 <p>Libraries used in Android projects as <b>NDK</b> modules.</p>
-                <br>
-                <ul class="list-aligned">
-                  <li><a href="https://github.com/mortalis13/NativeLibraries/tree/master/audio_engine" target="_blank"><b>audio_engine</b></a> library for the <a href="#metronomics"><b>Metronomics</b></a> project. Extracts raw audio data from <b>WAVE</b> files and calculates <b>FFT</b> data for spectrum visualization (using the <a href="http://www.fftw.org" target="_blank"><b>fftw</b></a> external library).</li>
-                  <li><a href="https://github.com/mortalis13/NativeLibraries/tree/master/dsl_library" target="_blank"><b>dsl_library</b></a> for the <a href="#home-dictionary"><b>Home Dictionary</b></a> project. Reads <b>DSL</b> (or compressed <b>DSL.DZ</b>) dictionary files, generates search indexes, parses articles and outputs HTML content of an article.</li>
+                <ul class="list-aligned project-modules-list">
+                  <li><a href="https://github.com/mortalis13/NativeLibraries/tree/master/audio_engine" target="_blank"><b>audio_engine</b></a> library for the <a href="#metronomics"><b>Metronomics</b></a> project.<br>
+                  Extracts raw audio data from <b>WAVE</b> files and calculates <b>FFT</b> data for spectrum visualization (using the <a href="http://www.fftw.org" target="_blank"><b>fftw</b></a> external library).</li>
+                  <li><a href="https://github.com/mortalis13/NativeLibraries/tree/master/dsl_library" target="_blank"><b>dsl_library</b></a> for the <a href="#home-dictionary"><b>Home Dictionary</b></a> project.<br>
+                  Reads <b>DSL</b> (or compressed <b>DSL.DZ</b>) dictionary files, generates search indexes, parses articles and generates HTML content of an article.</li>
                 </ul>
               </div>
             </div>
@@ -865,12 +857,12 @@
               </div>
               <div class="description">
                 <p>Tricks and tutorials on different computer topics based on my own computer experience.</p>
-                <p>Created to practice the <a target="_blank" href="https://wordpress.org"><b>Wordpress</b></a> framework, its themes and plugins development.</p>
+                <p>Created during the learning of the <a target="_blank" href="https://wordpress.org"><b>Wordpress</b></a> framework, its themes and plugins development.</p>
                 <p>Also helps me to find needed information I use in my PC life.</p>
                 <br>
                 <p class="project-features">Project features</p>
                 <ul>
-                  <li>advices (tweaks) are divided by categories: Windows, Programs, etc.</li>
+                  <li>advices (tweaks) are divided by categories: Windows, Programs, Programming etc.</li>
                   <li>high-quality screenshots for more comfortable site navigation</li>
                   <li>detailed steps explanation with example images</li>
                 </ul>
@@ -878,7 +870,7 @@
                 <p class="project-features">Development features</p>
                 <ul>
                   <li>created a custom Wordpress responsive theme <a href="#stater-point"><b>Starter Point</b></a></li>
-                  <li>created additional <a href="#wp-plugins">plugins</a> for the front-end and back-end to help editing and organizing the contents</li>
+                  <li>created additional <a href="#wp-plugins"><b>plugins</b></a> for the front-end and back-end to help editing and organizing the contents</li>
                   <li>created colored categories within the theme</li>
                   <li>multi-language support</li>
                   <li>program code highlight using a customly modified <a target="_blank" href="http://prismjs.com"><b>Prism</b></a> highlighter plugin,
@@ -901,15 +893,14 @@
                 <a title="GitHub Source" class="github-source-icon" target="_blank" href="https://github.com/mortalis13/simpleblog-site"><span class="screen-reader-text">GitHub Source</span></a>
               </div>
               <div class="description">
-                <p>A simple interpretation of a blog allowing users to register and</p>
-                <p>add new articles which will be shown in one common category on the main page.</p>
-                <p>The site was created to practice the <a target="_blank" href="https://www.joomla.org"><b>Joomla! CMS</b></a> development.</p>
+                <p>A simple interpretation of a blog allowing users to register and add new articles <br>which are shown in one common category on the main page.</p>
+                <p>The site was created during the learning of the <a target="_blank" href="https://www.joomla.org"><b>Joomla!</b></a> CMS.</p>
                 <br>
                 <p class="project-features">Project features</p>
                 <ul>
                   <li>register a new user and edit its own profile</li>
                   <li>create and edit articles</li>
-                  <li>filter articles list by author, sort by date, title, author,
+                  <li>filter articles list by author and sort by date/title/author/hits
                     <a href="images/web-sites/simpleblog-ex1.png" target="_blank"><b>[example]</b></a></li>
                   <li>change articles-per-page parameter</li>
                 </ul>
@@ -920,10 +911,10 @@
                   <li>added an authors filter on the front-end</li>
                   <li>added an articles-per-page filter on the front-end</li>
                   <li>added additional columns in the <b>List</b> view table</li>
-                  <li>added a <b>List</b>/<b>Blog</b> view switcher in the user's own articles,
+                  <li>added a <b>List</b>/<b>Blog</b> view switcher in the user's own articles
                     <a href="images/web-sites/simpleblog-ex2.png" target="_blank"><b>[example]</b></a></li>
                   <li>created additional action buttons to <b>Publish</b>, <b>Unpublish</b>, <b>Delete</b> articles in the user's articles page</li>
-                  <li>created a top fixed menu with inline login form, which was promoted to a separate Joomla <a href="#menu-with-login">plugin</a>, <a href="images/web-sites/simpleblog-ex3.png" target="_blank"><b>[example]</b></a></li>
+                  <li>created a top fixed menu with inline login form, which was promoted to a separate Joomla <a href="#menu-with-login">plugin</a> <a href="images/web-sites/simpleblog-ex3.png" target="_blank"><b>[example]</b></a></li>
                 </ul>
               </div>
               <div class="images">
@@ -956,15 +947,15 @@
                 <br>
                 <p class="project-features">Project features</p>
                 <ul>
-                  <li>categories are organized as a table of post titles,
+                  <li>categories are organized as a table of post titles
                     <a href="images/web-projects/starter-point-ex1.png" target="_blank"><b>[example]</b></a></li>
-                  <li>two types of menu: header and footer,
+                  <li>two types of menu: header and footer
                     <a href="images/web-projects/starter-point-7.png" target="_blank"><b>[example]</b></a></li>
-                  <li>colored categories,
+                  <li>colored categories
                     <a href="images/web-projects/starter-point-6.png" target="_blank"><b>[example]</b></a></li>
                   <li>customizer options allow to choose one of the predefined color schemes or change custom theme colors</li>
                   <li>add left/right sidebar or disable it to show the content in one column</li>
-                  <li>possibility to add custom CSS to pages,
+                  <li>possibility to add custom CSS to pages
                     <a href="images/web-projects/starter-point-8.png" target="_blank"><b>[example]</b></a></li>
                 </ul>
                 <br>
@@ -974,7 +965,7 @@
                   <li>used a set of Javascript plugins: <a href="http://ace.c9.io" target="_blank">Ace Editor</a>, <a href="http://www.appelsiini.net/projects/lazyload" target="_blank">LazyLoad</a>, <a href="https://superfish.joelbirch.co" target="_blank">Superfish</a>, <a href="http://masonry.desandro.com" target="_blank">Masonry</a>, <a href="http://wicky.nillia.ms/enquire.js" target="_blank">Enquire</a></li>
                   <li>multilanguage support using the <a href="https://poedit.net" target="_blank">Poedit</a> application</li>
                   <li>use of the <a href="http://lesscss.org/" target="_blank">LESS</a> technology for effective and easy CSS compilation</li>
-                  <li>development of a custom <b>Theme Options</b> page,
+                  <li>development of a custom <b>Theme Options</b> page with the use of <a href="http://ace.c9.io" target="_blank"><b>Ace Editor</b></a> as the internal web editor
                     <a href="images/web-projects/starter-point-8.png" target="_blank"><b>[example]</b></a></li>
                   <li>development of a custom content type which shows articles in a table (Category view)</li>
                 </ul>
@@ -998,7 +989,8 @@
                 <a title="GitHub Source" class="github-source-icon" target="_blank" href="https://github.com/mortalis13/html-post-editor-wp"><span class="screen-reader-text">GitHub Source</span></a>
               </div>
               <div class="description">
-                <p>A plugin which adds the HTML tab to the post editor which shows the raw source of the page and is highlighted with the <a href="http://ace.c9.io" target="_blank"><b>Ace&nbsp;Editor</b></a>.</p>
+                <p>A plugin which adds the <b>HTML</b> tab to the post editor to show the raw source of the page.</p>
+                <p>Uses <a href="http://ace.c9.io" target="_blank"><b>Ace Editor</b></a> for comfortable viewing and code editing.</p>
                 <br>
                 <p class="project-features">Project features</p>
                 <ul>
@@ -1037,12 +1029,12 @@
                 <a title="GitHub Source" class="github-source-icon" target="_blank" href="https://github.com/mortalis13/tinymce-code-formatting-wp"><span class="screen-reader-text">GitHub Source</span></a>
               </div>
               <div class="description">
-                <p>A plugin which adds the <b>Pre</b> and <b>Code</b> buttons to the <a href="https://codex.wordpress.org/TinyMCE" target="_blank"><b>TinyMCE</b></a> post editor toolbar with customizable shortcuts.</p>
+                <p>A plugin which adds the <b>Pre</b> and <b>Code</b> buttons to the <a href="https://codex.wordpress.org/TinyMCE" target="_blank"><b>TinyMCE</b></a> post editor toolbar.</p>
                 <br>
                 <p class="project-features">Project features</p>
                 <ul>
-                  <li>the Pre button toggles the preformatted style (&lt;pre&gt; tag)</li>
-                  <li>the Code button toggles the code style (&lt;code&gt; tag)</li>
+                  <li>the <b>Pre</b> button toggles the preformatted style (&lt;pre&gt; tag)</li>
+                  <li>the <b>Code</b> button toggles the code style (&lt;code&gt; tag)</li>
                 </ul>
                 <br>
                 <p class="project-features">Development features</p>
@@ -1086,8 +1078,8 @@
                   <li>view all the front-end menu items in the <b>Menus</b> item without entering the <b>Menus</b> component page</li>
                   <li>view the list of plugin folders and appropriate plugins inside them</li>
                   <li>view the list of the <b>Styles</b> and <b>Templates</b> views</li>
-                  <li>show the status of different components, plugins, menu items (disabled/enabled) with colors</li>
-                  <li>the menu is always active (the default deactivates when editing an article)</li>
+                  <li>show the status of different components, plugins, menu items (disabled/enabled) via red/white colors</li>
+                  <li>the menu is always active (by default the deactivates when editing an article)</li>
                 </ul>
               </div>
               <div class="images">
@@ -1111,8 +1103,8 @@
                 <p class="project-features">Project features</p>
                 <ul>
                   <li>the module is a mix of the default <b>mod_menu</b> and <b>mod_login</b> modules</li>
-                  <li>as the default <b>Menu</b> module allows to select menu to display in the module</li>
-                  <li>from the <b>Login</b> module has an option of login/logout redirect menu items</li>
+                  <li>the <b>mod_menu</b> integration allows to select site menu which will be displayed in the module</li>
+                  <li>the <b>mod_login</b> module gives an option of login/logout redirect menu items</li>
                 </ul>
               </div>
               <div class="images">
@@ -1141,7 +1133,7 @@
                 </div>
                 <div class="description">
                   <p>Adds a Bookmarks sidebar button to the <b>Toolbar Palette</b>.</p>
-                  <p>The button toggles the bookmarks panel on the left (equivalent to <b>Ctrl+B</b> shortcut).</p>
+                  <p>The button toggles the bookmarks panel on the left (equivalent to <span class="shortcut">Ctrl + B</span> shortcut).</p>
                   <p>Primarily created for Firefox 29+ which doesn't have a button with this functionality.</p>
                   <br>
                   <p class="project-features">Development features</p>
@@ -1171,10 +1163,9 @@
                   <p class="project-features">Project features</p>
                   <ul>
                     <li>customized colors for text and search background for more comfortable use</li>
-                    <li>additional shortcuts to close/open the search toolbar and for backward search</li>
-                    <li>exact number of matches (instead of the default "100+" message)</li>
+                    <li>exact number of matches (instead of the default <i>"100+"</i> message)</li>
                     <li>find-all functionality with regular expressions</li>
-                    <li>search in plain text and inside edit/emebedded elements (input, textarea, iframe)</li>
+                    <li>search text inside edit/emebedded elements (input, textarea, iframe)</li>
                   </ul>
                   <br>
                   <p class="project-features">Development features</p>
@@ -1182,8 +1173,8 @@
                     <li>integration into the standard search toolbar using <b>XML binding</b> technology</li>
                     <li>recursive document scanning for the forward and backward text search</li>
                     <li>intention to minimize possible errors in the incorrect use of regex queries</li>
-                    <li>custom text selection model</li>
-                    <li>exploration of the <a href="https://ftp.mozilla.org/pub/firefox/releases/40.0/source/" target="_blank"><b>Firefox source code</b></a></li>
+                    <li>custom text selection model (simulating the internal browser selection process)</li>
+                    <li>analysis of the <a href="https://ftp.mozilla.org/pub/firefox/releases/40.0/source/" target="_blank"><b>Firefox source code</b></a></li>
                   </ul>
                 </div>
                 <div class="images">
@@ -1205,15 +1196,16 @@
                   <br>
                   <p class="project-features">Project features</p>
                   <ul>
-                    <li>the shortcut <b>Alt-W</b> - closes other tabs except the current one</li>
-                    <li>the shortcut <b>Alt-Shift-F1</b> - closes all tabs to the left of the current one</li>
-                    <li>the shortcut <b>Alt-Shift-F2</b> - closes all tabs to the right of the current one</li>
+                    <li>the shortcut <span class="shortcut">Alt + W</span> - closes all tabs except the current one</li>
+                    <li>the shortcut <span class="shortcut">Alt + Shift + F1</span> - closes all tabs to the left of the current one</li>
+                    <li>the shortcut <span class="shortcut">Alt + Shift + F2</span> - closes all tabs to the right of the current one</li>
+                    <li><span class="new">new</span> starting from <a href="https://www.mozilla.org/en-US/firefox/66.0/releasenotes" target="_blank"><b>Firefox 66</b></a>, it's possible to change default shortcuts in the <b>Manage Extension Shortcuts</b> addons settings <a href="https://github.com/mortalis13/Close-Tabs-Shortcuts-XPI/issues/1#issuecomment-583296975" target="_blank"><b>[related issue]</b></a></li>
                   </ul>
                   <br>
                   <p class="project-features">Development features</p>
                   <ul>
-                    <li>implementation of a custom jQuery-like code structure for easier use of Javascript methods</li>
-                    <li>use of standard Firefox API and custom algorithms for the provided actions</li>
+                    <li>implementation of a custom <b>jQuery-like</b> code structure for easier use of Javascript methods</li>
+                    <li>use of standard <b>Firefox API</b> and custom algorithms for the provided actions</li>
                   </ul>
                 </div>
               </div>
@@ -1226,7 +1218,7 @@
                   <a title="GitHub Source" href="https://github.com/mortalis13/Toggle-Images-and-JS" class="github-source-icon" target="_blank"><span class="screen-reader-text">GitHub Source</span></a>
                 </div>
                 <div class="description">
-                  <p>Adds buttons to the Toolbar that toggle <b>Images</b> and <b>Javascript</b> loading when a webpage is opened.</p>
+                  <p>Adds buttons to the Toolbar that toggle <b>Images</b> and <b>Javascript</b> loading for all the pages.</p>
                   <br>
                   <p class="project-features">Development features</p>
                   <ul>
@@ -1248,13 +1240,13 @@
                   <a title="GitHub Source" href="https://github.com/mortalis13/Bookmark-Shortcuts" class="github-source-icon" target="_blank"><span class="screen-reader-text">GitHub Source</span></a>
                 </div>
                 <div class="description">
-                  <p>This addon adds shortcuts for bookmarks in the Bookmarks Toolbar.</p>
+                  <p>This addon adds shortcuts in the Bookmarks Toolbar.</p>
                   <p>This allows to open frequently used bookmarks much faster and more comfortable.</p>
                   <br>
                   <p class="project-features">Project features</p>
                   <ul>
-                    <li><b>Alt+1..9,0</b> shortcuts open the first 10 bookmarks in the same tab</li>
-                    <li><b>Alt+Shift+1..9,0</b> open first 10 bookmarks in a new tab</li>
+                    <li><span class="shortcut">Alt + 1..9, 0</span> shortcuts open the first 10 bookmarks in the same tab</li>
+                    <li><span class="shortcut">Alt + Shift + 1..9, 0</span> open first 10 bookmarks in a new tab</li>
                     <li>opens bookmarks independently of the visibility of the Bookmarks Toolbar</li>
                   </ul>
                 </div>
@@ -1298,8 +1290,8 @@
               
               <div class="project">
                 <div class="title">
-                  <a href="https://addons.mozilla.org/en-US/firefox/addon/tabs-export" target="_blank">Tabs Export</a> / <a href="https://addons.mozilla.org/en-US/firefox/addon/tabs-import" target="_blank">TabsImport</a>
-                  <a title="GitHub Source" href="https://github.com/mortalis13/Tabs-Export-XPI-Android" class="github-source-icon" target="_blank"><span class="screen-reader-text">GitHub Source</span></a> <a title="GitHub Source" href="https://github.com/mortalis13/Tabs-Import-XPI-Android" class="github-source-icon" target="_blank"><span class="screen-reader-text">GitHub Source</span></a>
+                  <a href="https://addons.mozilla.org/en-US/firefox/addon/tabs-export" target="_blank">Tabs Export</a> <a title="GitHub Source" href="https://github.com/mortalis13/Tabs-Export-XPI-Android" class="github-source-icon" target="_blank"><span class="screen-reader-text">GitHub Source</span></a><br><a href="https://addons.mozilla.org/en-US/firefox/addon/tabs-import" target="_blank">Tabs Import</a>
+                  <a title="GitHub Source" href="https://github.com/mortalis13/Tabs-Import-XPI-Android" class="github-source-icon" target="_blank"><span class="screen-reader-text">GitHub Source</span></a>
                 </div>
                 <div class="description">
                   <p>Adds the Export/Import Tabs menu items.</p>
@@ -1368,34 +1360,43 @@
               </div>
               
               <div class="description clearfix">
-                <p>Written in <b>Free Pascal</b> language with use of the <a href="https://www.lazarus-ide.org" target="_blank">Lazarus IDE</a> the source code compiles perfectly after a couple of adjustments.</p>
+                <p>The original project is written using the <b>Free Pascal</b> language and the <a href="https://www.lazarus-ide.org" target="_blank"><b>Lazarus IDE</b></a>.</p>
                 <p>With the knowledge of <b>Pascal</b> syntax and <b>Delphi</b> principles it's relatively easy to study the structure of the project to be able to extend it and add new necessary features, like menu items, custom commands, colors and shortcuts.</p>
                 <br>
                 <p>So I forked the main <a href="https://sourceforge.net/p/doublecmd/code/HEAD/tree/trunk" target="_blank">SVN repository</a> and with a list of desired enhancements began to modify the code for my everyday needs.</p>
-                <p>Thanks to the program creator (<b>alexx2000</b>) and all the contributors for this great instument which I used for several years now and very happy to be able to do things comfortably and fast!</p>
+                <p>Thanks to the program creator (<b>alexx2000</b>) and all the contributors for this great instument which I used for several years now and I'm pleased to be able to work comfortably and fast!</p>
                 <br>
                 <p>In short about the <b>original project</b>: it's a 2-panel file manager with tabs, toolbars and many filesystem utilities, fast navigation (Left-Right arrows for directory enter/exit is one of my favourite) and customizable parameters.</p>
-                <p>Some of tools I use: internal viewer (text, hex, image modes), multirename, <i>ADB</i> plugin to navigate an Android device filesystem, quick search and filter, inline archive view/extract/pack (all in the same panel, not only ZIP or RAR, but other zip-like files, APK, WAR, EAR, XPI), filename/filepath copy, space calculation for all folders, custom shortcuts for external system commands (like commit changes to <i>GitHub</i>, load a folder to <i>Sublime Text</i>).</p>
                 <br>
-                <p>Next I describe my contribution to the project.</p>
-                <br>
-                <p class="project-features">Project features</p>
+                <p>Some of the <b>tools</b> I use:</p>
                 <ul>
-                  <li>open drive by index command (default keys Alt+1..9)</li>
-                  <li>activate tab by index (default Ctrl+0..9)</li>
-                  <li>maximize active panel (F11) to easily view long filenames</li>
+                  <li>internal viewer (text, hex, image modes)</li>
+                  <li>rename multiple files using a pattern or an external editor</li>
+                  <li><b>ADB plugin</b> to navigate Android filesystem</li>
+                  <li>quick search and filter</li>
+                  <li>inline archive view/extract/pack (all in the same panel, not only ZIP or RAR, but other zip-like files, APK, WAR, EAR, XPI)</li>
+                  <li>filename/filepath copy shortcuts</li>
+                  <li>space calculation for all folders</li>
+                  <li>custom shortcuts for external system commands (like commit changes to <b>GitHub</b>, load a folder in <b>Sublime Text</b>)</li>
+                </ul>
+                <br>
+                <p class="mb5">My <b>contribution</b> to the project (added and extended commands and features):</p>
+                <ul>
+                  <li>open drive by index command (default keys <span class="shortcut">Alt + 1..9</span>)</li>
+                  <li>activate tab by index (default <span class="shortcut">Ctrl + 0..9</span>)</li>
+                  <li>maximize active panel (<span class="shortcut">F11</span>) to easily view long filenames</li>
                   <li>restore all tabs to their initial position without restart</li>
-                  <li>free sorting mode (no sorting for free files positioning)</li>
+                  <li>free sorting mode (no auto-sorting on file rename/copy)</li>
                   <li>multirename enhancement which allows to edit names of selected files in an external text editor</li>
                   <li>parameters for copy command which allow to copy only folders without content</li>
                   <li>alias mode which uses short commands to navigate faster to a directory or execute other system commands</li>
                   <li>extended information in copy/move dialogs: current/total files, current/total amount of data transferred (in MB)</li>
                   <li>additional column that shows files and folders number in each directory when calculating occupied space</li>
-                  <li>extended New Folder dialog to create a list of folders in one command</li>
-                  <li>removed <b>'..'</b> item that allowed to go to the parent folder (for faster navigation, now use Left arrow to exit current directory)</li>
+                  <li>extended <b>New Folder</b> dialog allowing to create a list of folders in one command</li>
+                  <li>removed the <code>'..'</code> item to navigate to the parent directory only with the <b>Left</b> key (this allows faster navigation to multiple subfolders)</li>
                   <li>increased tabs height</li>
-                  <li>converted Calculate Space dialog to non-modal type so it doesn't block main window and added Copy button to it</li>
-                  <li>select all folders command (similar to select all files with the same extension)</li>
+                  <li>converted <b>Calculate Space</b> dialog to non-modal type so it doesn't block main window and added <b>Copy</b> button to it</li>
+                  <li>select all folders command (similar to select all files with the same extension, <span class="shortcut">Ctrl + *</span>)</li>
                 </ul>
               </div>
               <div class="images">
@@ -1434,7 +1435,7 @@
                 <a title="GitHub Source" class="github-source-icon" target="_blank" href="https://github.com/mortalis13/NumberConverter-AngularJS"><span class="screen-reader-text">GitHub Source</span></a>
               </div>
               <div class="description">
-                <p>A web tools for number formats dynamic conversion (dec/hex/bin).</p>
+                <p>A web tool for dynamic number conversion between <b>Decimal</b>, <b>Hexadecimal</b> and <b>Binary</b> systems.</p>
                 <p>Written with <b>AngularJS</b>.</p>
                 <br>
                 <p class="project-features">Project features</p>
@@ -1443,7 +1444,7 @@
                   <li>format hex/bin text</li>
                   <li>show bytes-bits visualization</li>
                   <li>set/unset each bit</li>
-                  <li>reference number tables</li>
+                  <li>reference tables for the 3 numeral systems</li>
                 </ul>
               </div>
               <div class="images">
@@ -1468,11 +1469,11 @@
                 <br>
                 <p>Examples:</p>
                 <ul>
-                  <li><b>addons_download</b> - downloader for Firefox addons by direct URLs</li>
-                  <li><b>cue_split</b> - split FLAC audio files with a CUE list</li>
-                  <li><b>ftp_list</b> - get a list of files in FTP directories</li>
-                  <li><b>get_java_imports</b> - extract Java imports from a directory</li>
-                  <li><b>pdf_merge</b> - combine multiple PDF or image files</li>
+                  <li><b>addons_download</b> - downloads Firefox addons by direct URLs using the <b>Web Scraping</b></li>
+                  <li><b>cue_split</b> - splits <b>FLAC</b> audio files using a <b>CUE</b> list</li>
+                  <li><b>ftp_list</b> - gets a list of files in <b>FTP</b> directories</li>
+                  <li><b>get_java_imports</b> - extracts Java imports from <b>.java</b> files recursively from a directory</li>
+                  <li><b>pdf_merge</b> - combines multiple <b>PDF</b> files or images into one PDF document</li>
                 </ul>
               </div>
             </div>
@@ -1484,25 +1485,25 @@
                 <a href="https://github.com/mortalis13/SublimeSettings/tree/master/user-plugins" target="_blank">Sublime Plugins</a>
               </div>
               <div class="description">
-                <p>Sublime Text editor specific scripts written in <b>Python</b> with <a href="http://docs.sublimetext.info/en/latest/reference/api.html" target="_blank">Sublime API</a>.</p>
-                <p>Used mainly for text editing and interface control as well as file operations with a handy text input in the active tab.</p>
+                <p><a href="http://sublimetext.com" target="_blank"><b>Sublime Text</b></a> editor specific scripts written in <b>Python</b> using the <a href="http://docs.sublimetext.info/en/latest/reference/api.html" target="_blank"><b>Sublime API</b></a>.</p>
+                <p>Used mainly for text editing and interface control as well as filesystem manipulation.</p>
                 <br>
                 <p>Description of some scripts:</p>
                 <ul>
-                  <li><b>convert_sql</b> - transforms SQL INSERT commands to UPDATE using the selected text</li>
-                  <li><b>create_files</b> - creates multiple files with some content</li>
-                  <li><b>find_duplicated_lines</b> - shows text duplicates in a new tab</li>
-                  <li><b>generate_from_template</b> - creates text filling data into a static template</li>
-                  <li><b>generate_java_getters</b> - creates getter/setter methods for class fields in Java</li>
-                  <li><b>generate_lines</b> - creates new lines following a pattern</li>
-                  <li><b>get_method_call_signature</b> - extracts method call from its definition</li>
+                  <li><b>convert_sql</b> - transforms SQL <b>INSERT</b> statements to <b>UPDATE</b> inside the selected text</li>
+                  <li><b>create_files</b> - creates multiple files with the specified content</li>
+                  <li><b>find_duplicated_lines</b> - shows duplicated lines in a new tab</li>
+                  <li><b>generate_from_template</b> - creates text using a static template and dynamic variables</li>
+                  <li><b>generate_java_getters</b> - creates getter/setter methods for class fields in <b>Java</b></li>
+                  <li><b>generate_lines</b> - creates lines following a pattern</li>
+                  <li><b>get_method_call_signature</b> - generates method call from its definition</li>
                   <li><b>open_all_files</b> - opens files in tabs under a selected folder in the sidebar</li>
                   <li><b>open_project_in_new_window</b> - clones active project window with the same project folder</li>
                   <li><b>paste_with_commas</b> - pastes a list of lines separated by commas (with/without quotes)</li>
                   <li><b>separate_variable</b> - creates separate lines for a variable definition and its usage in a statement</li>
-                  <li><b>subtract_lines</b> - finds a difference between 2 lists of lines (in files or directly in the editor tabs)</li>
+                  <li><b>subtract_lines</b> - finds a difference between 2 lists of lines</li>
                   <li><b>unindent_resursive</b> - reduces a nested block indentation by the same amount for all nested levels</li>
-                  <li><b>view_as_hex</b> - converts all the text to hex codepoints</li>
+                  <li><b>view_as_hex</b> - converts all the text to hexadecimal codepoints</li>
                 </ul>
               </div>
             </div>
@@ -1516,8 +1517,14 @@
               </div>
               <div class="description">
                 <p>A theme for <a href="http://sublimetext.com" target="_blank"><b>Sublime Text</b></a> editor.</p>
-                <p>A comfortable design and layout with dark color scheme, filetype icon in the sidebar, different styles for different tab states.</p>
-                <p>The core of theme development is modification of specific API keys in JSON- and XML-structured control files.</p>
+                <p>The core of <a href="https://sublimetext.com/docs/3/themes.html" target="_blank"><b>the theme development</b></a> is modification of specific keys in <b>JSON</b> or <b>YAML</b> control files.</p>
+                <br>
+                <p class="project-features">Project features</p>
+                <ul>
+                  <li>comfortable design and layout with dark color scheme</li>
+                  <li>material icons for various filetypes in the sidebar</li>
+                  <li>styles for different tab states</li>
+                </ul>
               </div>
               <div class="images">
                 <a href="images/projects/norber-theme-1.png" target="_blank"><img class="project-image" src="images/projects/norber-theme-1.png" alt="NorberTheme Image1"></a>
