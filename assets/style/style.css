@@ -575,7 +575,7 @@ a:focus {
   padding: 0;
 }
 
-#footer #toTop {
+/*#footer #toTop {
   padding: 7px 12px;
   background: #eee;
   border-radius: 4px;
@@ -588,7 +588,7 @@ a:focus {
 #footer #toTop:focus,
 #footer #toTop:active {
   outline: none;
-}
+}*/
 
 
 /*------------------------------------ Clearing ------------------------------------*/
@@ -730,11 +730,52 @@ hr.project-separator:after {
 }
 
 .screen-reader-text {
-    height: 1px;
-    width: 1px;
-    clip: rect(1px, 1px, 1px, 1px);
-    overflow: hidden;
-    position: absolute !important;
+  height: 1px;
+  width: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+  overflow: hidden;
+  position: absolute !important;
+}
+
+
+#go_to_top {
+  display: inline-block;
+  position: fixed;
+  opacity: 0;
+  visibility: hidden;
+  width: 50px;
+  height: 50px;
+  bottom: 30px;
+  right: 30px;
+  background-color: #dfdfdf;
+  border-radius: 39px;
+  border: 1px solid #98a8ab;
+  text-align: center;
+  text-decoration: none;
+  transition: opacity .3s, visibility .3s;
+  cursor: pointer;
+  outline: none;
+  z-index: 1000;
+}
+#go_to_top::after {
+  content: '\f077';
+  font-family: 'Fontawesome';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.3em;
+  line-height: 44px;
+  color: #7a8b92;
+}
+#go_to_top:hover {
+  text-decoration: none;
+  background-color: #ccc;
+}
+#go_to_top:hover::after {
+  color: #546267;
+}
+#go_to_top.show {
+  opacity: 1;
+  visibility: visible;
 }
 
 

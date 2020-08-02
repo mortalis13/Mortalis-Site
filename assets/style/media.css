@@ -150,8 +150,13 @@
   #projects #android-manager .images img {
     max-height: 30rem !important;
   }
-  #projects #android.project-type #metronomics .images .stacked-images {
+  #projects #android.project-type #metronomix .images .stacked-images {
     margin-right: 0;
+  }
+  
+  #go_to_top {
+    bottom: 16px;
+    right: 16px;
   }
 }
 
@@ -202,6 +207,10 @@
     font-size: 18px;
     font-size: 1.1rem;
     padding: 0.4em 0.7em;
+  }
+  
+  #go_to_top {
+    display: none;
   }
 }
 
