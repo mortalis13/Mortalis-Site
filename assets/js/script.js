@@ -52,8 +52,10 @@ $(function(){
   
   toTop.click(function(e) {
     e.preventDefault();
+    // -- fix in chrome
     // $.scrollTo(0, settings.scrollSpeed, {easing: settings.easingType});
-    $.scrollTo(0);
+    // $.scrollTo(0);
+    $("html, body").scrollTop(0);
     this.blur();
   });
   
