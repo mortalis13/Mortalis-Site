@@ -1,12 +1,15 @@
 
 .mobile hr.project-separator:after,
 .chrome hr.project-separator:after {
-  top: -0.65em;
+  top: -0.6em;
 }
-
 .mobile .project-header .title,
 .chrome .project-header .title {
   margin-bottom: 3px;
+}
+
+.gecko hr.project-separator:after {
+  top: -0.65em;
 }
 
 .ie hr.project-separator:after,

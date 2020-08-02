@@ -184,7 +184,7 @@
               </div>
               
               <div class="description clearfix">
-                <p>Dictionary shell which allows to add multi-language dictionary files in <a target="_blank" href="http://lingvo.com/"><b>Lingvo</b></a> <a href="http://lingvo.helpmax.net/en/troubleshooting/dsl-compiler/dsl-dictionary-structure" target="_blank">DSL</a> format and search across added dictionaries in various language directions.</p>
+                <p>Dictionary shell which allows to add multi-language dictionary files in <a target="_blank" href="http://lingvo.helpmax.net/en/troubleshooting/dsl-compiler/dsl-dictionary-structure"><b>Lingvo DSL</b></a> format and search across added dictionaries in various language directions.</p>
                 <p><b>DSL</b> is a text file with specific markup: a headword followed by an article body indented with spaces or tabs <a href="https://github.com/Tvangeste/SampleDSL/blob/master/sample.dsl" target="_blank"><b>[SampleDSL]</b></a>.</p>
                 <br>
                 <p class="project-features">Project features</p>
@@ -292,7 +292,7 @@
                 <br>
                 <p class="project-features">Development features</p>
                 <ul>
-                  <li>use of custom widgets and direct surface painting (TempoPresets, Sequencer, Spectrum)</li>
+                  <li>use of custom widgets and direct surface painting (<b>TempoPresets, Sequencer, Spectrum</b>)</li>
                   <li>direct audio I/O with <b>AudioTrack</b> technology</li>
                   <li>raw audio data reading from external <b>WAVE</b> files using a <a href="#cpp-native-libraries"><b>native (C++) library</b></a> with Android NDK</li>
                   <li>separate audio thread which constantly writes audio data (samples) to the buffer during the loop playback</li>
@@ -873,7 +873,7 @@
                   <li>created additional <a href="#wp-plugins"><b>plugins</b></a> for the front-end and back-end to help editing and organizing the contents</li>
                   <li>created colored categories within the theme</li>
                   <li>multi-language support</li>
-                  <li>program code highlight using a customly modified <a target="_blank" href="http://prismjs.com"><b>Prism</b></a> highlighter plugin,
+                  <li>program code highlight using a customly modified <a target="_blank" href="http://prismjs.com"><b>Prism</b></a> highlighter plugin
                     <a href="https://github.com/mortalis13/wp-prism-highlight" target="_blank">[plugin source]</a>
                     <a href="images/web-sites/pcadvice-ex1.png" target="_blank"><b>[example]</b></a>
                   </li>
@@ -937,7 +937,8 @@
             
             <div class="project" id="stater-point">
               <div class="title">
-                <a href="https://github.com/mortalis13/Starter-Point" target="_blank">Starter Point</a>
+                <a href="https://github.com/mortalis13/Starter-Point/releases" target="_blank">Starter Point</a>
+                <a title="GitHub Source" class="github-source-icon" target="_blank" href="https://github.com/mortalis13/Starter-Point"><span class="screen-reader-text">GitHub Source</span></a>
               </div>
               <div class="description">
                 <p>A simple responsive <a href="http://wordpress.org" target="_blank"><b>Wordpress</b></a> theme.</p>
@@ -962,7 +963,7 @@
                 <p class="project-features">Development features</p>
                 <ul>
                   <li>extended <b>Customizer</b> allows to change colors, add custom CSS text, adds <b>Most viewed posts</b> option for the main page</li>
-                  <li>used a set of Javascript plugins: <a href="http://ace.c9.io" target="_blank">Ace Editor</a>, <a href="http://www.appelsiini.net/projects/lazyload" target="_blank">LazyLoad</a>, <a href="https://superfish.joelbirch.co" target="_blank">Superfish</a>, <a href="http://masonry.desandro.com" target="_blank">Masonry</a>, <a href="http://wicky.nillia.ms/enquire.js" target="_blank">Enquire</a></li>
+                  <li>used a set of Javascript plugins: <a href="http://ace.c9.io" target="_blank">Ace Editor</a>, <a href="http://www.appelsiini.net/projects/lazyload" target="_blank">LazyLoad</a>, <a href="https://superfish.joelbirch.design" target="_blank">Superfish</a>, <a href="http://masonry.desandro.com" target="_blank">Masonry</a>, <a href="http://wicky.nillia.ms/enquire.js" target="_blank">Enquire</a></li>
                   <li>multi-language support using the <a href="https://poedit.net" target="_blank">Poedit</a> application</li>
                   <li>use of the <a href="http://lesscss.org/" target="_blank">LESS</a> technology for effective and easy CSS compilation</li>
                   <li>development of a custom <b>Theme Options</b> page with the use of <a href="http://ace.c9.io" target="_blank"><b>Ace Editor</b></a> as the internal web editor
@@ -1120,222 +1121,192 @@
             
             <div class="type-description">
               <p>The addons are small plugins for the <b>Firefox</b> browser that give additional functionality to the default browser features.</p>
-              <p>The source code uses mainly JavaScript, CSS, Firefox specific API and <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Mozilla/Tech/XUL"><b>XUL</b></a> markup.</p>
+              <p>The source code uses mainly JavaScript, CSS, <a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions" target="_blank"><b>WebExtensions API</b></a> and <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Mozilla/Tech/XUL"><b>XUL</b></a> markup for legacy code (prior to Firefox ~v55).</p>
             </div>
             
-            <div class="subtype">
-              <div class="subtype-title">Desktop Firefox</div>
-              
-              <div class="project" id="bookmarks-sidebar-button-pr">
-                <div class="title">
-                  <a href="https://addons.mozilla.org/en-US/firefox/addon/bookmarks-sidebar-button" target="_blank">Bookmarks Sidebar Button</a>
-                  <a title="GitHub Source" href="https://github.com/mortalis13/Bookmarks-Sidebar-Button" class="github-source-icon" target="_blank"><span class="screen-reader-text">GitHub Source</span></a>
-                </div>
-                <div class="description">
-                  <p>Adds a Bookmarks sidebar button to the <b>Toolbar Palette</b>.</p>
-                  <p>The button toggles the bookmarks panel on the left (equivalent to <span class="shortcut">Ctrl + B</span> shortcut).</p>
-                  <p>Primarily created for Firefox 29+ which doesn't have a button with this functionality.</p>
-                  <br>
-                  <p class="project-features">Development features</p>
-                  <ul>
-                    <li>addon installs without browser restart</li>
-                    <li>a simple checkbox button implementation which uses default browser command to open the panel</li>
-                    <li>a customized icon binded with a CSS style sheet</li>
-                  </ul>
-                </div>
-                <div class="images">
-                  <a href="images/addons/bookmarks-sidebar-button-1.jpg" target="_blank"><img class="project-image img-shadow" src="images/addons/bookmarks-sidebar-button-1.jpg" alt="Bookmarks Sidebar Button Image1"></a>
-                  <a href="images/addons/bookmarks-sidebar-button-2.jpg" target="_blank"><img class="project-image img-shadow" src="images/addons/bookmarks-sidebar-button-2.jpg" alt="Bookmarks Sidebar Button Image1"></a>
-                </div>
+            <div class="project">
+              <div class="title">
+                <a href="https://addons.mozilla.org/en-US/firefox/addon/close-tabs-shortcuts/" target="_blank">Close Tabs Shortcuts</a>
+                <a title="GitHub Source" href="https://github.com/mortalis13/Close-Tabs-Shortcuts-XPI" class="github-source-icon" target="_blank"><span class="screen-reader-text">GitHub Source</span></a>
               </div>
-              
-              <hr class="project-separator">
-              
-              <div class="project" id="regex-find-pr">
-                <div class="title">
-                  <a href="https://addons.mozilla.org/en-US/firefox/addon/regex-find" target="_blank">Regex Find</a>
-                  <a title="GitHub Source" href="https://github.com/mortalis13/Regex-Find" class="github-source-icon" target="_blank"><span class="screen-reader-text">GitHub Source</span></a>
-                </div>
-                <div class="description">
-                  <p>Adds a Regex checkbox to the findbar in Firefox 25+.</p>
-                  <p>This allows to search text on a page using <b>Regular expressions</b>.</p>
-                  <br>
-                  <p class="project-features">Project features</p>
-                  <ul>
-                    <li>customized colors for text and search background for more comfortable use</li>
-                    <li>exact number of matches (instead of the default <i>"100+"</i> message)</li>
-                    <li>find-all functionality with regular expressions</li>
-                    <li>search text inside edit/embedded elements (input, textarea, iframe)</li>
-                  </ul>
-                  <br>
-                  <p class="project-features">Development features</p>
-                  <ul>
-                    <li>integration into the standard search toolbar using <b>XML binding</b> technology</li>
-                    <li>recursive document scanning for the forward and backward text search</li>
-                    <li>intention to minimize possible errors in the incorrect use of regex queries</li>
-                    <li>custom text selection model (simulating the internal browser selection process)</li>
-                    <li>analysis of the <a href="https://ftp.mozilla.org/pub/firefox/releases/40.0/source/" target="_blank"><b>Firefox source code</b></a></li>
-                  </ul>
-                </div>
-                <div class="images">
-                  <a href="images/addons/regex-find-1.jpg" target="_blank"><img class="project-image img-shadow" src="images/addons/regex-find-1.jpg" alt="Regex Find Image1"></a>
-                  <a href="images/addons/regex-find-2.jpg" target="_blank"><img class="project-image img-shadow" src="images/addons/regex-find-2.jpg" alt="Regex Find Image1"></a>
-                  <a href="images/addons/regex-find-3.jpg" target="_blank"><img class="project-image img-shadow" src="images/addons/regex-find-3.jpg" alt="Regex Find Image1"></a>
-                </div>
+              <div class="description">
+                <p>The addon provides additional keyboard shortcuts to close unneeded browser tabs.</p>
+                <br>
+                <p class="project-features">Project features</p>
+                <ul>
+                  <li>the shortcut <span class="shortcut">Alt + W</span> - closes all tabs except the current one</li>
+                  <li>the shortcut <span class="shortcut">Alt + Shift + F1</span> - closes all tabs to the left of the current one</li>
+                  <li>the shortcut <span class="shortcut">Alt + Shift + F2</span> - closes all tabs to the right of the current one</li>
+                  <li><span class="new">new</span> starting from <a href="https://www.mozilla.org/en-US/firefox/66.0/releasenotes" target="_blank"><b>Firefox 66</b></a>, it's possible to change default shortcuts in the <b>Manage Extension Shortcuts</b> addons settings <a href="https://github.com/mortalis13/Close-Tabs-Shortcuts-XPI/issues/1#issuecomment-583296975" target="_blank"><b>[related issue]</b></a></li>
+                </ul>
+                <br>
+                <p class="project-features">Development features</p>
+                <ul>
+                  <li>implementation of a custom <b>jQuery-like</b> code structure for easier use of JavaScript methods</li>
+                  <li>use of standard <b>Firefox API</b> and custom algorithms for the provided actions</li>
+                </ul>
               </div>
-              
-              <hr class="project-separator">
-              
-              <div class="project">
-                <div class="title">
-                  <a href="https://addons.mozilla.org/en-US/firefox/addon/close-tabs-shortcuts/" target="_blank">Close Tabs Shortcuts</a>
-                  <a title="GitHub Source" href="https://github.com/mortalis13/Close-Tabs-Shortcuts-XPI" class="github-source-icon" target="_blank"><span class="screen-reader-text">GitHub Source</span></a>
-                </div>
-                <div class="description">
-                  <p>The addon provides additional keyboard shortcuts to close unneeded browser tabs.</p>
-                  <br>
-                  <p class="project-features">Project features</p>
-                  <ul>
-                    <li>the shortcut <span class="shortcut">Alt + W</span> - closes all tabs except the current one</li>
-                    <li>the shortcut <span class="shortcut">Alt + Shift + F1</span> - closes all tabs to the left of the current one</li>
-                    <li>the shortcut <span class="shortcut">Alt + Shift + F2</span> - closes all tabs to the right of the current one</li>
-                    <li><span class="new">new</span> starting from <a href="https://www.mozilla.org/en-US/firefox/66.0/releasenotes" target="_blank"><b>Firefox 66</b></a>, it's possible to change default shortcuts in the <b>Manage Extension Shortcuts</b> addons settings <a href="https://github.com/mortalis13/Close-Tabs-Shortcuts-XPI/issues/1#issuecomment-583296975" target="_blank"><b>[related issue]</b></a></li>
-                  </ul>
-                  <br>
-                  <p class="project-features">Development features</p>
-                  <ul>
-                    <li>implementation of a custom <b>jQuery-like</b> code structure for easier use of JavaScript methods</li>
-                    <li>use of standard <b>Firefox API</b> and custom algorithms for the provided actions</li>
-                  </ul>
-                </div>
-              </div>
-              
-              <hr class="project-separator">
-              
-              <div class="project" id="toggle-images-js">
-                <div class="title">
-                  <a href="https://addons.mozilla.org/en-US/firefox/addon/toggle-images-and-js" target="_blank">Toggle Images and JS</a>
-                  <a title="GitHub Source" href="https://github.com/mortalis13/Toggle-Images-and-JS" class="github-source-icon" target="_blank"><span class="screen-reader-text">GitHub Source</span></a>
-                </div>
-                <div class="description">
-                  <p>Adds buttons to the Toolbar that toggle <b>Images</b> and <b>JavaScript</b> loading for all the pages.</p>
-                  <br>
-                  <p class="project-features">Development features</p>
-                  <ul>
-                    <li>development of two buttons which act like checkboxes and change its color on toggling</li>
-                    <li>implementation of preference observer which is used to display correct state of buttons in multiple browser windows</li>
-                  </ul>
-                </div>
-                <div class="images">
-                  <a href="images/addons/toggle-images-js-1.png" target="_blank"><img class="project-image" src="images/addons/toggle-images-js-1.png" alt="Toggle Images and JS Image1"></a>
-                  <a href="images/addons/toggle-images-js-2.png" target="_blank"><img class="project-image" src="images/addons/toggle-images-js-2.png" alt="Toggle Images and JS Image1"></a>
-                </div>
-              </div>
-              
-              <hr class="project-separator">
-              
-              <div class="project">
-                <div class="title">
-                  <a href="https://addons.mozilla.org/en-US/firefox/addon/bookmark-shortcuts" target="_blank">Bookmark Shortcuts</a>
-                  <a title="GitHub Source" href="https://github.com/mortalis13/Bookmark-Shortcuts" class="github-source-icon" target="_blank"><span class="screen-reader-text">GitHub Source</span></a>
-                </div>
-                <div class="description">
-                  <p>This addon adds shortcuts in the Bookmarks Toolbar.</p>
-                  <p>This allows to open frequently used bookmarks much faster and more comfortable.</p>
-                  <br>
-                  <p class="project-features">Project features</p>
-                  <ul>
-                    <li><span class="shortcut">Alt + 1..9, 0</span> shortcuts open the first 10 bookmarks in the same tab</li>
-                    <li><span class="shortcut">Alt + Shift + 1..9, 0</span> open first 10 bookmarks in a new tab</li>
-                    <li>opens bookmarks independently of the visibility of the Bookmarks Toolbar</li>
-                  </ul>
-                </div>
-              </div>
-              
-              <hr class="project-separator">
             </div>
             
-            <div class="subtype android-addons">
-              <div class="subtype-title">Firefox for Android</div>
+            <hr class="project-separator">
             
-              <div class="project">
-                <div class="title">
-                  <a href="https://addons.mozilla.org/en-US/android/addon/my-panel" target="_blank">My Panel</a>
-                  <a title="GitHub Source" href="https://github.com/mortalis13/My-Panel" class="github-source-icon" target="_blank"><span class="screen-reader-text">GitHub Source</span></a>
-                </div>
-                <div class="description">
-                  <p>Adds a customizable homepage panel <b>"My Panel"</b> with the grid layout.</p>
-                  <br>
-                  <p class="project-features">Project features</p>
-                  <ul>
-                    <li>loads any number of custom links with/without titles</li>
-                    <li>loaded links may be used like bookmarks to open frequently used pages</li>
-                    <li>possibility load URLs from a text file</li>
-                  </ul>
-                  <br>
-                  <p class="project-features">Development features</p>
-                  <ul>
-                    <li>use of a <b>file picker</b> to select a text file with links</li>
-                    <li>use of a stock <b>file IO</b> provided by the <b>Firefox Android API</b></li>
-                    <li>use of the <b>XMLHTTPRequest</b> class to asynchronously retrieve text data from an input file</li>
-                  </ul>
-                </div>
-                <div class="images">
-                  <a href="images/addons/my-panel-1.png" target="_blank"><img class="project-image" src="images/addons/my-panel-1.png" alt="My Panel Image1"></a>
-                  <a href="images/addons/my-panel-2.png" target="_blank"><img class="project-image" src="images/addons/my-panel-2.png" alt="My Panel Image1"></a>
-                </div>
+            <div class="project">
+              <div class="title">
+                <a href="https://addons.mozilla.org/en-US/firefox/addon/bookmark-shortcuts" target="_blank">Bookmark Shortcuts</a>
+                <a title="GitHub Source" href="https://github.com/mortalis13/Bookmark-Shortcuts" class="github-source-icon" target="_blank"><span class="screen-reader-text">GitHub Source</span></a>
               </div>
-              
-              <hr class="project-separator">
-              
-              <div class="project">
-                <div class="title">
-                  <a href="https://addons.mozilla.org/en-US/firefox/addon/tabs-export" target="_blank">Tabs Export</a> <a title="GitHub Source" href="https://github.com/mortalis13/Tabs-Export-XPI-Android" class="github-source-icon" target="_blank"><span class="screen-reader-text">GitHub Source</span></a><br><a href="https://addons.mozilla.org/en-US/firefox/addon/tabs-import" target="_blank">Tabs Import</a>
-                  <a title="GitHub Source" href="https://github.com/mortalis13/Tabs-Import-XPI-Android" class="github-source-icon" target="_blank"><span class="screen-reader-text">GitHub Source</span></a>
-                </div>
-                <div class="description">
-                  <p>Adds the Export/Import Tabs menu items.</p>
-                  <p>Addons are migrated to the <b>WebExtensions</b> standard from the old <a href="https://addons.mozilla.org/en-US/firefox/addon/tabs-backup">Tabs Backup</a> extension.</p>
-                  <p>These commands allow to save a text file with current tabs' addresses and then restore the opened tabs from that file.</p>
-                  <br>
-                  <p class="project-features">Project features</p>
-                  <ul>
-                    <li class="break-words-xxs"><b>Export Tabs</b> - saves tabs' addresses to a text file in the "/sdcard/Download" folder</li>
-                    <li><b>Import Tabs</b> - loads URLs taken from a text file opened in the browser</li>
-                  </ul>
-                </div>
+              <div class="description">
+                <p>This addon adds shortcuts in the Bookmarks Toolbar.</p>
+                <p>This allows to open frequently used bookmarks much faster and more comfortable.</p>
+                <br>
+                <p class="project-features">Project features</p>
+                <ul>
+                  <li><span class="shortcut">Alt + 1..9, 0</span> shortcuts open the first 10 bookmarks in the same tab</li>
+                  <li><span class="shortcut">Alt + Shift + 1..9, 0</span> open first 10 bookmarks in a new tab</li>
+                  <li>opens bookmarks independently of the visibility of the Bookmarks Toolbar</li>
+                </ul>
               </div>
-              
-              <hr class="project-separator">
-              
-              <div class="project">
-                <div class="title">
-                  <a href="https://addons.mozilla.org/en-US/android/addon/copy-paste-location/" target="_blank">Copy Paste Location</a>
-                  <a title="GitHub Source" href="https://github.com/mortalis13/Copy-Paste-Location" class="github-source-icon" target="_blank"><span class="screen-reader-text">GitHub Source</span></a>
-                </div>
-                <div class="description">
-                  <p>Adds the Copy/Paste buttons to the URL bar.</p>
-                  <br>
-                  <p class="project-features">Project features</p>
-                  <ul>
-                    <li><b>Copy Location</b> command - copies current page address</li>
-                    <li><b>Paste And Go</b> command - pastes the clipboard contents into the URL bar and goes to its address</li>
-                    <li><b>Paste In New Tab</b> command - creates a new tab and goes to the location taken from the clipboard</li>
-                  </ul>
-                </div>
+            </div>
+            
+            <hr class="project-separator">
+            
+            <div class="project">
+              <div class="title">
+                <a href="https://addons.mozilla.org/en-US/firefox/addon/open-last-download" target="_blank">Open Last Download</a>
+                <a title="GitHub Source" href="https://github.com/mortalis13/Open-Last-Download-XPI" class="github-source-icon" target="_blank"><span class="screen-reader-text">GitHub Source</span></a>
               </div>
-              
-              <hr class="project-separator">
-              
-              <div class="project">
-                <div class="title">
-                  <a href="https://addons.mozilla.org/en-US/android/addon/links-in-new-tab" target="_blank">Links in New Tab</a>
-                  <a title="GitHub Source" href="https://github.com/mortalis13/Links-in-New-Tab" class="github-source-icon" target="_blank"><span class="screen-reader-text">GitHub Source</span></a>
-                </div>
-                <div class="description">
-                  <p>Adds a checkbox which toggles the possibility to open all links in new tabs.</p>
-                  <p>The addon works for already opened tabs and new ones.</p>
-                </div>
+              <div class="description">
+                <p>Opens the last downloaded file from the browser.</p>
+                <br>
+                <p>Saves a couple of mouse clicks allowing to press a toolbar <b>button</b> or the <span class="shortcut">F1</span> shortcut instead of opening the downloads folder and double-clicking the file.</p>
+                <p>The default shortcut may be changed via the <b>Manage Extension Shortcuts</b> window in the addon settings page</p>
+              </div>
+              <div class="images">
+                <a href="images/addons/open-last-download-1.png" target="_blank"><img class="project-image img-shadow" src="images/addons/open-last-download-1.png" alt="Open Last Download Image1"></a>
+              </div>
+            </div>
+            
+            <hr class="project-separator">
+            
+            <div class="project">
+              <div class="title">
+                <a href="https://addons.mozilla.org/en-US/firefox/addon/tabs-export" target="_blank">Tabs Export</a> <a title="GitHub Source" href="https://github.com/mortalis13/Tabs-Export-XPI-Android" class="github-source-icon" target="_blank"><span class="screen-reader-text">GitHub Source</span></a>, <a href="https://addons.mozilla.org/en-US/firefox/addon/tabs-import" target="_blank">Tabs Import</a>
+                <a title="GitHub Source" href="https://github.com/mortalis13/Tabs-Import-XPI-Android" class="github-source-icon" target="_blank"><span class="screen-reader-text">GitHub Source</span></a>
+              </div>
+              <div class="description">
+                <p>Addons for Firefox for Android which add the <b><i>Export/Import Tabs</i></b> menu items.</p>
+                <p>These commands allow to save a text file with current tabs' addresses and then restore the opened tabs from that file.</p>
+                <br>
+                <p>The addons were migrated to the <b>WebExtensions</b> standard from the old <b>Tabs Backup</b> extension which is currently discontinued due to the incompatibility with the newest addon API changes.</p>
+                <br>
+                <p class="project-features">Project features</p>
+                <ul>
+                  <li class="break-words-xxs"><b>Export Tabs</b> - saves tabs' addresses to a text file in the "/sdcard/Download" folder</li>
+                  <li><b>Import Tabs</b> - loads URLs taken from a text file opened in the browser</li>
+                </ul>
+              </div>
+            </div>
+            
+            <hr class="project-separator">
+            
+            
+            <!-- ==Legacy== -->
+            <div class="subtype-title">Legacy Addons (Firefox ~25-50)</div>
+            
+            <div class="project" id="bookmarks-sidebar-button-pr">
+              <div class="title">
+                <a href="https://github.com/mortalis13/Bookmarks-Sidebar-Button" target="_blank">Bookmarks Sidebar Button</a>
+              </div>
+              <div class="description">
+                <p>Adds a Bookmarks sidebar button to the <b>Toolbar Palette</b>.</p>
+                <p>The button toggles the bookmarks panel on the left (equivalent to <span class="shortcut">Ctrl + B</span> shortcut).</p>
+                <p>Primarily created for Firefox 29+ which doesn't have a button with this functionality.</p>
+                <br>
+                <p class="project-features">Development features</p>
+                <ul>
+                  <li>addon installs without browser restart</li>
+                  <li>a simple checkbox button implementation which uses default browser command to open the panel</li>
+                  <li>a customized icon binded with a CSS style sheet</li>
+                </ul>
+              </div>
+              <div class="images">
+                <a href="images/addons/bookmarks-sidebar-button-1.jpg" target="_blank"><img class="project-image img-shadow" src="images/addons/bookmarks-sidebar-button-1.jpg" alt="Bookmarks Sidebar Button Image1"></a>
+                <a href="images/addons/bookmarks-sidebar-button-2.jpg" target="_blank"><img class="project-image img-shadow" src="images/addons/bookmarks-sidebar-button-2.jpg" alt="Bookmarks Sidebar Button Image1"></a>
+              </div>
+            </div>
+            
+            <hr class="project-separator">
+            
+            <div class="project" id="regex-find-pr">
+              <div class="title">
+                <a href="https://github.com/mortalis13/Regex-Find" target="_blank">Regex Find</a>
+              </div>
+              <div class="description">
+                <p>Adds a Regex checkbox to the findbar in Firefox 25+.</p>
+                <p>This allows to search text on a page using <b>Regular expressions</b>.</p>
+                <br>
+                <p class="project-features">Project features</p>
+                <ul>
+                  <li>customized colors for text and search background for more comfortable use</li>
+                  <li>exact number of matches (instead of the default <i>"100+"</i> message)</li>
+                  <li>find-all functionality with regular expressions</li>
+                  <li>search text inside edit/embedded elements (input, textarea, iframe)</li>
+                </ul>
+                <br>
+                <p class="project-features">Development features</p>
+                <ul>
+                  <li>integration into the standard search toolbar using <b>XML binding</b> technology</li>
+                  <li>recursive document scanning for the forward and backward text search</li>
+                  <li>intention to minimize possible errors in the incorrect use of regex queries</li>
+                  <li>custom text selection model (simulating the internal browser selection process)</li>
+                  <li>analysis of the <a href="https://ftp.mozilla.org/pub/firefox/releases/40.0/source/" target="_blank"><b>Firefox source code</b></a></li>
+                </ul>
+              </div>
+              <div class="images">
+                <a href="images/addons/regex-find-1.jpg" target="_blank"><img class="project-image img-shadow" src="images/addons/regex-find-1.jpg" alt="Regex Find Image1"></a>
+                <a href="images/addons/regex-find-2.jpg" target="_blank"><img class="project-image img-shadow" src="images/addons/regex-find-2.jpg" alt="Regex Find Image1"></a>
+                <a href="images/addons/regex-find-3.jpg" target="_blank"><img class="project-image img-shadow" src="images/addons/regex-find-3.jpg" alt="Regex Find Image1"></a>
+              </div>
+            </div>
+            
+            <hr class="project-separator">
+            
+            <div class="project" id="toggle-images-js">
+              <div class="title">
+                <a href="https://github.com/mortalis13/Toggle-Images-and-JS" target="_blank">Toggle Images and JS</a>
+              </div>
+              <div class="description">
+                <p>Adds buttons to the Toolbar that toggle <b>Images</b> and <b>JavaScript</b> loading for all the pages.</p>
+                <p><i>[Was used in Firefox prior to <b>version 57</b>]</i></p>
+                <br>
+                <p class="project-features">Development features</p>
+                <ul>
+                  <li>development of two buttons which act like checkboxes and change its color on toggling</li>
+                  <li>implementation of preference observer which is used to display correct state of buttons in multiple browser windows</li>
+                </ul>
+              </div>
+              <div class="images">
+                <a href="images/addons/toggle-images-js-1.png" target="_blank"><img class="project-image" src="images/addons/toggle-images-js-1.png" alt="Toggle Images and JS Image1"></a>
+                <a href="images/addons/toggle-images-js-2.png" target="_blank"><img class="project-image" src="images/addons/toggle-images-js-2.png" alt="Toggle Images and JS Image1"></a>
+              </div>
+            </div>
+            
+            <hr class="project-separator">
+            
+            <div class="project">
+              <div class="title">
+                <a href="https://github.com/mortalis13/Copy-Paste-Location" target="_blank">Copy Paste Location</a>
+              </div>
+              <div class="description">
+                <p>Adds the Copy/Paste buttons to the URL bar.</p>
+                <p><i>[Was used in Firefox for Android prior to <b>version 37</b>]</i></p>
+                <br>
+                <p class="project-features">Project features</p>
+                <ul>
+                  <li><b>Copy Location</b> command - copies current page address</li>
+                  <li><b>Paste And Go</b> command - pastes the clipboard contents into the URL bar and goes to its address</li>
+                  <li><b>Paste In New Tab</b> command - creates a new tab and goes to the location taken from the clipboard</li>
+                </ul>
               </div>
             </div>
           </div>
@@ -1467,13 +1438,25 @@
                   <li>data analysis</li>
                 </ul>
                 <br>
-                <p>Examples:</p>
+                <p>Some examples:</p>
                 <ul>
+                  <li><b>scipy/audio_fft_calc</b> - calculates <b>Fast Fourier Transform</b> (FFT) for an audio <b>WAV</b> file</li>
+                  <li><b>scipy/audio_wave_plot</b> - plots a graph for an audio wave in the time domain</li>
+                  <li><b>scipy/extract_audio_pcm</b> - writes audio data from a <b>WAV</b> file as text</li>
+                  <br>
                   <li><b>addons_download</b> - downloads Firefox addons by direct URLs using the <b>Web Scraping</b></li>
+                  <li><b>archive_process</b> - scans ZIP files and gets their content</li>
+                  <li><b>bankia_api</b> - reads data from a bank account using its API methods</li>
+                  <li><b>covid_stat_csv</b> - generates world statistics on COVID-19 spread and plots a graph in a XLS file</li>
                   <li><b>cue_split</b> - splits <b>FLAC</b> audio files using a <b>CUE</b> list</li>
+                  <li><b>directory_structure_duplicate</b> - makes a duplicate of a folder tree without copying files</li>
                   <li><b>ftp_list</b> - gets a list of files in <b>FTP</b> directories</li>
-                  <li><b>get_java_imports</b> - extracts Java imports from <b>.java</b> files recursively from a directory</li>
+                  <li><b>get_java_imports</b> - extracts imports from <b>Java</b> files recursively in a directory</li>
+                  <li><b>gmail_api-remove_unread</b> - removes unread messages from a Gmail account using <b>Gmail API</b></li>
+                  <li><b>parse_html</b> - walks through HTML elements tree and extracts information</li>
                   <li><b>pdf_merge</b> - combines multiple <b>PDF</b> files or images into one PDF document</li>
+                  <li><b>replace_string_in_files</b> - replaces a string in all text files in a folder</li>
+                  <li><b>torrent_parse</b> - extracts a torrent file contents to a text file</li>
                 </ul>
               </div>
             </div>
@@ -1485,7 +1468,7 @@
                 <a href="https://github.com/mortalis13/SublimeSettings/tree/master/user-plugins" target="_blank">Sublime Plugins</a>
               </div>
               <div class="description">
-                <p><a href="http://sublimetext.com" target="_blank"><b>Sublime Text</b></a> editor specific scripts written in <b>Python</b> using the <a href="http://docs.sublimetext.info/en/latest/reference/api.html" target="_blank"><b>Sublime API</b></a>.</p>
+                <p><a href="http://sublimetext.com" target="_blank"><b>Sublime Text</b></a> editor specific scripts written in <b>Python</b> using the <a href="https://www.sublimetext.com/docs/3/api_reference.html" target="_blank"><b>Sublime API</b></a>.</p>
                 <p>Used mainly for text editing and interface control as well as filesystem manipulation.</p>
                 <br>
                 <p>Description of some scripts:</p>

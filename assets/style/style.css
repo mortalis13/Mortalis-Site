@@ -723,7 +723,7 @@ hr.project-separator:after {
   content: "\2022";
   display: inline-block;
   position: relative;
-  top: -0.73em;
+  top: -0.7em;
   font-size: 1.5em;
   padding: 0 0.25em;
   background: white;
