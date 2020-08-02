@@ -570,27 +570,32 @@ a:focus {
   background: transparent;
 }
 .footer-content {
-  padding: 16px 24px;
-  padding: 1rem 1.5rem;
+  padding: 14px 24px;
 }
 .footer-content .footer-info {
   padding: 0;
 }
 
-/*#footer #toTop {
-  padding: 7px 12px;
-  background: #eee;
-  border-radius: 4px;
+#footer a.footer-github-source-icon {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: -3px;
+  margin-left: 2px;
+  font-size: 1.6em;
+  line-height: 1;
+  color: #555;
+}
+#footer a.footer-github-source-icon:hover,
+#footer a.footer-github-source-icon:focus {
+  color: #111;
   text-decoration: none;
-  cursor: pointer;
 }
-#footer #toTop:hover {
-  background: #ddd;
+#footer a.footer-github-source-icon::before {
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-family: 'Fontawesome';
+  content: '\f09b';
 }
-#footer #toTop:focus,
-#footer #toTop:active {
-  outline: none;
-}*/
 
 
 /*------------------------------------ Clearing ------------------------------------*/
