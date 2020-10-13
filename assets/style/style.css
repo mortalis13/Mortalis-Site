@@ -454,7 +454,6 @@ a:focus {
 }
 #projects .project-type#android .images img {
   max-height: 272px;
-  max-height: 17rem;
   box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.2);
 }
 #projects .project-type#android .images img.project-image {
@@ -479,6 +478,17 @@ a:focus {
   margin-bottom: 4px;
   width: 208px;
   box-shadow: none !important;
+}
+
+#projects .project-type#android #kodi-control .project-icon {
+  padding-top: 0;
+}
+#projects .project-type#android #kodi-control .images img {
+  max-height: 320px;
+}
+
+#projects .project-type#android #task-lister .images img {
+  max-height: 320px;
 }
 
 #projects #qtcolorpicker .images img {
