@@ -46,6 +46,20 @@ a:hover,
 a:focus {
   text-decoration: underline;
 }
+pre, code {
+  padding: 8px 14px;
+  margin: 0;
+  font-size: 85%;
+  background-color: #1b1f2317;
+  color: #000;
+  border-radius: 2px;
+  font-family: Consolas, monospace;
+  cursor: default;
+  line-height: 1.4;
+}
+pre {
+  width: 90%;
+}
 
 .image-full {
   max-width: 100% !important;
@@ -69,6 +83,9 @@ a:focus {
 
 .mb5 {
   margin-bottom: 5px;
+}
+.mb7 {
+  margin-bottom: 7px;
 }
 .mt5 {
   margin-top: 5px;
@@ -508,10 +525,10 @@ a:focus {
   max-height: 24rem;
 }
 
-#projects #cpp-native-libraries .project-modules-list {
+#projects .project-modules-list {
   margin-top: 1em;
 }
-#projects #cpp-native-libraries .project-modules-list li {
+#projects .project-modules-list li {
   margin-top: 0.5em;
 }
 
