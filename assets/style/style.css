@@ -50,7 +50,7 @@ pre, code {
   padding: 10px 18px;
   margin: 0;
   font-size: 85%;
-  background-color: #1b1f2317;
+  background-color: #1b1f230d;
   color: #000;
   border-radius: 3px;
   font-family: Consolas, monospace;
@@ -85,13 +85,13 @@ pre {
   margin-bottom: 0 !important;
 }
 .mb5 {
-  margin-bottom: 5px;
+  margin-bottom: 5px !important;
 }
 .mb7 {
-  margin-bottom: 7px;
+  margin-bottom: 7px !important;
 }
 .mt5 {
-  margin-top: 5px;
+  margin-top: 5px !important;
 }
 
 .shortcut {
