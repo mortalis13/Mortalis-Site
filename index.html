@@ -125,13 +125,13 @@
         
         <div id="projects-nav" class="scrollspy">
           <ul id="nav" class="nav hidden-xs hidden-sm" data-spy="affix">
-            <li><a href="#android">Android (7)</a></li>
-            <li><a href="#qt-cpp">Qt / C++ (6)</a></li>
-            <li><a href="#web-sites">Web Sites (2)</a></li>
+            <li><a href="#android">Android (8)</a></li>
+            <li><a href="#qt-cpp">Qt / C++ (8)</a></li>
+            <li><a href="#web-sites">Web Sites (3)</a></li>
             <li><a href="#wordpress">Wordpress (3)</a></li>
             <li><a href="#joomla">Joomla (2)</a></li>
             <li><a href="#firefox-addons">Firefox Addons (8)</a></li>
-            <li><a href="#misc">Misc (5)</a></li>
+            <li><a href="#misc">Misc (8)</a></li>
           </ul>
         </div>
         
@@ -142,8 +142,8 @@
                 <tr>
                   <td>
                     <div class="menu-part">
-                      <div class="projects-menu-item"><a href="#android">Android (7)</a></div>
-                      <div class="projects-menu-item"><a href="#qt">Qt / C++ (6)</a></div>
+                      <div class="projects-menu-item"><a href="#android">Android (8)</a></div>
+                      <div class="projects-menu-item"><a href="#qt">Qt / C++ (8)</a></div>
                       <div class="projects-menu-item"><a href="#web-sites">Web Sites (2)</a></div>
                       <div class="projects-menu-item"><a href="#wordpress">Wordpress (3)</a></div>
                     </div>
@@ -152,7 +152,7 @@
                     <div class="menu-part">
                       <div class="projects-menu-item"><a href="#joomla">Joomla (2)</a></div>
                       <div class="projects-menu-item"><a href="#firefox-addons">Firefox Addons (8)</a></div>
-                      <div class="projects-menu-item"><a href="#misc">Misc (5)</a></div>
+                      <div class="projects-menu-item"><a href="#misc">Misc (8)</a></div>
                     </div>
                   </td>
                 </tr>
@@ -218,7 +218,7 @@
                 </ul>
                 <br>
                 
-                <p class="project-features"><a class="docs-link" href="https://mortalis13.github.io/HomeDictionary" target="_blank">Instructions</a></p>
+                <p class="project-features"><a class="docs-link" href="https://mortalis13.github.io/HomeDictionary/#/main#usage" target="_blank">Instructions</a></p>
                 <ul>
                   <li>start the app and wait for the demo data to load for the first time</li>
                   <li>select a language direction from available items in the list</li>
@@ -451,7 +451,7 @@
                 <p class="project-features">Development features</p>
                 <ul>
                   <li>use of <b>ViewPager</b> component with tabs to easily switch between sections</li>
-                  <li>use of a custom <a href="https://rogerkeays.com/simple-android-file-chooser" target="_blank"><b>FileChooser</b></a> dialog to select a text file or database to import data from</li>
+                  <li>use of a custom <b>FileChooser</b> dialog to select a text file or database to import data from</li>
                   <li>database management using the <b>SQLiteOpenHelper</b> class which works with the <a href="https://www.sqlite.org" target="_blank"><b>SQLite</b></a> database technology</li>
                   <li>app style customization to get a desired interface look & feel</li>
                   <li>customization of the <b>ListView</b> widget items</li>
@@ -669,7 +669,7 @@
                 </ul>
               </div>
               <div class="images">
-                <a href="images/projects/qtcolorpicker-1.png" target="_blank"><img class="project-image" src="images/projects/qtcolorpicker-1.png" alt="QtColorPicker Image1"></a>
+                <a href="images/projects/qtcolorpicker-1.png" target="_blank"><img class="project-image" src="images/projects/qtcolorpicker-1.png" alt="QtColorPicker Image1"></a><br>
                 <a href="images/projects/qtcolorpicker-2.png" target="_blank"><img class="project-image" src="images/projects/qtcolorpicker-2.png" alt="QtColorPicker Image2"></a>
               </div>
             </div>
@@ -884,7 +884,7 @@
                 <p>Libraries used in Android projects as <b>NDK</b> modules.</p>
                 <ul class="list-aligned project-modules-list">
                   <li><a href="https://github.com/mortalis13/NativeLibraries/tree/master/audio_engine" target="_blank"><b>audio_engine</b></a> used in the <a href="#metronomix"><b>Metronomix</b></a> project.<br>
-                  Extracts raw audio data from <b>WAVE</b> files and calculates <b>FFT</b> data for spectrum visualization (using the <a href="http://www.fftw.org" target="_blank"><b>fftw</b></a> external library).</li>
+                  Extracts raw audio data from <b>WAVE</b> files and calculates <b>FFT</b> data for spectrum visualization (using the <a href="#libfftw3"><b>fftw</b></a> external library).</li>
                   <li><a href="https://github.com/mortalis13/NativeLibraries/tree/master/dsl_library" target="_blank"><b>dsl_library</b></a> used in the <a href="#home-dictionary"><b>Home Dictionary</b></a> project.<br>
                   Reads <b>DSL</b> (or compressed <b>DSL.DZ</b>) dictionary files, generates search indexes, parses articles and generates HTML content of an article.</li>
                 </ul>
@@ -900,8 +900,8 @@
               <div class="description">
                 <p>External <b>C</b> libraries adapted for use with <b>Android NDK</b> modules.</p>
                 <ul class="list-aligned project-modules-list">
-                  <li><a href="https://github.com/mortalis13/libfftw3-android" target="_blank"><b>libfftw3</b></a><br>
-                  Library for computing the <b>Discrete Fourier Transform</b> (DFT) and <b>Discrete Hartley Transform</b> (DHT). <br>Based on the <a target="_blank" href="fftw.org"><b>fftw</b></a> source.</li>
+                  <li><a href="https://github.com/mortalis13/libfftw3-android" target="_blank" id="libfftw3"><b>libfftw3</b></a><br>
+                  Library for computing the <b>Discrete Fourier Transform</b> (DFT) and <b>Discrete Hartley Transform</b> (DHT). <br>Based on the <a target="_blank" href="http://fftw.org"><b>fftw</b></a> source.</li>
                   <li><a href="https://github.com/mortalis13/libiconv-android" target="_blank"><b>libiconv</b></a><br>
                   Library for character encoding conversion. <br>Based on the <a target="_blank" href="https://www.gnu.org/software/libiconv"><b>GNU libiconv</b></a> source.</li>
                 </ul>
@@ -990,7 +990,7 @@
                 <p class="project-features">Development features</p>
                 <ul>
                   <li>created custom handler scripts for the <b>Contact</b> form and the <b>Newsletters</b> module</li>
-                  <li>developed a custom image zoom plugin based on the <a target="_blank" href="elevateweb.co.uk/image-zoom"><b>jQuery elevateZoom</b></a></li>
+                  <li>developed a custom image zoom plugin based on the <a target="_blank" href="https://elevateweb.co.uk/image-zoom"><b>jQuery elevateZoom</b></a></li>
                   <li>use of modified <b>WooCommerce</b> templates</li>
                 </ul>
               </div>
@@ -1098,6 +1098,7 @@
             
             <hr class="project-separator">
             
+            <div id="wp-plugins"></div> <!-- used as an anchor in another section -->
             <div class="project" id="html-post-editor">
               <div class="title">
                 <a href="https://wordpress.org/plugins/html-post-editor-new" target="_blank">HTML Post Editor</a>
