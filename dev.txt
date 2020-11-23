@@ -1,0 +1,7 @@
+https://unpkg.com/vue
+https://unpkg.com/vue-router
+https://unpkg.com/http-vue-loader
+
+== tasks
+- vue scrollspy for projects menu
+- scroll to project hash when the hash is already selected
