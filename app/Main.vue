@@ -159,7 +159,7 @@ let projects = {
 
 module.exports = {
 data() { return {
-  version: 'v1.4.0',
+  version: 'v1.4.1',
   year: 2020,
   
   categories: [
