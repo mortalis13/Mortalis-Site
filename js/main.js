@@ -2,6 +2,8 @@ $(function(){
   $("#contacts-menu a").click(function(){ $(this).blur() });
   $('[data-toggle="tooltip"]').tooltip();
   
+  // $(".prof").html("[" + $(window).outerWidth() + ", " + $(window).outerHeight() + "]");
+  
   // ----- browsers
   if (window.opera && window.opera.version() < 12) {
     document.documentElement.className += ' opera11';
@@ -12,14 +14,6 @@ $(function(){
   
   // ----- affix
   $('#projects-nav').affix({offset: {top: $('#projects').offset().top-30}})
-  // $('#nav').affix({
-  //   offset: {
-  //     // top: $('#nav').offset().top
-  //     top: $('#projects').offset().top
-  //     // bottom: $('footer').outerHeight(true) + $('.application').outerHeight(true) + 40
-  //   }
-  // });
-  // $('#projects-nav').css({top: $('#projects').offset().top});
   
   // ----- toTop config
   var settings = {

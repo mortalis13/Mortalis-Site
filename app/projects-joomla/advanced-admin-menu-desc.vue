@@ -10,7 +10,7 @@
   <li>view the list of plugin folders and appropriate plugins inside them</li>
   <li>view the list of the <b>Styles</b> and <b>Templates</b> views</li>
   <li>show the status of different components, plugins, menu items (disabled/enabled) via red/white colors</li>
-  <li>the menu is always active (by default the deactivates when editing an article)</li>
+  <li>the menu is always active (by default it deactivates in article edition mode)</li>
 </ul>
 </div>
 </template>

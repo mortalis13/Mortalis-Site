@@ -1,48 +1,38 @@
-@media screen and (min-width: 2000px) {
+@media (min-width: 2000px) {
   .project-image {
     max-height: 320px !important;
     max-height: 20rem !important;
-  }
-  #projects #homedict-java img {
-    max-height: 24rem !important;
-  }
-  #projects #create-folders img {
-    max-height: 22rem !important;
   }
   #projects #path-edit img {
     max-height: 22rem !important;
   }
 }
 
-@media screen and (max-width: 1800px) {
+@media (max-width: 1800px) {
   #projects-nav {
     margin-left: -288px;
     margin-left: -18rem;
   }
 }
 
-@media screen and (max-width: 1700px) {
+@media (max-width: 1700px) {
   #projects-nav {
     margin-left: -272px;
     margin-left: -17rem;
   }
 }
 
-@media screen and (max-width: 1600px) {
+@media (max-width: 1600px) {
   .project .project-separator-div {
     margin-left: -22px;
   }
 }
 
-@media screen and (max-width: 1500px) {
+@media (max-width: 1500px) {
   #projects-nav {
     margin-left: -256px;
     margin-left: -16rem;
     font-size: 15px;
-  }
-  #projects .image-container,
-  #projects img {
-    /*max-width: 100% !important;*/
   }
   #projects .image-container {
     margin-bottom: 16px !important;
@@ -53,19 +43,21 @@
   #projects #double-commander .image-container {
     margin-bottom: 8px !important;
   }
-  #projects #advanced-admin-menu img {
-    max-width: 70% !important;
-  }
 }
 
-@media screen and (max-width: 1300px) {
+@media (max-width: 1300px) {
   #app {
-    width: 90%;
+    width: 92%;
+  }
+  
+  .prof {
+    /*---for_tests---*/
+    /*color: #ff0 !important;*/
   }
   
   #projects-nav {
     width: 60%;
-    margin: 1.5em auto 1em;
+    margin: 20px auto 10px;
     position: relative;
     z-index: 10;
   }
@@ -90,14 +82,16 @@
   }
   #projects-nav li a:hover,
   #projects-nav li a:focus,
-  #projects-nav li a:active,
-  #projects-nav a.active {
-    background: #edf2f4;
+  #projects-nav li a:active {
+    background: #e6eaeb;
+  }
+  #projects-nav li a.active {
+    background: #edf2f4 !important;
   }
   #projects-nav .menu-row-last {
     display: none;
   }
-
+  
   #projects-nav .count-label {
     margin-left: 6px;
   }
@@ -115,11 +109,8 @@
     display: inline-block;
   }
   
-  .project-separator-container {
-    width: 85%;
-  }
-  .sm-hide {
-    display: none;
+  .project .project-separator-div {
+    margin-left: -8px;
   }
   
   .footer-content {
@@ -128,42 +119,66 @@
   }
 }
 
-@media screen and (max-width: 1100px) {
+@media (max-width: 1100px) {
   #projects-nav {
     width: 80%;
   }
 }
 
-@media screen and (max-width: 1000px) {
+@media (max-width: 1000px) {
   #projects #home-dictionary .image-container.last {
     display: none;
   }
-  #projects #regex-find-pr img {
+  #projects #regex-find .images a {
     max-width: 100%;
     margin-bottom: 8px;
     margin-bottom: 0.5rem;
   }
+  
+  #go-to-top {
+    bottom: 16px;
+    right: 16px;
+  }
 }
 
-@media screen and (max-width: 830px) {
-  #projects-nav {
-    width: 100%;
+@media (max-width: 830px) {
+  .tooltip {
+    display: none !important;
   }
-  .menu-part-i,
-  .menu-part-ii {
+  
+  #header {
+    padding-top: 12px;
+  }
+  
+  #contacts-menu {
+    padding-top: 6px;
+  }
+  #contacts-menu .menu-part-i,
+  #contacts-menu .menu-part-ii {
     display: block;
   }
-  .opera11 .contacts-menu li {
+  #contacts-menu li {
+    margin-bottom: 0;
+  }
+  #contacts-menu li {
+    width: 50px;
+  }
+  #contacts-menu a {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+  .opera11 #contacts-menu li {
     float: none;
   }
 
-  .menu-social .divider-menu {
+  #contacts-menu .divider-item {
     border: 0;
   }
-  #projects .images img {
-    /*margin-bottom: 8px;*/
-  }
   
+  #projects-nav {
+    width: 100%;
+    margin-top: 1em;
+  }
   #projects .description ul,
   #projects .description ol,
   #projects .images ul,
@@ -182,7 +197,7 @@
     display: flex;
   }
   #projects .project .images .image-row a {
-    margin-right: 0;
+    margin-right: 0 !important;
     margin-bottom: 16px;
   }
   #projects .project .images .image-row img {
@@ -192,42 +207,48 @@
     margin-bottom: 0;
   }
   
-  #projects #qtcolorpicker .images img {
+  #projects #qtcolorpicker .images img,
+  #projects #advanced-admin-menu .images img,
+  #projects #double-commander .images img {
     max-width: 100%;
   }
-  #projects #advanced-admin-menu img {
-    max-width: 100% !important;
-  }
   #projects #double-commander .images img {
-    max-height: 100%;
+    max-height: 20rem;
+  }
+  #projects #double-commander .images .image-container,
+  #projects #html-post-editor .images .image-container,
+  #projects #tinymce-code-formatting .images .image-container,
+  #projects #regex-find .images .image-container {
+    display: block;
+    margin-right: 0 !important;
+  }
+  
+  
+  #go-to-top:hover {
+    opacity: 0.8;
+    background-color: #dfdfdf;
+  }
+  #go-to-top:active {
+    background-color: #ccc;
+    opacity: 1;
   }
 }
 
-@media screen and (max-width: 750px) {
+@media (max-width: 750px) {
   #projects #double-commander .image-row {
     display: block;
   }
-  #projects .project .images img {
-    /*max-height: 80%;*/
-  }
 }
 
-@media screen and (max-width: 640px) {
+@media (max-width: 640px) {
   #projects-nav #nav > li {
     min-width: 170px;
-    margin: 6px;
+    margin: 4px;
   }
   
-  #projects .project {
-    margin-left: 8px;
-    margin-left: 0.5rem;
-  }
   #projects .images {
     padding: 0;
   }
-  /*#projects img {
-    margin-right: 5px !important;
-  }*/
   
   .project .project-separator-div {
     width: 100%;
@@ -237,45 +258,44 @@
     display: none;
   }
   
-  #projects #double-commander .images img {
-    max-width: 100% !important;
-    max-height: 320px !important;
-    max-height: 20rem !important;
+  #projects #metronomix .images .stacked-images {
+    margin-right: 0;
   }
   #projects #list-folders .images img, 
   #projects #android-manager .images img {
     max-height: 30rem !important;
   }
-  #projects #metronomix .images .stacked-images {
-    margin-right: 0;
-  }
-  
-  #go-to-top {
-    bottom: 16px;
-    right: 16px;
+  #projects #double-commander .images img {
+    max-width: 100% !important;
+    max-height: 320px !important;
+    max-height: 20rem !important;
   }
 }
 
-@media screen and (max-width: 500px) {
+@media (max-width: 500px) {
   pre {
     width: 100%;
   }
   
+  .img-sep {
+    display: block;
+  }
+  
+  #projects .project {
+    margin-bottom: 0;
+  }
   #projects .images .image-row {
     display: block !important;
+  }
+  #projects .images .image-row img {
+    margin-bottom: 0;
   }
   #projects .project .images .image-container {
     display: block;
   }
   #projects .project .images a {
-    display: block !important;
+    /*display: block !important;*/
     margin-right: 0 !important;
-  }
-  #projects .project .images img {
-    /*margin-bottom: 16px;*/
-  }
-  #projects .images .image-row img {
-    margin-bottom: 0;
   }
   
   #projects #metronomix .images a {
@@ -288,67 +308,36 @@
   #projects #metronomix .images .stacked-images {
     margin-right: 0;
   }
-  #projects #metronomix .images .stacked-images a {
-    display: inline;
-  }
   #projects #metronomix .images .stacked-images img {
     box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.2) !important;
   }
-  .projects-menu table td {
-    padding: 0.8em 1em;
-  }
-  .projects-menu-item {
-    margin-bottom: 0;
+  #projects #advanced-admin-menu .images a {
+    max-width: 100% !important;
   }
 }
 
-@media screen and (max-width: 420px) {
+@media (max-width: 420px) {
   pre {
     font-size: 12px;
   }
-  .projects-menu .inner {
-    border-radius: 0.2em;
-  }
-  .projects-menu table td {
-    padding: 1.5em 0.5em;
-  }
-  .projects-menu-item {
-    margin-bottom: 0.3em;
+  .hidden-small {
+    display: none !important;
   }
   #projects img {
     margin-right: 0px !important;
   }
-  .hidden-xxs {
-    display: none !important;
-  }
 }
 
-@media screen and (max-width: 350px) {
-  .projects-menu .inner {
-    padding: 0.5em;
-  }
-  .projects-menu table td {
-    display: block;
-    padding: 0;
-  }
-  
-  .opera11 .contacts-menu a {
+@media (max-width: 350px) {
+  .opera11 #contacts-menu a {
     font-size: 18px;
     font-size: 1.1rem;
     padding: 0.4em 0.7em;
   }
 }
 
-@media screen and (max-width: 330px) {
-  .break-words-xxs {
+@media (max-width: 330px) {
+  .break-words-small {
     word-break: break-all;
-  }
-  .contacts-menu li {
-    width: 33%;
-  }
-  .contacts-menu a {
-    width: 70%;
-    padding: 0.4em 0.5em;
-    margin: 0px auto;
   }
 }

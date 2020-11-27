@@ -87,7 +87,7 @@ ul.list-aligned {
 }
 
 .shortcut {
-  padding: 1px 5px;
+  padding: 0px 5px;
   background: #fafafa;
   border: 1px solid #aaa;
   border-radius: 3px;
@@ -110,6 +110,18 @@ ul.list-aligned {
 .new:hover {
   background: #d3f7d2;
 }
+
+.img-sep {
+  display: none;
+}
+.no-highlight {
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.nowrap {
+  white-space: nowrap;
+}
+
 
 /* ----------------- content ----------------- */
 .section-title {
@@ -189,12 +201,12 @@ ul.list-aligned {
   border-bottom: 2px solid #ddd;
   border-image: linear-gradient(90deg, #fff 0%, #ddd 15%, #ddd 50%, #ddd 80%, #fff 100%) 1;
 }
-.divider-menu {
+.divider-item {
   border-right: 2px solid #ccc;
 }
 
 /* ----------------------------------- contacts ------------------------------- */
-.contacts-menu {
+#contacts-menu {
   position: relative;
   display: block;
   width: 100%;
@@ -202,24 +214,23 @@ ul.list-aligned {
   padding: 16px 0px 0px;
   margin-top: 0px;
 }
-.contacts-menu .contacts-menu-container {
+#contacts-menu .menu-container {
   text-align: center;
-  line-height: 16px;
-  line-height: 1rem;
+  line-height: 0;
 }
-.contacts-menu ul {
+#contacts-menu ul {
   display: inline-block;
   margin: 0;
   padding-left: 0;
   list-style: none;
 }
-.contacts-menu li {
+#contacts-menu li {
   position: relative;
   display: inline-block;
   float: left;
 }
 
-.contacts-menu a {
+#contacts-menu a {
   display: block;
   font-size: 19px;
   font-size: 1.2rem;
@@ -229,18 +240,19 @@ ul.list-aligned {
   line-height: 1em;
 }
 
-.contacts-menu li:hover > a,
-.contacts-menu li > a:focus {
+#contacts-menu li:hover > a,
+#contacts-menu li:active > a,
+#contacts-menu li > a:focus {
   color: #fff;
   background: #61939bdd;
   /*background: #098598;*/
   /*background: #828282;*/
 }
-.contacts-menu li:hover > a {
+#contacts-menu li:hover > a {
   transition: background 0.15s;
 }
-.menu-part-i,
-.menu-part-ii {
+#contacts-menu .menu-part-i,
+#contacts-menu .menu-part-ii {
   display: inline-block;
 }
 
@@ -409,31 +421,6 @@ ul.list-aligned {
 }
 
 
-/* === ie-menu === */
-#menu-box {
-  display: none;
-  margin: 1em auto;
-  text-align: center;
-  width: 40%;
-  background: #fafafa;
-}
-.projects-menu .inner {
-  border-radius: 5px;
-  -ms-border-radius: 0.5em;
-  border: 1px solid #ccc;
-}
-.projects-menu table {
-  margin: 0px auto;
-  text-align: left;
-}
-.projects-menu table td {
-  padding: 0.8em 1.5em;
-}
-.projects-menu-item {
-  margin-bottom: 0.4em;
-  font-size: 105%;
-}
-
 /* ----------------- projects ----------------- */
 #projects .project .images a {
   margin-right: 16px;
@@ -509,7 +496,6 @@ ul.list-aligned {
 }
 #projects .project.last {
   padding-bottom: 0px;
-  margin-bottom: 20px;
 }
 
 .project .title {
@@ -560,6 +546,13 @@ ul.list-aligned {
 }
 #projects .images a:hover > img {
   opacity: 0.8;
+}
+.mobile #projects .images a:hover > img {
+  opacity: 1;
+}
+.mobile #projects .images a {
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 #projects .image-container {
@@ -696,24 +689,20 @@ ul.list-aligned {
   margin-right: 0;
 }
 
-#projects #advanced-admin-menu .images a {
-  margin-right: 0;
-}
-#projects #advanced-admin-menu .images img {
-  max-height: 100%;
-  max-width: 60%;
-  box-shadow: none;
-}
+#projects #advanced-admin-menu .images a,
 #projects #menu-with-login .images a {
   margin-right: 0;
-  margin-bottom: 0;
+}
+#projects #advanced-admin-menu .images a {
+  max-height: 100%;
+  max-width: 80%;
+  box-shadow: none;
 }
 
 #projects #open-last-download .images a {
   margin-right: 0;
-  margin-bottom: 0;
 }
-#projects #regex-find-pr img {
+#projects #regex-find img {
   margin-bottom: 16px;
   margin-bottom: 1rem;
   margin-right: 16px;
@@ -730,33 +719,20 @@ ul.list-aligned {
   margin-right: 8px;
   margin-right: 0.5rem;
 }
-#projects #_7zip .images a {
+#projects #_7zip .images a,
+#projects #adbview .images a,
+#projects #number-converter .images a,
+#projects #cplusplus-reference .images a,
+#projects #norber-theme .images a {
   margin-right: 0;
-  margin-bottom: 0;
-}
-#projects #adbview .images a {
-  margin-right: 0;
-  margin-bottom: 0;
 }
 #projects #adbview .images img {
   max-height: 320px;
   max-height: 20rem;
 }
-#projects #number-converter .images a {
-  margin-right: 0;
-  margin-bottom: 0;
-}
-#projects #cplusplus-reference .images a {
-  margin-right: 0;
-  margin-bottom: 0;
-}
 #projects #cplusplus-reference .images img {
   max-height: 304px;
   max-height: 19rem;
-}
-#projects #norber-theme .images a {
-  margin-right: 0;
-  margin-bottom: 0;
 }
 #projects #norber-theme .images img {
   max-height: 304px;
@@ -807,63 +783,63 @@ ul.list-aligned {
 }
 
 /*------------------------------------ Font Icons ------------------------------------*/
-.contacts-menu ul li a::before {
+#contacts-menu ul li a::before {
   -webkit-font-smoothing: antialiased;
   display: inline-block;
   font-family: 'Fontawesome';
   vertical-align: middle;
 }
 
-.contacts-menu ul li a::before {
+#contacts-menu ul li a::before {
   content: '\f17c';
 }
-.contacts-menu ul li a[href*="@"]::before {
+#contacts-menu ul li a[href*="@"]::before {
   content: '\f0e0';
 }
-.contacts-menu ul li a[href*="plus.google.com"]::before {
+#contacts-menu ul li a[href*="plus.google.com"]::before {
   /*content: '\f0d5';*/
   content: '\f0d4';
 }
-.contacts-menu ul li a[href*="vk.com"]::before {
+#contacts-menu ul li a[href*="vk.com"]::before {
   content: '\f189';
 }
-.contacts-menu ul li a[href*="facebook.com"]::before {
+#contacts-menu ul li a[href*="facebook.com"]::before {
   content: '\f09a';
 }
-.contacts-menu ul li a[href*="linkedin.com"]::before {
+#contacts-menu ul li a[href*="linkedin.com"]::before {
   content: '\f0e1';
 }
-.contacts-menu ul li a[href*="github.com"]::before {
+#contacts-menu ul li a[href*="github.com"]::before {
   content: '\f113';
 }
-.contacts-menu ul li a[href*="twitter.com"]::before {
+#contacts-menu ul li a[href*="twitter.com"]::before {
   content: '\f099';
 }
-.contacts-menu ul li a[href*="addons.mozilla.org"]::before {
+#contacts-menu ul li a[href*="addons.mozilla.org"]::before {
   content: '\f12e';
 }
-.contacts-menu ul li a[href*="joomla.org"]::before {
+#contacts-menu ul li a[href*="joomla.org"]::before {
   content: '\f1aa';
 }
-.contacts-menu ul li a[href*="stackoverflow.com"]::before {
+#contacts-menu ul li a[href*="stackoverflow.com"]::before {
   content: '\f16c';
 }
-.contacts-menu ul li a[href*="soundcloud.com"]::before {
+#contacts-menu ul li a[href*="soundcloud.com"]::before {
   content: '\f1be';
 }
-.contacts-menu ul li a[href*="tumblr.com"]::before {
+#contacts-menu ul li a[href*="tumblr.com"]::before {
   /*content: '\f173';*/
   content: '\f174';
 }
 
-.contacts-menu ul li a[href*="wordpress.org"]::before,
-.contacts-menu ul li a[href*="wordpress.com"]::before {
+#contacts-menu ul li a[href*="wordpress.org"]::before,
+#contacts-menu ul li a[href*="wordpress.com"]::before {
   font-family: "dashicons";
   /*content: "\f324";*/
   content: "\f120";
 }
 
-.contacts-menu ul li a[href*="sourceforge.net"]::before {
+#contacts-menu ul li a[href*="sourceforge.net"]::before {
   font-family: 'icomoon' !important;
   content: "\e903";
 }
@@ -964,6 +940,19 @@ a.github-source-icon::before {
   opacity: 0.8;
   visibility: visible;
 }
+
+.mobile #go-to-top:hover {
+  background-color: #dfdfdf;
+  opacity: 0.8;
+}
+.mobile #go-to-top:hover::after {
+  color: #7a8b92;
+}
+.mobile #go-to-top:active {
+  background-color: #ccc;
+  opacity: 1;
+}
+
 
 /* ---------------------------- bootstrap override ---------------------------- */
 .tooltip {

@@ -5,7 +5,7 @@
 <br>
 <p class="project-features">Project features</p>
 <ul>
-  <li class="break-words-xxs"><b>Export Tabs</b> - saves tabs' addresses to a text file in the "/sdcard/Download" folder</li>
+  <li class="break-words-small"><b>Export Tabs</b> - saves tabs' addresses to a text file in the "/sdcard/Download" folder</li>
   <li><b>Import Tabs</b> - loads URLs taken from a text file opened in the browser</li>
 </ul>
 </div>

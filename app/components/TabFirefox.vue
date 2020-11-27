@@ -60,22 +60,22 @@ module.exports = {
         },
         {
           name: 'Bookmarks Sidebar Button',
-          id: 'bookmarks-sidebar-button-pr',
+          id: 'bookmarks-sidebar-button',
           url: 'https://github.com/mortalis13/Bookmarks-Sidebar-Button',
           short_description: 'Adds a Bookmarks sidebar button to the <b>Toolbar Palette</b>',
           
-          description: httpVueLoader(SUB_COMP_PATH + 'bookmarks-sidebar-button-pr-desc.vue'),
-          images: httpVueLoader(SUB_COMP_PATH + 'bookmarks-sidebar-button-pr-images.vue'),
+          description: httpVueLoader(SUB_COMP_PATH + 'bookmarks-sidebar-button-desc.vue'),
+          images: httpVueLoader(SUB_COMP_PATH + 'bookmarks-sidebar-button-images.vue'),
           add_classes: {'min-separator': true},
         },
         {
           name: 'Regex Find',
-          id: 'regex-find-pr',
+          id: 'regex-find',
           url: 'https://github.com/mortalis13/Regex-Find',
           short_description: 'Adds a <b>Regex</b> checkbox to the findbar',
           
-          description: httpVueLoader(SUB_COMP_PATH + 'regex-find-pr-desc.vue'),
-          images: httpVueLoader(SUB_COMP_PATH + 'regex-find-pr-images.vue'),
+          description: httpVueLoader(SUB_COMP_PATH + 'regex-find-desc.vue'),
+          images: httpVueLoader(SUB_COMP_PATH + 'regex-find-images.vue'),
           add_classes: {'min-separator': true},
         },
         {

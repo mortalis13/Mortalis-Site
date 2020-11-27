@@ -14,7 +14,7 @@ module.exports = {
     return {
       projects: [
         {
-          name: 'Double Commander [fork]',
+          name: 'Double Commander',
           id: 'double-commander',
           icon: ICONS_PATH + 'double-commander-rebuild-48.png',
           url: 'https://github.com/mortalis13/DoubleCommander-Rebuild/releases',
@@ -25,7 +25,7 @@ module.exports = {
           images: httpVueLoader(SUB_COMP_PATH + 'double-commander-images.vue'),
         },
         {
-          name: '7-Zip [fork]',
+          name: '7-Zip',
           id: '_7zip',
           url: 'https://github.com/mortalis13/7zip-User-Build-CPP/releases',
           source_url: 'https://github.com/mortalis13/7zip-User-Build-CPP',
@@ -36,10 +36,10 @@ module.exports = {
           add_classes: {'min-separator': true},
         },
         {
-          name: 'ADBView [fork]',
+          name: 'ADBView',
           id: 'adbview',
           url: 'https://github.com/mortalis13/ADBView',
-          short_description: 'A plugin for the <a href="http://sublimetext.com" target="_blank"><b>Sublime Text</b></a> editor that provides live <b>Android Logcat</b> output',
+          short_description: 'A fork of the <a href="https://github.com/quarnster/ADBView" target="_blank"><b>ADBView</b></a> plugin for the <a href="http://sublimetext.com" target="_blank"><b>Sublime Text</b></a> editor that provides live <b>Android Logcat</b> output',
           
           description: httpVueLoader(SUB_COMP_PATH + 'adbview-desc.vue'),
           images: httpVueLoader(SUB_COMP_PATH + 'adbview-images.vue'),
@@ -57,7 +57,7 @@ module.exports = {
           add_classes: {'reduced-separator': true},
         },
         {
-          name: 'Offline \'cplusplus.com\' Reference',
+          name: 'Offline C++ Reference',
           id: 'cplusplus-reference',
           url: 'https://github.com/mortalis13/cplusplus.com-reference-offline',
           short_description: 'A <b>Python</b> script that generates offline help files from <a href="http://cplusplus.com" target="_blank"><b>cplusplus.com</b></a>',

@@ -1,7 +1,7 @@
 <template>
 <div>
   <header id="header" class="section">
-    <h2 class="name"><a href="http://mortalis.c1.biz" rel="home">Roman Hudz</a></h2>
+    <h2 class="name"><a href="http://mortalis.c1.biz" class="no-highlight" rel="home">Roman Hudz</a></h2>
     <h4 class="prof">Program Developer</h4>
   </header>
 
@@ -9,19 +9,19 @@
     <section id="contacts" class="section">
       <h3 class="text-center section-title"><span>[ </span>Contacts<span> ]</span></h3>
 
-      <nav id="contacts-menu" class="contacts-menu clear">
-        <div class="contacts-menu-container">
+      <nav id="contacts-menu" class="clear">
+        <div class="menu-container">
           <div class="menu-part-i">
-            <ul id="menu-social-i" class="menu menu-social">
+            <ul>
               <social-menu-item id="github"></social-menu-item>
               <social-menu-item id="firefox"></social-menu-item>
               <social-menu-item id="stackoverflow"></social-menu-item>
               <social-menu-item id="wordpress"></social-menu-item>
-              <social-menu-item id="joomla" class="divider-menu"></social-menu-item>
+              <social-menu-item id="joomla" class="divider-item"></social-menu-item>
             </ul>
           </div><!--
        --><div class="menu-part-ii">
-            <ul id="menu-social-ii" class="menu menu-social">
+            <ul>
               <social-menu-item id="email"></social-menu-item>
               <social-menu-item id="linkedin"></social-menu-item>
               <social-menu-item id="facebook"></social-menu-item>
@@ -36,10 +36,10 @@
     <nav id="projects-nav" data-spy="affix">
       <ul id="nav" class="nav">
         <li v-for="(item, index) in categories" :class="'menu-row-'+index">
-          <router-link :to="item.link" @click.native="scrollToTop">{{item.title}} <span :class="'count-label '+item.count_class">x{{item.count}}</span></router-link>
+          <router-link :to="item.link" class="no-highlight">{{item.title}} <span :class="'count-label '+item.count_class">x{{item.count}}</span></router-link>
           <ul class="projects-submenu">
             <li v-for="project in item.projects">
-              <router-link :to="{hash: project.id}">{{project.name}}</router-link>
+              <router-link :to="{hash: project.id}" class="no-highlight">{{project.name}}</router-link>
             </li>
           </ul>
           <svg class="active-indicator" height="12" width="12"><path d="M0 0 L5 6 L0 12 Z"/></svg>
@@ -63,10 +63,10 @@
       <div class="footer-info col-xs-4 text-center"></div>
       <div class="footer-info col-xs-4 text-right">
         <a href="https://github.com/mortalis13/Mortalis-Site" target="_blank">{{version}}</a>&nbsp;
-        <a title="GitHub Source" class="github-source-icon hidden-xxs" target="_blank" href="https://github.com/mortalis13/Mortalis-Site"><span class="screen-reader-text">GitHub Source</span> <span class=""></span></a>
+        <a title="GitHub Source" class="github-source-icon" target="_blank" href="https://github.com/mortalis13/Mortalis-Site"><span class="screen-reader-text">GitHub Source</span> <span class=""></span></a>
       </div>
     </div>
-    <a href="#" id="go-to-top"></a>
+    <a href="#" id="go-to-top" class="no-highlight"></a>
   </footer>
 <!-- <script src="js/main.min.js"></script> -->
 </div>
@@ -87,11 +87,16 @@ let social_menu = {
 }
 
 Vue.component('social-menu-item', {
-  template: `<li :class="'menu-item item-' + id"><a :title="item.title" rel="tooltip" data-toggle="tooltip" data-placement="top" target="_blank" :href="item.url"><span class="screen-reader-text">{{item.title}}</span></a></li>`,
+  template: `<li :class="'menu-item item-' + id"><a :title="item.title" class="no-highlight" rel="tooltip" data-toggle="tooltip" data-placement="top" :target="link_target" :href="item.url"><span class="screen-reader-text">{{item.title}}</span></a></li>`,
   props: ['id'],
   data() { return {
     item: social_menu[this.id]
-  }}
+  }},
+  computed: {
+    link_target: function() {
+      return this.item.url.startsWith('http')?'_blank':''
+    }
+  }
 });
 
 // ---------------------------
@@ -135,17 +140,17 @@ let projects = {
     {name: 'Bookmark Shortcuts', id: 'bookmark-shortcuts'},
     {name: 'Open Last Download', id: 'open-last-download'},
     {name: 'Tabs Export/Import', id: 'tabs-export-import'},
-    {name: 'Bookmarks Sidebar Button', id: 'bookmarks-sidebar-button-pr'},
-    {name: 'Regex Find', id: 'regex-find-pr'},
+    {name: 'Bookmarks Sidebar Button', id: 'bookmarks-sidebar-button'},
+    {name: 'Regex Find', id: 'regex-find'},
     {name: 'Toggle Images and JS', id: 'toggle-images-js'},
     {name: 'Copy Paste Location', id: 'copy-paste-location'},
   ],
   'misc': [
-    {name: 'Double Commander', id: 'double-commander'},
-    {name: '7-Zip', id: '_7zip'},
-    {name: 'ADBView', id: 'adbview'},
+    {name: 'Double Commander Fork', id: 'double-commander'},
+    {name: '7-Zip Fork', id: '_7zip'},
+    {name: 'ADBView Fork', id: 'adbview'},
     {name: 'Number Converter', id: 'number-converter'},
-    {name: 'Offline \'cplusplus.com\'', id: 'cplusplus-reference'},
+    {name: 'C++ Reference', id: 'cplusplus-reference'},
     {name: 'Python Scripts', id: 'python-scripts'},
     {name: 'Sublime Plugins', id: 'sublime-plugins'},
     {name: 'Norber Theme', id: 'norber-theme'},
@@ -159,7 +164,7 @@ data() { return {
   
   categories: [
     {title: 'Android'        , link: 'android'        , count: 8 , count_class: 'green', projects: projects['android']},
-    {title: 'Qt / C++'       , link: 'qtcpp'          , count: 8 , count_class: 'green', projects: projects['qtcpp']},
+    {title: 'C++ / Qt'       , link: 'qtcpp'          , count: 8 , count_class: 'green', projects: projects['qtcpp']},
     {title: 'Web Sites'      , link: 'web-sites'      , count: 3 , count_class: 'beige', projects: projects['web-sites']},
     {title: 'Wordpress'      , link: 'wordpress'      , count: 3 , count_class: 'beige', projects: projects['wordpress']},
     {title: 'Joomla'         , link: 'joomla'         , count: 2 , count_class: 'red',   projects: projects['joomla']},
@@ -168,13 +173,10 @@ data() { return {
   ],
 }},
 methods: {
-  scrollToTop() {
-    window.scrollTo(0,0);
-  }
 },
 mounted() {
-  // let js_src = 'js/main.js'
-  let js_src = 'js/main.min.js'
+  let js_src = 'js/main.js'
+  // let js_src = 'js/main.min.js'
   
   let externalScript = document.createElement('script')
   externalScript.setAttribute('src', js_src)

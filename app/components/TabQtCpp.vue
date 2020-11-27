@@ -1,6 +1,6 @@
 <template>
 <div class="project-type" id="qt-cpp">
-  <div class="type-title-wrap"><div class="type-title">Qt / C++</div></div>
+  <div class="type-title-wrap"><div class="type-title">C++ / Qt</div></div>
   <gen-project v-for="(project, index) in projects" :project="project" :key="index"></gen-project>
 </div>
 </template>

@@ -4,7 +4,7 @@
   <div v-if="project.icon" class="project-icon"><img :src="project.icon" alt=""></div>
   <div class="project-info">
     <div class="title">
-      <a v-if="project.url" :href="project.url" target="_blank">{{project.name}}</a>
+      <a v-if="project.url" :href="project.url" target="_blank" v-html="project.name"></a>
       <span v-else><b>{{project.name}}</b></span>
       <a v-if="project.source_url" title="GitHub Source" class="github-source-icon" target="_blank" :href="project.source_url"><span class="screen-reader-text">GitHub Source</span></a>
       

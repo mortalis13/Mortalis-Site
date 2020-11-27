@@ -19,11 +19,14 @@ const router = new VueRouter({
     {path: '*', redirect: '/android'}
   ],
   linkActiveClass: 'active',
-
+  
   scrollBehavior (to, from, savedPosition) {
     // console.log('== scrollBehavior: ' + to.hash);
     
-    if (to.hash) {
+    if (savedPosition) {
+      return savedPosition
+    }
+    else if (to.hash) {
       // setTimeout(() => {
       //   const element = document.getElementById(to.hash.replace(/#/, ''))
       //   element.scrollIntoView()
@@ -32,9 +35,13 @@ const router = new VueRouter({
       return {selector: to.hash}
     }
     else {
-      return {x:0, y:0}
+      return {}
+      // return {selector: '#projects'}
+      // return {selector: '#projects-nav'}
+      // return {x:0, y:0}
     }
   }
+  
 })
 
 const App = new Vue({el: '#app', components: {'app': httpVueLoader('/app/Main.vue')}, router})

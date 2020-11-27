@@ -16,7 +16,7 @@
   <li><b>addons_download</b> - downloads Firefox addons by direct URLs using the <b>Web Scraping</b></li>
   <li><b>archive_process</b> - scans ZIP files and gets their content</li>
   <li><b>bankia_api</b> - reads data from a bank account using its API methods</li>
-  <li><b>covid_stat_csv</b> - generates world statistics on COVID-19 spread and plots a graph in a XLS file</li>
+  <li><b>covid_stat_csv</b> - generates world statistics on COVID-19 spread and plots a graph in an XLS file</li>
   <li><b>cue_split</b> - splits <b>FLAC</b> audio files using a <b>CUE</b> list</li>
   <li><b>directory_structure_duplicate</b> - makes a duplicate of a folder tree without copying files</li>
   <li><b>ftp_list</b> - gets a list of files in <b>FTP</b> directories</li>
