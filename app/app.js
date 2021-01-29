@@ -35,10 +35,8 @@ const router = new VueRouter({
       return {selector: to.hash}
     }
     else {
-      return {}
-      // return {selector: '#projects'}
-      // return {selector: '#projects-nav'}
-      // return {x:0, y:0}
+      return {x:0, y:0}
+      // return {}
     }
   }
   

@@ -94,8 +94,7 @@ module.exports = {
     }
   },
   
-  components: {
-    'gen-project': httpVueLoader('/app/components/GenProject.vue')
-  }
+components: {'gen-project': httpVueLoader('/app/components/GenProject.vue')},
+
 }
 </script>

@@ -196,9 +196,17 @@ ul.list-aligned {
 #content #projects {
   padding: 10px 0;
 }
+#content #projects #projects-wrap {
+  min-height: 600px;
+}
 
-.section {
+#header,
+#content #contacts {
   border-bottom: 2px solid #ddd;
+  border-image: linear-gradient(90deg, #fff 0%, #ddd 15%, #ddd 50%, #ddd 80%, #fff 100%) 1;
+}
+#footer {
+  border-top: 2px solid #ddd;
   border-image: linear-gradient(90deg, #fff 0%, #ddd 15%, #ddd 50%, #ddd 80%, #fff 100%) 1;
 }
 .divider-item {

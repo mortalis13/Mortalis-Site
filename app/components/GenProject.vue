@@ -23,12 +23,17 @@
 <div v-if="project.images" class="images">
   <component :is="project.images"></component>
 </div>
-<div class="project-separator-div"><div class="inner"></div></div>
+
+<div><component :is="separator_comp"></component></div>
+
 </div>
 </template>
 
 <script>
 module.exports = {
+  data() { return {
+    separator_comp: httpVueLoader('/app/components/separator.vue'),
+  }},
   props: ['project']
 }
 </script>

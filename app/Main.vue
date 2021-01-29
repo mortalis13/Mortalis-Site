@@ -56,7 +56,7 @@
       </div>
     </section>
   </div>
-
+  
   <footer id="footer">
     <div class="footer-content">
       <div class="footer-info col-xs-4 text-left">&copy; {{year}}</div>
@@ -68,7 +68,6 @@
     </div>
     <a href="#" id="go-to-top" class="no-highlight"></a>
   </footer>
-<!-- <script src="js/main.min.js"></script> -->
 </div>
 </template>
 
@@ -76,9 +75,9 @@
 let social_menu = {
   'github'        : {title: 'GitHub'         , url: 'https://github.com/mortalis13'},
   'firefox'       : {title: 'Firefox Addons' , url: 'https://addons.mozilla.org/en-US/firefox/user/mortalis/'},
-  'stackoverflow' : {title: 'Stack Overflow' , url: 'http://stackoverflow.com/users/1106547/mortalis'},
+  'stackoverflow' : {title: 'Stack Overflow' , url: 'https://stackoverflow.com/users/1106547/mortalis'},
   'wordpress'     : {title: 'Wordpress'      , url: 'https://profiles.wordpress.org/mortalis#content-plugins'},
-  'joomla'        : {title: 'Joomla'         , url: 'http://extensions.joomla.org/profile/profile/details/260289'},
+  'joomla'        : {title: 'Joomla'         , url: 'https://extensions.joomla.org/profile/profile/details/260289'},
   'email'         : {title: 'E-Mail'         , url: 'mailto:aspirinumes@gmail.com'},
   'linkedin'      : {title: 'LinkedIn'       , url: 'https://www.linkedin.com/in/mortalis'},
   'facebook'      : {title: 'Facebook'       , url: 'https://www.facebook.com/mortalis13'},
@@ -170,16 +169,19 @@ data() { return {
     {title: 'Joomla'         , link: 'joomla'         , count: 2 , count_class: 'red',   projects: projects['joomla']},
     {title: 'Firefox Addons' , link: 'firefox-addons' , count: 8 , count_class: 'green', projects: projects['firefox-addons']},
     {title: 'Misc'           , link: 'misc'           , count: 8 , count_class: 'green', projects: projects['misc']},
-  ],
+  ]
 }},
 methods: {
 },
+
 mounted() {
-  let js_src = 'js/main.js'
-  // let js_src = 'js/main.min.js'
+  // let js_src = 'js/main.js'
+  let js_src = 'js/main.min.js'
   
   let externalScript = document.createElement('script')
   externalScript.setAttribute('src', js_src)
   document.head.appendChild(externalScript)
-}}
+},
+
+}
 </script>
