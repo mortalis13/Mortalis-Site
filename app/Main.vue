@@ -158,8 +158,8 @@ let projects = {
 
 module.exports = {
 data() { return {
-  version: 'v1.4.1',
-  year: 2020,
+  version: 'v1.4.2',
+  year: 2021,
   
   categories: [
     {title: 'Android'        , link: 'android'        , count: 8 , count_class: 'green', projects: projects['android']},
